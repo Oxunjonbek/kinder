@@ -257,4 +257,53 @@ class SiteController extends Controller
             'model' => $model
         ]);
     }
+
+    public function actionTadbirlar()
+    {
+        return $this->render('tadbirlar');
+    }
+
+    public function actionTadbirSingle()
+    {
+        return $this->render('tadbirlar-single');
+    }
+
+    public function actionTanlovlar()
+    {
+        return $this->render('tanlov');
+    }
+
+    public function actionElonlar()
+    {
+        return $this->render('elon');
+    }
+
+    public function actionTuzilma()
+    {
+        return $this->render('tuzilma');
+    }
+
+    public function actionTarkibiy()
+    {
+        return $this->render('tarkibiy');
+    }
+
+    public function actionVakansiya()
+    {
+        return $this->render('vakansiya');
+    }
+
+    public function actionRahbariyat()
+    {
+        $genels = Genel::find()->all();
+        return $this->render('rahbariyat',
+            [
+                'genels'=>$genels
+            ]);
+    }
+
+    public function actionPedagog()
+    {
+        return $this->render('pedagog');
+    }
 }
