@@ -66,10 +66,12 @@ class FarmonlarController extends Controller
     {
         $model = new Farmonlar();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        if ($model->load(Yii::$app->request->post())) {
+            
+            if ($model->save()) {
+                return $this->redirect(['index']);
+            }
         }
-
         return $this->render('create', [
             'model' => $model,
         ]);
@@ -86,11 +88,13 @@ class FarmonlarController extends Controller
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        if ($model->load(Yii::$app->request->post())) {
+            
+            if ($model->save()) {
+                return $this->redirect(['index']);
+            }
         }
-
-        return $this->render('update', [
+        return $this->render('create', [
             'model' => $model,
         ]);
     }

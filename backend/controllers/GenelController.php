@@ -8,6 +8,7 @@ use backend\models\search\GenelSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 /**
  * GenelController implements the CRUD actions for Genel model.
@@ -66,10 +67,20 @@ class GenelController extends Controller
     {
         $model = new Genel();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        if ($model->load(Yii::$app->request->post())) {
+            $img = UploadedFile::getInstance($model, 'img');
+            if (!empty($img)) {
+                $model->image = random_int(0,9999). '.' . $img->extension;
+            }
+            
+            if ($model->save()) {
+                if (!empty($img)) {
+                    $img->saveAs('uploads/genel/' . $model->image);
+                    return $this->redirect(['index']);
+                }
+                return $this->redirect(['index']);
+            }
         }
-
         return $this->render('create', [
             'model' => $model,
         ]);
@@ -86,11 +97,21 @@ class GenelController extends Controller
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        if ($model->load(Yii::$app->request->post())) {
+            $img = UploadedFile::getInstance($model, 'img');
+            if (!empty($img)) {
+                $model->image = random_int(0,9999). '.' . $img->extension;
+            }
+            
+            if ($model->save()) {
+                if (!empty($img)) {
+                    $img->saveAs('uploads/genel/' . $model->image);
+                    return $this->redirect(['index']);
+                }
+                return $this->redirect(['index']);
+            }
         }
-
-        return $this->render('update', [
+        return $this->render('create', [
             'model' => $model,
         ]);
     }
@@ -104,6 +125,8 @@ class GenelController extends Controller
      */
     public function actionDelete($id)
     {
+        $data = Genel::findOne($id);
+        unlink(Yii::$app->basePath . '/web/uploads/genel/' . $data->image);
         $this->findModel($id)->delete();
 
         return $this->redirect(['index']);

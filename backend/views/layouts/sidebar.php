@@ -30,89 +30,105 @@
                     <a href="<?= Url::to(['site/index']) ?>" class="nav-link <?=($pathInfo == 'site/index' ? 'active' : '')?>">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
-                            Smart Technology
+                            KinderGarden
                             <!--<span class="right badge badge-danger">New</span>-->
                         </p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="<?= Url::to(['our-product/index']) ?>" class="nav-link <?=($pathInfo == 'our-product/index' ? 'active' : '')?>">
+                    <a href="<?= Url::to(['genel/index']) ?>" class="nav-link <?=($pathInfo == 'our-product/index' ? 'active' : '')?>">
                         <i class="nav-icon fas fa-chart-pie"></i>
                         <p>
-                            Наши продукты
+                            Boshqarma
                         </p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="<?= Url::to(['our-partner/index']) ?>" class="nav-link <?=($pathInfo == 'our-partner/index' ? 'active' : '')?>">
+                    <a href="<?= Url::to(['ariza/index']) ?>" class="nav-link <?=($pathInfo == 'ariza/index' ? 'active' : '')?>">
                         <i class="nav-icon far fa-plus-square"></i>
                         <p>
-                            Наши партнеры
+                            Ariza
                         </p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="<?= Url::to(['customer-reviews/index']) ?>" class="nav-link <?=($pathInfo == 'customer-reviews/index' ? 'active' : '')?>">
+                    <a href="<?= Url::to(['elonlar/index']) ?>" class="nav-link <?=($pathInfo == 'elonlar/index' ? 'active' : '')?>">
                         <i class="nav-icon fas fa-trophy text-teal"></i>
                         <p>
-                            Отзывы
+                            E'lonlar
                         </p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="<?= Url::to(['contact/index']) ?>" class="nav-link <?=($pathInfo == 'contact/index' ? 'active' : '')?>">
+                    <a href="<?= Url::to(['farmonlar/index']) ?>" class="nav-link <?=($pathInfo == 'contact/index' ? 'active' : '')?>">
                         <i class="nav-icon fas fa-phone-square"></i>
                         <p>
-                            Контакт
+                            Farmonlar
                         </p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="<?= Url::to(['get-consultation/index']) ?>" class="nav-link <?=($pathInfo == 'get-consultation/index' ? 'active' : '')?>">
+                    <a href="<?= Url::to(['nizom/index']) ?>" class="nav-link <?=($pathInfo == 'nizom/index' ? 'active' : '')?>">
                         <i class="nav-icon fas fa-copy"></i>
                         <p>
-                            Получить консультацию
+                            Nizomlar
                         </p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="<?= Url::to(['question/index']) ?>" class="nav-link <?=($pathInfo == 'question/index' ? 'active' : '')?>">
+                    <a href="<?= Url::to(['qonunlar/index']) ?>" class="nav-link <?=($pathInfo == 'qonunlar/index' ? 'active' : '')?>">
                         <i class="nav-icon fas fa-envelope"></i>
                         <p>
-                            Остались вопросы?
+                            Qonunlar
                         </p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="<?= Url::to(['replaces/index']) ?>" class="nav-link <?=($pathInfo == 'replaces/index' ? 'active' : '')?>">
+                    <a href="<?= Url::to(['structure/index']) ?>" class="nav-link <?=($pathInfo == 'structure/index' ? 'active' : '')?>">
                         <i class="nav-icon far fa-image"></i>
                         <p>
-                            Вопросы картинки
+                            Tuzilma
                         </p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="<?= Url::to(['list-gmail/index']) ?>" class="nav-link <?=($pathInfo == 'list-gmail/index' ? 'active' : '')?>">
+                    <a href="<?= Url::to(['tadbir/index']) ?>" class="nav-link <?=($pathInfo == 'tadbir/index' ? 'active' : '')?>">
                         <i class="nav-icon fas fa-book"></i>
                         <p>
-                            Список Маил
+                            Tadbir
                         </p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="<?= Url::to(['logo/index']) ?>" class="nav-link <?=($pathInfo == 'logo/index' ? 'active' : '')?>">
+                    <a href="<?= Url::to(['tanlov/index']) ?>" class="nav-link <?=($pathInfo == 'tanlov/index' ? 'active' : '')?>">
                         <i class="nav-icon fas fa-circle"></i>
                         <p>
-                            Логотип
+                            Tanlov
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="<?= Url::to(['tarkibiy-structure/index']) ?>" class="nav-link <?=($pathInfo == 'tarkibiy-structure/index' ? 'active' : '')?>">
+                        <i class="nav-icon fas fa-circle"></i>
+                        <p>
+                            Tarkibiy stuktura
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="<?= Url::to(['vacansy/index']) ?>" class="nav-link <?=($pathInfo == 'vacansy/index' ? 'active' : '')?>">
+                        <i class="nav-icon fas fa-circle"></i>
+                        <p>
+                            Vakansiya
                         </p>
                     </a>
                 </li>
