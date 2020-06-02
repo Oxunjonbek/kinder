@@ -257,4 +257,14 @@ class SiteController extends Controller
             'model' => $model
         ]);
     }
+
+    public function actionTadbirlar()
+    {
+        return $this->render('tadbirlar');
+    }
+    
+    public function actionTadbirSingle()
+    {
+        return $this->render('tadbirlar-single');
+    }
 }
