@@ -18,6 +18,7 @@ class Genel extends \yii\db\ActiveRecord
     /**
      * {@inheritdoc}
      */
+    public $img;
     public static function tableName()
     {
         return 'genel';
@@ -33,6 +34,7 @@ class Genel extends \yii\db\ActiveRecord
             [['title'], 'string'],
             [['name'], 'string', 'max' => 400],
             [['phone', 'image'], 'string', 'max' => 255],
+            [['img'], 'file', 'skipOnEmpty' => true, 'extensions' => 'png, jpg,gif,jpeg'],
         ];
     }
 

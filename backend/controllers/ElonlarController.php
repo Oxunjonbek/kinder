@@ -8,6 +8,7 @@ use backend\models\search\ElonlarSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 /**
  * ElonlarController implements the CRUD actions for Elonlar model.
@@ -66,10 +67,20 @@ class ElonlarController extends Controller
     {
         $model = new Elonlar();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        if ($model->load(Yii::$app->request->post())) {
+            $img = UploadedFile::getInstance($model, 'img');
+            if (!empty($img)) {
+                $model->image = random_int(0,9999). '.' . $img->extension;
+            }
+            
+            if ($model->save()) {
+                if (!empty($img)) {
+                    $img->saveAs('uploads/elonlar/' . $model->image);
+                    return $this->redirect(['index']);
+                }
+                return $this->redirect(['index']);
+            }
         }
-
         return $this->render('create', [
             'model' => $model,
         ]);
@@ -86,11 +97,21 @@ class ElonlarController extends Controller
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        if ($model->load(Yii::$app->request->post())) {
+            $img = UploadedFile::getInstance($model, 'img');
+            if (!empty($img)) {
+                $model->image = random_int(0,9999). '.' . $img->extension;
+            }
+            
+            if ($model->save()) {
+                if (!empty($img)) {
+                    $img->saveAs('uploads/elonlar/' . $model->image);
+                    return $this->redirect(['index']);
+                }
+                return $this->redirect(['index']);
+            }
         }
-
-        return $this->render('update', [
+        return $this->render('create', [
             'model' => $model,
         ]);
     }
@@ -104,6 +125,8 @@ class ElonlarController extends Controller
      */
     public function actionDelete($id)
     {
+        $data = Elonlar::findOne($id);
+        unlink(Yii::$app->basePath . '/web/uploads/elonlar/' . $data->image);
         $this->findModel($id)->delete();
 
         return $this->redirect(['index']);

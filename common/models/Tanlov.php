@@ -17,6 +17,7 @@ class Tanlov extends \yii\db\ActiveRecord
     /**
      * {@inheritdoc}
      */
+    public $img;
     public static function tableName()
     {
         return 'tanlov';
@@ -31,6 +32,7 @@ class Tanlov extends \yii\db\ActiveRecord
             [['title', 'text', 'image'], 'required'],
             [['title', 'text'], 'string'],
             [['image'], 'string', 'max' => 255],
+            [['img'], 'file', 'skipOnEmpty' => true, 'extensions' => 'png, jpg,gif,jpeg'],
         ];
     }
 

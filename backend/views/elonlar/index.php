@@ -16,16 +16,24 @@ $this->title = 'Наши партнеры';
         ['class' => 'kartik\grid\SerialColumn'],
 
         //'id',
-        'title',
+        // 'title',
         [
-            'attribute'=>'image',
-            'format' => 'html',
-            'value' => function($model){
-                return \yii\helpers\Html::img($model->image, ['width'=>90]);
-            }
+            'attribute'=>'title',
+            'format'=>'raw'
         ],
-        'text',
-        // 'image',
+        // [
+        //     'attribute'=>'image',
+        //     'format' => 'html',
+        //     'value' => function($model){
+        //         return \yii\helpers\Html::img($model->image, ['width'=>90]);
+        //     }
+        // ],
+        'image',
+        // 'text',
+        [
+            'attribute'=>'text',
+            'format'=>'raw'
+        ]
     ];
 
     $columns[] = [

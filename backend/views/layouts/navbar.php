@@ -16,13 +16,13 @@
             <?php $languageVal = \Yii::$app->language; ?>
             <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><?= ($languageVal == 'uz') ? "O'zbekcha" : (($languageVal == 'ru') ? 'Русский' : 'English') ?></a>
             <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
-                <?php if($languageVal != 'uz'){ ?>
+                <?php /*if($languageVal != 'uz'){ ?>
                     <li><a href="<?= \backend\components\Helper::createMultilanguageReturnUrl('uz') ?>" class="dropdown-item">O'zbekcha</a></li>
-                <?php } if($languageVal != 'ru'){ ?>
+                /*<?php } if($languageVal != 'ru'){ ?>
                     <li><a href="<?= \backend\components\Helper::createMultilanguageReturnUrl('ru') ?>" class="dropdown-item">Русский</a></li>
                 <?php } if($languageVal != 'en'){?>
                     <li><a href="<?= \backend\components\Helper::createMultilanguageReturnUrl('en') ?>" class="dropdown-item">English</a></li>
-                <?php } ?>
+                <?php } */?>
             </ul>
         </li>
     </ul>
@@ -66,7 +66,9 @@
         </li>
         <li class="nav-item dropdown user-menu">
             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-                <span class="d-none d-md-inline"><?= Yii::$app->user->identity->fio ?></span>
+                <span class="d-none d-md-inline">
+                        
+                    </span>
             </a>
             <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                 <!-- User image -->

@@ -8,6 +8,7 @@ use backend\models\search\NizomSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 /**
  * NizomController implements the CRUD actions for Nizom model.
@@ -66,10 +67,20 @@ class NizomController extends Controller
     {
         $model = new Nizom();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        if ($model->load(Yii::$app->request->post())) {
+            $img = UploadedFile::getInstance($model, 'img');
+            if (!empty($img)) {
+                $model->image = random_int(0,9999). '.' . $img->extension;
+            }
+            
+            if ($model->save()) {
+                if (!empty($img)) {
+                    $img->saveAs('uploads/nizom/' . $model->image);
+                    return $this->redirect(['index']);
+                }
+                return $this->redirect(['index']);
+            }
         }
-
         return $this->render('create', [
             'model' => $model,
         ]);
@@ -86,11 +97,21 @@ class NizomController extends Controller
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        if ($model->load(Yii::$app->request->post())) {
+            $img = UploadedFile::getInstance($model, 'img');
+            if (!empty($img)) {
+                $model->image = random_int(0,9999). '.' . $img->extension;
+            }
+            
+            if ($model->save()) {
+                if (!empty($img)) {
+                    $img->saveAs('uploads/nizom/' . $model->image);
+                    return $this->redirect(['index']);
+                }
+                return $this->redirect(['index']);
+            }
         }
-
-        return $this->render('update', [
+        return $this->render('create', [
             'model' => $model,
         ]);
     }
@@ -104,6 +125,8 @@ class NizomController extends Controller
      */
     public function actionDelete($id)
     {
+        $data = Nizom::findOne($id);
+        unlink(Yii::$app->basePath . '/web/uploads/nizom/' . $data->image);
         $this->findModel($id)->delete();
 
         return $this->redirect(['index']);
