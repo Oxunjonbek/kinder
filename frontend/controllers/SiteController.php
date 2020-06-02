@@ -14,6 +14,13 @@ use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
+use common\models\Genel;
+use common\models\Vacansy;
+use common\models\Structure;
+use common\models\TarkibiyStructure;
+use common\models\Tadbir;
+use common\models\Tanlov;
+use common\models\Elonlar;
 
 /**
  * Site controller
@@ -260,7 +267,10 @@ class SiteController extends Controller
 
     public function actionTadbirlar()
     {
-        return $this->render('tadbirlar');
+        $tadbir = Tadbir::find()->all();
+        return $this->render('tadbirlar',[
+            'tadbir'=>$tadbir
+        ]);
     }
 
     public function actionTadbirSingle()
@@ -270,27 +280,42 @@ class SiteController extends Controller
 
     public function actionTanlovlar()
     {
-        return $this->render('tanlov');
+        $tanlov = Tanlov::find()->all();
+        return $this->render('tanlov',[
+            'tanlov'=>$tanlov
+        ]);
     }
 
     public function actionElonlar()
     {
-        return $this->render('elon');
+        $elon = Elonlar::find()->all();
+        return $this->render('elon',[
+            'elon'=>$elon
+        ]);
     }
 
     public function actionTuzilma()
     {
-        return $this->render('tuzilma');
+        $tuzilma = Structure::find()->all();
+        return $this->render('tuzilma',[
+            'tuzilma'=>$tuzilma
+        ]);
     }
 
     public function actionTarkibiy()
     {
-        return $this->render('tarkibiy');
+        $tarkibiy = TarkibiyStructure::find()->all();
+        return $this->render('tarkibiy',[
+            'tarkibiy'=>$tarkibiy
+        ]);
     }
 
     public function actionVakansiya()
     {
-        return $this->render('vakansiya');
+        $vakant = Vacansy::find()->all();
+        return $this->render('vakansiya',[
+            'vakant'=>$vakant
+        ]);
     }
 
     public function actionRahbariyat()

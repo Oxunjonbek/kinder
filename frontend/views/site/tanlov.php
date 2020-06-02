@@ -6,7 +6,24 @@
 								<h2>Blog Style #1</h2>
 							</div>
 							<div class="blog-list style-1">
-								
+								<?php foreach ($tanlov as  $value) : ?>
+								<div class="item">
+									<div class="item-header">
+										<a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$value->image?>" alt="" class="item-photo" /></a>
+									</div>
+									<div class="item-content">
+										<a href="blog.html" class="category-link" style="color: #c32929;"><strong><?=$value->title?></strong></a>
+										<h3><a href="post.html"><?=$value->title?></a></h3>
+										<p><?=$value->text?></p>
+									</div>
+									<!-- <div class="item-footer">
+										<span class="right">
+											<a href="blog.html"><i class="fa fa-clock-o"></i> 4 Jan, 2014</a>
+											<a href="blog.html"><i class="fa fa-comment"></i> 3</a>
+										</span>
+									</div> -->
+								</div>
+									<?php endforeach; ?>
 								<div class="item">
 									<div class="item-header">
 										<a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-16.jpg" alt="" class="item-photo" /></a>
