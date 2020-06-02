@@ -11,8 +11,8 @@ use yii\helpers\Url;
                             <li><a href="<?=Url::to('site/tadbirlar')?>">Бўлим ҳақида</a>
                                 <ul class="sub-menu">
                                     <li><a href="<?=Url::to('site/rahbariyat')?>">Рахбарият</a></li>
-                                    <li><a href="<?=Url::to('site/tadbirlar')?>">Тузилма</a></li>
-                                    <li><a href="<?=Url::to('site/tadbirlar')?>">Таркибий тузилма</a></li>
+                                    <li><a href="<?=Url::to('site/tuzilma')?>">Тузилма</a></li>
+                                    <li><a href="<?=Url::to('site/tarkibiy')?>">Таркибий тузилма</a></li>
                                     <li><a href="<?=Url::to('site/vakansiyalar')?>">Ваканциялар</a></li>
                                 </ul>
                             </li>

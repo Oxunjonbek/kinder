@@ -21,7 +21,7 @@
 
 								<div class="paragraph-row">
 									<div class="column6">
-										<div class="review-photo"><img src="images/photos/image-35.jpg" alt="" /></div>
+										<div class="review-photo"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-35.jpg" alt="" /></div>
 										<div class="paragraph-row">
 											<div class="column7">
 												<h3 class="panel-title">Rating</h3>
@@ -109,7 +109,7 @@
 							</div>
 							<div class="about-author">
 								<div class="about-header">
-									<a href="#"><img src="images/photos/avatar-4.jpg" alt="" /></a>
+									<a href="#"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/avatar-4.jpg" alt="" /></a>
 								</div>
 								<div class="about-content">
 									<div class="soc-buttons right">
@@ -139,35 +139,35 @@
 								<!-- BEGIN .inner-carousel -->
 								<div class="inner-carousel">
 									<div class="item">
-										<a href="post-video.html"><img src="images/photos/image-20.jpg" class="item-photo" alt="" /></a>
+										<a href="post-video.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-20.jpg" class="item-photo" alt="" /></a>
 										<h3><a href="post-video.htm">The all-new BMW i8. Official Launch Video</a></h3>
 									</div>
 									<div class="item">
-										<a href="post-video.html"><img src="images/photos/image-21.jpg" class="item-photo" alt="" /></a>
+										<a href="post-video.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-21.jpg" class="item-photo" alt="" /></a>
 										<h3><a href="post-video.htm">BMW 335Dx Review</a></h3>
 									</div>
 									<div class="item">
-										<a href="post-video.html"><img src="images/photos/image-22.jpg" class="item-photo" alt="" /></a>
+										<a href="post-video.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-22.jpg" class="item-photo" alt="" /></a>
 										<h3><a href="post-video.htm">BMW M5 V8 5.0L Review</a></h3>
 									</div>
 									<div class="item">
-										<a href="post-video.html"><img src="images/photos/image-20.jpg" class="item-photo" alt="" /></a>
+										<a href="post-video.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-20.jpg" class="item-photo" alt="" /></a>
 										<h3><a href="post-video.htm">The all-new BMW i8. Official Launch Video</a></h3>
 									</div>
 									<div class="item">
-										<a href="post-video.html"><img src="images/photos/image-21.jpg" class="item-photo" alt="" /></a>
+										<a href="post-video.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-21.jpg" class="item-photo" alt="" /></a>
 										<h3><a href="post-video.htm">BMW 335Dx Review</a></h3>
 									</div>
 									<div class="item">
-										<a href="post-video.html"><img src="images/photos/image-20.jpg" class="item-photo" alt="" /></a>
+										<a href="post-video.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-20.jpg" class="item-photo" alt="" /></a>
 										<h3><a href="post-video.htm">The all-new BMW i8. Official Launch Video</a></h3>
 									</div>
 									<div class="item">
-										<a href="post-video.html"><img src="images/photos/image-21.jpg" class="item-photo" alt="" /></a>
+										<a href="post-video.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-21.jpg" class="item-photo" alt="" /></a>
 										<h3><a href="post-video.htm">BMW 335Dx Review</a></h3>
 									</div>
 									<div class="item">
-										<a href="post-video.html"><img src="images/photos/image-22.jpg" class="item-photo" alt="" /></a>
+										<a href="post-video.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-22.jpg" class="item-photo" alt="" /></a>
 										<h3><a href="post-video.htm">BMW M5 V8 5.0L Review</a></h3>
 									</div>
 								<!-- END .inner-carousel -->
@@ -189,7 +189,7 @@
 									<li>
 										<div class="comment-block">
 											<a href="#" class="user-avatar">
-												<img src="images/photos/avatar-1.jpg" alt="" title="" />
+												<img src="<?=Yii::getAlias('@web')?>/foto/images/photos/avatar-1.jpg" alt="" title="" />
 											</a>
 											<div class="comment-text">
 												<strong class="user-nick left"><a href="#">Luisinho Alojz</a></strong>
@@ -206,7 +206,7 @@
 											<li>
 												<div class="comment-block">
 													<a href="#" class="user-avatar">
-														<img src="images/photos/avatar-3.jpg" alt="" title="" />
+														<img src="<?=Yii::getAlias('@web')?>/foto/images/photos/avatar-3.jpg" alt="" title="" />
 													</a>
 													<div class="comment-text">
 														<strong class="user-nick left"><a href="#">Orange-Themes</a><span class="user-author">Author</span></strong>
@@ -225,7 +225,7 @@
 									<li>
 										<div class="comment-block">
 											<div class="user-avatar">
-												<img src="images/photos/avatar-2.jpg" alt="" title="" />
+												<img src="<?=Yii::getAlias('@web')?>/foto/images/photos/avatar-2.jpg" alt="" title="" />
 											</div>
 											<div class="comment-text">
 												<strong class="user-nick left">Theudoricus Nur</strong>
