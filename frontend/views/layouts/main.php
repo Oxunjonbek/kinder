@@ -69,8 +69,8 @@ AppAsset::register($this);
                             <!-- <h1><a href="index.html">NOVOMag</a></h1> -->
                         </div>
                         <div class="header-banner">
-                            <a href="#" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/no-banner-728x90.jpg" alt="" /></a>
-                            <a href="contact.html">CLICK HERE FOR ADVERTISEMENT RATES</a>
+                            <a href="#" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/no-banner-728x90.png" alt="" /></a>
+                           
                         </div>
                     </div>
                     
