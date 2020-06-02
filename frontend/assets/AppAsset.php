@@ -13,22 +13,22 @@ class AppAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         // 'css/site.css',
-        "html/css/reset.css",
-        "html/css/main-stylesheet.css",
-        "html/css/font-awesome.min.css",
-        "html/css/lightbox.css",
-        "html/css/shortcodes.css",
-        "html/css/custom-fonts.css",
-        "html/css/custom-colors.css",
-        "html/css/responsive.css",
-        "html/css/ie-ancient.css",
-        "html/css/demo-settings.css",
+        "foto/css/reset.css",
+        "foto/css/main-stylesheet.css",
+        "foto/css/font-awesome.min.css",
+        "foto/css/lightbox.css",
+        "foto/css/shortcodes.css",
+        "foto/css/custom-fonts.css",
+        "foto/css/custom-colors.css",
+        "foto/css/responsive.css",
+        "foto/css/ie-ancient.css",
+        "foto/css/demo-settings.css",
     ];
     public $js = [
-        "html/jscript/jquery-latest.min.js",
-        "html/jscript/theme-scripts.js",
-        "html/jscript/lightbox.js",
-        "html/jscript/demo-settings.js",
+        "foto/jscript/jquery-latest.min.js",
+        "foto/jscript/theme-scripts.js",
+        "foto/jscript/lightbox.js",
+        "foto/jscript/demo-settings.js",
     ];
     public $depends = [
         'yii\web\YiiAsset',
