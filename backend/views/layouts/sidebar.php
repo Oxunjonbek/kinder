@@ -40,7 +40,7 @@
                     <a href="<?= Url::to(['genel/index']) ?>" class="nav-link <?=($pathInfo == 'our-product/index' ? 'active' : '')?>">
                         <i class="nav-icon fas fa-chart-pie"></i>
                         <p>
-                            Boshqarma
+                            Рахбарият
                         </p>
                     </a>
                 </li>
