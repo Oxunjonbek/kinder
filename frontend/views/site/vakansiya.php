@@ -16,14 +16,19 @@
 							<div class="photo-gallery-blocks">
 								
 								<!-- BEGIN .item -->
+								<?php foreach ($vakant as $value) : ?>
 								<div class="item">
 									
 									<div class="item-content">
-										<h3><a href="photo-gallery-single.html">Eros mediocrem ius no, cum te homero lobortis neglegentur</a></h3>
-										<p>Ex eirmod regione quo, te tempor luptatum honestatis quo. Invenire signiferumque eu quo, vim ne vide facilisi phaedrum. Te eam sale detraxit imperdiet, an cum explicari torquatos.</p>
+										<h3><a href="photo-gallery-single.html">
+											<?=$value->name ?>
+										</a></h3>
+										<p><?=$value->title ?></p>
+										<p><?=$value->salary ?></p>
 									</div>
-								<!-- END .item -->
 								</div>
+							<?php endforeach; ?>
+								<!-- END .item -->
 								
 								<!-- BEGIN .item -->
 								<div class="item">

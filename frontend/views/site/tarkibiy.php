@@ -6,24 +6,23 @@
 								<h2>Blog Style #1</h2>
 							</div>
 							<div class="blog-list style-1">
-								
+								<?php foreach ($tarkibiy as  $value) : ?>
 								<div class="item">
 									<div class="item-header">
 										<a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-16.jpg" alt="" class="item-photo" /></a>
 									</div>
 									<div class="item-content">
-										<a href="blog.html" class="category-link" style="color: #c32929;"><strong>Design</strong></a>
+										<a href="blog.html" class="category-link" style="color: #c32929;"><strong> <?=$value->name ?></strong></a>
 										<h3><a href="post.html">BMW E60 Test Drive from TOP GEAR</a></h3>
-										<p>Sotheby’s in London is getting ready for another seasonal display of wealth, as some of world’s. Sotheby’s in London is getting ready for another seasonal display of wealth, as some of world’s. Sotheby’s in London is getting ready for another seasonal display of wealth, as some of world’s. Sotheby’s in London is getting ready.</p>
+										<p><?=$value->title ?></p>
 									</div>
 									<div class="item-footer">
 										<span class="right">
-											<a href="blog.html"><i class="fa fa-clock-o"></i> 4 Jan, 2014</a>
-											<a href="blog.html"><i class="fa fa-comment"></i> 3</a>
+											<?=$value->phone ?>
 										</span>
 									</div>
 								</div>
-								
+								<?php endforeach; ?>
 								<div class="item">
 									<div class="item-header">
 										<a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-15.jpg" alt="" class="item-photo" /></a>
