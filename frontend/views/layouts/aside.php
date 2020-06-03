@@ -15,8 +15,8 @@
                         
                         <!-- BEGIN .widget -->
                         <div class="widget">
-                            <div class="w-title tab-a">
-                                <h3>Popular</h3><h3>Recent</h3><h3>Comments</h3>
+                            <div class="w-title tab-a" >
+                                <h3 style="padding-left: 12px; padding-right: 12px;">So'nggi yangiliklar</h3><h3 style="padding-left: 12px;padding-right: 12px;"">Ko'p o'qilgan yangiliklar</h3>
                             </div>
                             <div class="tab-d">
 
@@ -135,7 +135,7 @@
                         <!-- BEGIN .widget -->
                         <div class="widget">
                             <div class="w-title">
-                                <h3>Latest Articles</h3>
+                                <h3>Maqolalar</h3>
                             </div>
                             <div class="article-list">
                                 
@@ -186,7 +186,7 @@
                         <!-- BEGIN .widget -->
                         <div class="widget">
                             <div class="w-title">
-                                <h3>Latest Reviews</h3>
+                                <h3>Hamkor Tashkilotlar</h3>
                             </div>
                             <div class="review-list">
                                 <a href="blog.html" class="upper-title">More Reviews<i class="fa fa-caret-right"></i></a>
@@ -259,7 +259,7 @@
                         <!-- BEGIN .widget -->
                         <div class="widget">
                             <div class="w-title">
-                                <h3>Tag Cloud</h3>
+                                <h3>Kalit so'zlar</h3>
                             </div>
                             <div class="tagcloud">
                                 <a href="blog.html">Omnes</a><a href="blog.html">definitionem</a><a href="blog.html">accommodare</a><a href="blog.html">intellegat</a><a href="blog.html">quas</a><a href="blog.html">theophrastus</a><a href="blog.html">commune</a><a href="blog.html">eleifend</a>
