@@ -86,7 +86,14 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $elon = Elonlar::find()->orderBy(['id'=>SORT_DESC])->one();
+        $tadbir = Tadbir::find()->orderBy(['id'=>SORT_DESC])->one();
+        $tanlov = Tanlov::find()->orderBy(['id'=>SORT_DESC])->one();
+        return $this->render('index',[
+            'elon'=>$elon,
+            'tadbir'=>$tadbir,
+            'tanlov'=>$tanlov
+        ]);
     }
 
     /**

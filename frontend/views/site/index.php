@@ -18,29 +18,29 @@ $this->title = 'KinderGarden';
                                 <div class="slider-image">
                                     <a href="post.html" class="active">
                                         <span class="slider-overlay">
-                                            <strong>Euismod princips consequuntur ius no ad has graece appareat</strong>
-                                            <span>Adhuc repudiare id pri. Ex aeque aliquid bonorum mea, cu sea invidunt sapientem ullamcorper. Invenire sententiae te vim...</span>
+                                            <strong><?=$elon->title;?></strong>
+                                            <span><?=$elon->text;?></span>
                                         </span>
-                                        <img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-23.jpg" class="setborder" alt="" title="" />
+                                        <img src="<?=Yii::getAlias('@web')?>/admin/uploads/elonlar/<?=$elon->image;?>" class="setborder" alt="" title="" />
                                     </a>
                                     <a href="post.html">
                                         <span class="slider-overlay">
-                                            <strong>Euismod princips consequuntur ius no ad has graece appareat</strong>
-                                            <span>Adhuc repudiare id pri. Ex aeque aliquid bonorum mea, cu sea invidunt sapientem ullamcorper. Invenire sententiae te vim...</span>
+                                            <strong><?=$tadbir->title;?></strong>
+                                            <span><?=$tadbir->text;?></span>
                                         </span>
-                                        <img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-24.jpg" class="setborder" alt="" title="" />
+                                        <img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$tadbir->image;?>" class="setborder" alt="" title="" />
                                     </a>
                                     <a href="post.html">
                                         <span class="slider-overlay">
-                                            <strong>Euismod princips consequuntur ius no ad has graece appareat</strong>
-                                            <span>Adhuc repudiare id pri. Ex aeque aliquid bonorum mea, cu sea invidunt sapientem ullamcorper. Invenire sententiae te vim...</span>
+                                            <strong><?=$tanlov->title;?></strong>
+                                            <span><?=$tanlov->text;?></span>
                                         </span>
-                                        <img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-25.jpg" class="setborder" alt="" title="" />
+                                        <img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$tanlov->image;?>" class="setborder" alt="" title="" />
                                     </a>
                                     <a href="post.html">
                                         <span class="slider-overlay">
-                                            <strong>Euismod princips consequuntur ius no ad has graece appareat</strong>
-                                            <span>Adhuc repudiare id pri. Ex aeque aliquid bonorum mea, cu sea invidunt sapientem ullamcorper. Invenire sententiae te vim...</span>
+                                            <strong>Design</strong>
+                                            <span>Sotheby’s in London is getting ready for another seasonal display of wealth, as some of world’s. Sotheby’s in London is getting ready for another seasonal display of wealth, as some of world’s.</span>
                                         </span>
                                         <img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-26.jpg" class="setborder" alt="" title="" />
                                     </a>
@@ -48,26 +48,26 @@ $this->title = 'KinderGarden';
                                 <ul class="slider-navigation">
                                     <li class="active">
                                         <a href="#" data-target="1">
-                                            <strong>Ut tantas mediocrem nec vix error accusam forensibus ne</strong>
-                                            <span>Ut vix decore epicurei, eos id similique mediocritatem. An vix platonem sapientem salutandi, quem assum impedit per no. Nostrud maiorum maiestatis duo ex. Est congue postea suscipiantur te, vidit novum petentium nec ea, eos agam deserunt ut</span>
+                                            <strong><?=$elon->title;?></strong>
+                                            <span><?=$elon->text;?></span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" data-target="2">
-                                            <strong>Sea ea noluisse reprimique repudiandae vis at natum comprehensam</strong>
-                                            <span>An vix platonem sapientem salutandi, quem assum impedit per no. Nostrud maiorum maiestatis duo ex. Est congue postea suscipiantur te, vidit novum petentium nec ea, eos agam deserunt ut.</span>
+                                            <strong><?=$tanlov->title;?></strong>
+                                            <span><?=$tanlov->text;?></span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" data-target="3">
-                                            <strong>Ad duo erat omnes dissentiet sea voluptaria concludaturque ne</strong>
-                                            <span>Ea mutat contentiones pri, ex eam minim eloquentiam, has nostrud feugiat admodum et. Oportere aliquando vulputate ei quo, ad pro brute tritani. Cum eu idque dicta oratio, per an ferri posidonium.</span>
+                                            <strong><?=$tadbir->title;?></strong>
+                                            <span><?=$tadbir->text;?></span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" data-target="4">
-                                            <strong>Paulo quidam maluisset ei vim vel nobis nominavi ei</strong>
-                                            <span>Eos et fabulas perfecto. Ei tacimates forensibus est. Mea natum graece recteque ad, autem moderatius eam te, et cum ferri liber assueverit.</span>
+                                            <strong>Design</strong>
+                                            <span>Sotheby’s in London is getting ready for another seasonal display of wealth, as some of world’s. Sotheby’s in London is getting ready for another seasonal display of wealth, as some of world’s.</span>
                                         </a>
                                     </li>
                                 </ul>
