@@ -18,29 +18,29 @@ $this->title = 'KinderGarden';
                                 <div class="slider-image">
                                     <a href="post.html" class="active">
                                         <span class="slider-overlay">
-                                            <strong><?=$elon->title;?></strong>
-                                            <span><?=$elon->text;?></span>
+                                            <strong><?php  substr($elon->title, 0, 20);  echo $elon->title?></strong>
+                                            <span><?php  substr($elon->text, 0, 120);  echo $elon->text?></span>
                                         </span>
-                                        <img src="<?=Yii::getAlias('@web')?>/admin/uploads/elonlar/<?=$elon->image;?>" class="setborder" alt="" title="" />
+                                        <img src="<?=Yii::getAlias('@web')?>/admin/uploads/elonlar/<?=$elon->image?>" class="setborder" alt="" title="" />
                                     </a>
                                     <a href="post.html">
                                         <span class="slider-overlay">
-                                            <strong><?=$tadbir->title;?></strong>
-                                            <span><?=$tadbir->text;?></span>
+                                           <strong><?php  substr($tanlov->title, 0, 20);  echo $tanlov->title?></strong>
+                                            <span><?php  substr($tanlov->text, 0, 120);  echo $tanlov->text?></span>
                                         </span>
-                                        <img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$tadbir->image;?>" class="setborder" alt="" title="" />
+                                        <img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$tanlov->image?>" class="setborder" alt="" title="" />
                                     </a>
                                     <a href="post.html">
                                         <span class="slider-overlay">
-                                            <strong><?=$tanlov->title;?></strong>
-                                            <span><?=$tanlov->text;?></span>
+                                            <strong><?php  substr($tadbir->title, 0, 20);  echo $tadbir->title?></strong>
+                                            <span><?php  substr($tadbir->text, 0, 120);  echo $tadbir->text?></span>
                                         </span>
-                                        <img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$tanlov->image;?>" class="setborder" alt="" title="" />
+                                        <img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$tadbir->image?>" alt="" title="" />
                                     </a>
                                     <a href="post.html">
                                         <span class="slider-overlay">
-                                            <strong>Design</strong>
-                                            <span>Sotheby’s in London is getting ready for another seasonal display of wealth, as some of world’s. Sotheby’s in London is getting ready for another seasonal display of wealth, as some of world’s.</span>
+                                            <strong>Euismod princips consequuntur ius no ad has graece appareat</strong>
+                                            <span>Adhuc repudiare id pri. Ex aeque aliquid bonorum mea, cu sea invidunt sapientem ullamcorper. Invenire sententiae te vim...</span>
                                         </span>
                                         <img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-26.jpg" class="setborder" alt="" title="" />
                                     </a>
@@ -48,26 +48,28 @@ $this->title = 'KinderGarden';
                                 <ul class="slider-navigation">
                                     <li class="active">
                                         <a href="#" data-target="1">
-                                            <strong><?=$elon->title;?></strong>
-                                            <span><?=$elon->text;?></span>
+                                            <strong><?php  substr($elon->title, 0, 20);  echo $elon->title?></strong>
+                                            <span><?php  substr($elon->text, 0, 70);  echo $elon->text?></span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" data-target="2">
-                                            <strong><?=$tanlov->title;?></strong>
-                                            <span><?=$tanlov->text;?></span>
+                                            <strong><?php  substr($tanlov->title, 0, 20);  echo $tanlov->title?></strong>
+                                            <span><?php  substr($tanlov->text, 0, 70);  echo $tanlov->text?></span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" data-target="3">
-                                            <strong><?=$tadbir->title;?></strong>
-                                            <span><?=$tadbir->text;?></span>
+                                            <span class="slider-overlay">
+                                            <strong><?php  substr($tadbir->title, 0, 20);  echo $tadbir->title?></strong>
+                                            <span><?php  substr($tadbir->text, 0, 70);  echo $tadbir->text?></span>
+                                        </span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" data-target="4">
-                                            <strong>Design</strong>
-                                            <span>Sotheby’s in London is getting ready for another seasonal display of wealth, as some of world’s. Sotheby’s in London is getting ready for another seasonal display of wealth, as some of world’s.</span>
+                                            <strong>Paulo quidam maluisset ei vim vel nobis nominavi ei</strong>
+                                            <span>Eos et fabulas perfecto. Ei tacimates forensibus est. Mea natum graece recteque ad, autem moderatius eam te, et cum ferri liber assueverit.</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -99,7 +101,7 @@ $this->title = 'KinderGarden';
                                                 </div>
                                             </div>
                                             <div class="item-content">
-                                                <p><?=$tadbirlar[0]->text?></p>
+                                                <p><?php echo substr($tadbirlar[0]->text, 0, 150);  ?>...</p>
                                             </div>
                                         </div>
 <?php 
@@ -160,15 +162,15 @@ $this->title = 'KinderGarden';
                                                 <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$tanlovlar[0]->image?>" alt="" class="item-photo" /></a>
                                                 <div class="article-slide">
                                                     <h3><a href="post.html"><?=$tanlovlar[0]->title?></a></h3>
-                                                    <a href="post.html" class="info-line">
+                                                    <!-- <a href="post.html" class="info-line"> -->
                                                         <!-- <span>4 JAN, 2014</span>
                                                         <span>by Orange-Themes</span>
                                                         <span>11 comments</span> -->
-                                                    </a>
+                                                    <!-- </a> -->
                                                 </div>
                                             </div>
                                             <div class="item-content">
-                                                <p><?=$tanlovlar[0]->text ?></p>
+                                                <p><?php echo substr($tanlovlar[0]->text, 0, 150);  ?>...</p>
                                             </div>
                                         </div>
 
