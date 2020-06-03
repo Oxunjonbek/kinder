@@ -18,29 +18,29 @@ $this->title = 'KinderGarden';
                                 <div class="slider-image">
                                     <a href="post.html" class="active">
                                         <span class="slider-overlay">
-                                            <strong><?=$elon->title;?></strong>
-                                            <span><?=$elon->text;?></span>
+                                            <strong><?php  substr($elon->title, 0, 20);  echo $elon->title?></strong>
+                                            <span><?php  substr($elon->text, 0, 120);  echo $elon->text?></span>
                                         </span>
-                                        <img src="<?=Yii::getAlias('@web')?>/admin/uploads/elonlar/<?=$elon->image;?>" class="setborder" alt="" title="" />
+                                        <img src="<?=Yii::getAlias('@web')?>/admin/uploads/elonlar/<?=$elon->image?>" class="setborder" alt="" title="" />
                                     </a>
                                     <a href="post.html">
                                         <span class="slider-overlay">
-                                            <strong><?=$tadbir->title;?></strong>
-                                            <span><?=$tadbir->text;?></span>
+                                           <strong><?php  substr($tanlov->title, 0, 20);  echo $tanlov->title?></strong>
+                                            <span><?php  substr($tanlov->text, 0, 120);  echo $tanlov->text?></span>
                                         </span>
-                                        <img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$tadbir->image;?>" class="setborder" alt="" title="" />
+                                        <img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$tanlov->image?>" class="setborder" alt="" title="" />
                                     </a>
                                     <a href="post.html">
                                         <span class="slider-overlay">
-                                            <strong><?=$tanlov->title;?></strong>
-                                            <span><?=$tanlov->text;?></span>
+                                            <strong><?php  substr($tadbir->title, 0, 20);  echo $tadbir->title?></strong>
+                                            <span><?php  substr($tadbir->text, 0, 120);  echo $tadbir->text?></span>
                                         </span>
-                                        <img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$tanlov->image;?>" class="setborder" alt="" title="" />
+                                        <img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$tadbir->image?>" alt="" title="" />
                                     </a>
                                     <a href="post.html">
                                         <span class="slider-overlay">
-                                            <strong>Design</strong>
-                                            <span>Sotheby’s in London is getting ready for another seasonal display of wealth, as some of world’s. Sotheby’s in London is getting ready for another seasonal display of wealth, as some of world’s.</span>
+                                            <strong>Euismod princips consequuntur ius no ad has graece appareat</strong>
+                                            <span>Adhuc repudiare id pri. Ex aeque aliquid bonorum mea, cu sea invidunt sapientem ullamcorper. Invenire sententiae te vim...</span>
                                         </span>
                                         <img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-26.jpg" class="setborder" alt="" title="" />
                                     </a>
@@ -48,26 +48,28 @@ $this->title = 'KinderGarden';
                                 <ul class="slider-navigation">
                                     <li class="active">
                                         <a href="#" data-target="1">
-                                            <strong><?=$elon->title;?></strong>
-                                            <span><?=$elon->text;?></span>
+                                            <strong><?php  substr($elon->title, 0, 20);  echo $elon->title?></strong>
+                                            <span><?php  substr($elon->text, 0, 70);  echo $elon->text?></span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" data-target="2">
-                                            <strong><?=$tanlov->title;?></strong>
-                                            <span><?=$tanlov->text;?></span>
+                                            <strong><?php  substr($tanlov->title, 0, 20);  echo $tanlov->title?></strong>
+                                            <span><?php  substr($tanlov->text, 0, 70);  echo $tanlov->text?></span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" data-target="3">
-                                            <strong><?=$tadbir->title;?></strong>
-                                            <span><?=$tadbir->text;?></span>
+                                            <span class="slider-overlay">
+                                            <strong><?php  substr($tadbir->title, 0, 20);  echo $tadbir->title?></strong>
+                                            <span><?php  substr($tadbir->text, 0, 70);  echo $tadbir->text?></span>
+                                        </span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" data-target="4">
-                                            <strong>Design</strong>
-                                            <span>Sotheby’s in London is getting ready for another seasonal display of wealth, as some of world’s. Sotheby’s in London is getting ready for another seasonal display of wealth, as some of world’s.</span>
+                                            <strong>Paulo quidam maluisset ei vim vel nobis nominavi ei</strong>
+                                            <span>Eos et fabulas perfecto. Ei tacimates forensibus est. Mea natum graece recteque ad, autem moderatius eam te, et cum ferri liber assueverit.</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -99,7 +101,7 @@ $this->title = 'KinderGarden';
                                                 </div>
                                             </div>
                                             <div class="item-content">
-                                                <p><?=$tadbirlar[0]->text?></p>
+                                                <p><?php echo substr($tadbirlar[0]->text, 0, 150);  ?>...</p>
                                             </div>
                                         </div>
 <?php 
@@ -157,46 +159,50 @@ $this->title = 'KinderGarden';
 
                                         <div class="item main-artice light">
                                             <div class="item-header">
-                                                <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-15.jpg" alt="" class="item-photo" /></a>
+                                                <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$tanlovlar[0]->image?>" alt="" class="item-photo" /></a>
                                                 <div class="article-slide">
-                                                    <h3><a href="post.html">BMW E60 Test Drive from TOP GEAR</a></h3>
-                                                    <a href="post.html" class="info-line">
-                                                        <span>4 JAN, 2014</span>
+                                                    <h3><a href="post.html"><?=$tanlovlar[0]->title?></a></h3>
+                                                    <!-- <a href="post.html" class="info-line"> -->
+                                                        <!-- <span>4 JAN, 2014</span>
                                                         <span>by Orange-Themes</span>
-                                                        <span>11 comments</span>
-                                                    </a>
+                                                        <span>11 comments</span> -->
+                                                    <!-- </a> -->
                                                 </div>
                                             </div>
                                             <div class="item-content">
-                                                <p>Sotheby’s in London is getting ready for another seasonal display of wealth, as some of world’s</p>
+                                                <p><?php echo substr($tanlovlar[0]->text, 0, 150);  ?>...</p>
                                             </div>
                                         </div>
 
                                         <div class="item">
-                                            <a href="#"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-1.jpg" alt="" class="item-photo" /></a>
+                                            <a href="#"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$tanlovlar[1]->image?>" alt="" class="item-photo" /></a>
                                             <div class="item-content">
-                                                <h3><a href="post.html">BMW 530D Tunign from Hamman</a></h3>
-                                                <span>4 Jan, 2014</span>
-                                                <a href="post.html#comments"><span>3 Comments</span></a>
-                                                <div class="ot-star-rating"><span style="width:60%"><strong class="rating">3</strong> out of 5</span></div>
+                                                <h3><a href="post.html"><?=$tanlovlar[0]->title?></a></h3>
+                                                <!-- <span>4 Jan, 2014</span>
+                                                <a href="post.html#comments"><span>3 Comments</span> -->
+                                                </a>
+                                                <div class="ot-star-rating">
+                                                    <span style="width:60%"><strong class="rating">3</strong> out of 5</span></div>
                                             </div>
                                         </div>
 
                                         <div class="item">
-                                            <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-2.jpg" alt="" class="item-photo" /></a>
+                                            <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$tanlovlar[1]->image?>" alt="" class="item-photo" /></a>
                                             <div class="item-content">
-                                                <h3><a href="post.html">Eurozone Manufacturing Industry Rises Sharply in January</a></h3>
-                                                <span>4 Jan, 2014</span>
-                                                <a href="post.html#comments"><span>3 Comments</span></a>
+                                                <h3><a href="post.html"><?=$tanlovlar[1]->title?></a></h3>
+                                                <!-- <span>4 Jan, 2014</span>
+                                                <a href="post.html#comments"><span>3 Comments</span> -->
+                                                </a>
                                             </div>
                                         </div>
 
                                         <div class="item">
-                                            <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-3.jpg" alt="" class="item-photo" /></a>
+                                            <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$tanlovlar[2]->image?>" alt="" class="item-photo" /></a>
                                             <div class="item-content">
-                                                <h3><a href="post.html">Unexpected Drop in Euro Area</a></h3>
-                                                <span>4 Jan, 2014</span>
-                                                <a href="post.html#comments"><span>3 Comments</span></a>
+                                                <h3><a href="post.html"><?=$tanlovlar[1]->title?></a></h3>
+                                                <!-- <span>4 Jan, 2014</span>
+                                                <a href="post.html#comments"><span>3 Comments</span> -->
+                                                </a>
                                             </div>
                                         </div>
 

@@ -28,7 +28,7 @@ use dosamigos\tinymce\TinyMce;
 
     <?= $form->field($model, 'text')->widget(TinyMce::className(), [
     'options' => ['rows' => 9],
-    'language' => 'es',
+    'language' => 'en',
     'clientOptions' => [
         'plugins' => [
             "advlist autolink lists link charmap print preview anchor",

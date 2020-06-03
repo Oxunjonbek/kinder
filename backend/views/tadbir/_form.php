@@ -12,10 +12,9 @@ use dosamigos\tinymce\TinyMce;
 <div class="tadbir-form">
 
 	<?php $form = ActiveForm::begin(); ?>
-	
 	<?= $form->field($model, 'title')->widget(TinyMce::className(), [
 		'options' => ['rows' => 9],
-		'language' => 'es',
+		'language' => 'en_GB',
 		'clientOptions' => [
 			'plugins' => [
 				"advlist autolink lists link charmap print preview anchor",
@@ -25,9 +24,10 @@ use dosamigos\tinymce\TinyMce;
 			'toolbar' => "undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"
 		]
 	]);?>
+
 	<?= $form->field($model, 'text')->widget(TinyMce::className(), [
 		'options' => ['rows' => 9],
-		'language' => 'es',
+		'language' => 'en_GB',
 		'clientOptions' => [
 			'plugins' => [
 				"advlist autolink lists link charmap print preview anchor",
