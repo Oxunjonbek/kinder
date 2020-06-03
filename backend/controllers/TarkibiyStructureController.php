@@ -8,6 +8,7 @@ use backend\models\search\TarkibiyStructureSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 /**
  * TarkibiyStructureController implements the CRUD actions for TarkibiyStructure model.
@@ -67,7 +68,16 @@ class TarkibiyStructureController extends Controller
         $model = new TarkibiyStructure();
 
         if ($model->load(Yii::$app->request->post())) {
+            $img = UploadedFile::getInstance($model, 'img');
+            if (!empty($img)) {
+                $model->image = random_int(0,9999). '.' . $img->extension;
+            }
+            
             if ($model->save()) {
+                if (!empty($img)) {
+                    $img->saveAs('uploads/tarkibiy/' . $model->image);
+                    return $this->redirect(['index']);
+                }
                 return $this->redirect(['index']);
             }
         }
@@ -88,7 +98,16 @@ class TarkibiyStructureController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post())) {
+            $img = UploadedFile::getInstance($model, 'img');
+            if (!empty($img)) {
+                $model->image = random_int(0,9999). '.' . $img->extension;
+            }
+            
             if ($model->save()) {
+                if (!empty($img)) {
+                    $img->saveAs('uploads/tarkibiy/' . $model->image);
+                    return $this->redirect(['index']);
+                }
                 return $this->redirect(['index']);
             }
         }
@@ -106,6 +125,8 @@ class TarkibiyStructureController extends Controller
      */
     public function actionDelete($id)
     {
+        $data = TarkibiyStructure::findOne($id);
+        unlink(Yii::$app->basePath . '/web/uploads/tarkibiy/' . $data->image);
         $this->findModel($id)->delete();
 
         return $this->redirect(['index']);

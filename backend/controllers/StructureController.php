@@ -8,6 +8,7 @@ use backend\models\search\StructureSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 /**
  * StructureController implements the CRUD actions for Structure model.
@@ -66,8 +67,17 @@ class StructureController extends Controller
     {
         $model = new Structure();
 
-        if ($model->load(Yii::$app->request->post())) {            
+        if ($model->load(Yii::$app->request->post())) {
+            $img = UploadedFile::getInstance($model, 'img');
+            if (!empty($img)) {
+                $model->image = random_int(0,9999). '.' . $img->extension;
+            }
+            
             if ($model->save()) {
+                if (!empty($img)) {
+                    $img->saveAs('uploads/structure/' . $model->image);
+                    return $this->redirect(['index']);
+                }
                 return $this->redirect(['index']);
             }
         }
@@ -87,8 +97,17 @@ class StructureController extends Controller
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post())) {            
+        if ($model->load(Yii::$app->request->post())) {
+            $img = UploadedFile::getInstance($model, 'img');
+            if (!empty($img)) {
+                $model->image = random_int(0,9999). '.' . $img->extension;
+            }
+            
             if ($model->save()) {
+                if (!empty($img)) {
+                    $img->saveAs('uploads/structure/' . $model->image);
+                    return $this->redirect(['index']);
+                }
                 return $this->redirect(['index']);
             }
         }
@@ -106,6 +125,8 @@ class StructureController extends Controller
      */
     public function actionDelete($id)
     {
+        $data = Structure::findOne($id);
+        unlink(Yii::$app->basePath . '/web/uploads/structure/' . $data->image);
         $this->findModel($id)->delete();
 
         return $this->redirect(['index']);

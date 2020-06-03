@@ -17,6 +17,7 @@ class TarkibiyStructure extends \yii\db\ActiveRecord
     /**
      * {@inheritdoc}
      */
+    public $img;
     public static function tableName()
     {
         return 'tarkibiy_structure';
@@ -31,7 +32,9 @@ class TarkibiyStructure extends \yii\db\ActiveRecord
             [['title', 'name', 'phone'], 'required'],
             [['title'], 'string'],
             [['name'], 'string', 'max' => 300],
-            [['phone'], 'string', 'max' => 255],
+            [['phone','image'], 'string', 'max' => 255],
+            [['img'], 'file', 'skipOnEmpty' => true, 'extensions' => 'png, jpg,gif,jpeg'],
+
         ];
     }
 

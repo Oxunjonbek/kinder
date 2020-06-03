@@ -18,7 +18,7 @@ class StructureSearch extends Structure
     {
         return [
             [['id'], 'integer'],
-            [['name', 'prof', 'phone'], 'safe'],
+            [['name', 'prof', 'phone','image'], 'safe'],
         ];
     }
 
@@ -63,6 +63,7 @@ class StructureSearch extends Structure
 
         $query->andFilterWhere(['like', 'name', $this->name])
             ->andFilterWhere(['like', 'prof', $this->prof])
+            ->andFilterWhere(['like', 'image', $this->image])
             ->andFilterWhere(['like', 'phone', $this->phone]);
 
         return $dataProvider;
