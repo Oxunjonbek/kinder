@@ -108,9 +108,9 @@ $this->title = 'KinderGarden';
 //  exit();
  ?>
                                         <div class="item">
-                                            <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?//=$tadbirlar[1]->image?>" alt="" class="item-photo" /></a>
+                                            <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$tadbirlar[1]->image?>" alt="" class="item-photo" /></a>
                                             <div class="item-content">
-                                                <h3><a href="post.html"><?//=$tadbirlar[1]->title?></a></h3>
+                                                <h3><a href="post.html"><?=$tadbirlar[1]->title?></a></h3>
                                                <!--  <span>4 Jan, 2014</span>
                                                 <a href="post.html#comments"><span>3 Comments</span> -->
                                                 </a>
@@ -118,21 +118,26 @@ $this->title = 'KinderGarden';
                                         </div>
 
                                         <div class="item">
-                                            <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-2.jpg" alt="" class="item-photo" /></a>
+                                            <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$tadbirlar[2]->image?>" alt="" class="item-photo" /></a>
                                             <div class="item-content">
-                                                <h3><a href="post.html">Eurozone Manufacturing Industry Rises Sharply in January</a></h3>
-                                                <span>4 Jan, 2014</span>
-                                                <a href="post.html#comments"><span>3 Comments</span></a>
-                                                <div class="ot-star-rating"><span style="width:70%"><strong class="rating">3.50</strong> out of 5</span></div>
+                                                <h3><a href="post.html"><?=$tadbirlar[2]->title?></a></h3>
+                                                <!-- <span>4 Jan, 2014</span>
+                                                <a href="post.html#comments"><span>3 Comments</span> -->
+                                                </a>
+                                                <div class="ot-star-rating">
+                                                    <span style="width:70%"><strong class="rating">3.50</strong> out of 5</span></div>
                                             </div>
                                         </div>
 
                                         <div class="item">
-                                            <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-3.jpg" alt="" class="item-photo" /></a>
+                                            <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$tadbirlar[3]->image?>" alt="" class="item-photo" /></a>
                                             <div class="item-content">
-                                                <h3><a href="post.html">Unexpected Drop in Euro Area</a></h3>
-                                                <span>4 Jan, 2014</span>
-                                                <a href="post.html#comments"><span>3 Comments</span></a>
+                                                <h3><a href="post.html"><?=$tadbirlar[3]->title?></a></h3>
+                                                <!-- <span>4 Jan, 2014</span>
+                                                <a href="post.html#comments"><span>3 Comments</span> -->
+                                                </a>
+                                                <div class="ot-star-rating">
+                                                   <!--  <span style="width:70%"><strong class="rating">3.50</strong> out of 5</span> --></div>
                                             </div>
                                         </div>
 
