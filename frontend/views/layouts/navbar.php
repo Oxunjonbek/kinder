@@ -7,7 +7,7 @@ use yii\helpers\Url;
                     <div class="wrapper">
 
                         <ul class="menu">
-                            <li><a href="index.html">Bosh sahifa</a></li>
+                            <li><a href="<?=Url::to(['site/index'])?>">Bosh sahifa</a></li>
                             <li><a href="<?=Url::to(['site/tadbirlar'])?>">Бўлим ҳақида</a>
                                 <ul class="sub-menu">
                                     <li><a href="<?=Url::to(['site/rahbariyat'])?>">Рахбарият</a></li>

@@ -22,6 +22,10 @@ use common\models\Tadbir;
 use common\models\Tanlov;
 use common\models\Elonlar;
 use common\models\Qonunlar;
+// use common\models\Standartlar;
+use common\models\Nizom;
+use common\models\Farmonlar;
+use common\models\Ariza;
 
 /**
  * Site controller
@@ -335,9 +339,108 @@ class SiteController extends Controller
 
     public function actionQonunlar()
     {
-        $qonunlar = Qonunlar::find()->all();
-        return $this->render('qonunlar',[
-            'qonunlar'=>$qonunlar
+        $nizomlar = Nizom::find()->all();
+        return $this->render('nizomlar',[
+            'nizomlar'=>$nizomlar
         ]);
+    }
+
+    public function actionStandartlar()
+    {
+        $nizomlar = Nizom::find()->all();
+        return $this->render('nizomlar',[
+            'nizomlar'=>$nizomlar
+        ]);
+    }
+    public function actionNizom()
+    {
+        $nizomlar = Nizom::find()->all();
+        return $this->render('nizomlar',[
+            'nizomlar'=>$nizomlar
+        ]);
+    }
+
+    public function actionTavsiyalar()
+    {
+        $nizomlar = Nizom::find()->all();
+        return $this->render('nizomlar',[
+            'nizomlar'=>$nizomlar
+        ]);
+    }
+    public function actionFarmonlar()
+    {
+        $farmonlar = Farmonlar::find()->all();
+        return $this->render('farmonlar',[
+            'farmonlar'=>$farmonlar
+        ]);
+    }
+
+    public function actionQarorlar()
+    {
+        $farmonlar = Farmonlar::find()->all();
+        return $this->render('qarorlar',[
+            'farmonlar'=>$farmonlar
+        ]);
+    }
+
+    public function actionHujjatlar()
+    {
+        $farmonlar = Farmonlar::find()->all();
+        return $this->render('ichki',[
+            'farmonlar'=>$farmonlar
+        ]);
+    }
+
+    public function actionElektron()
+    {
+        // $farmonlar = Farmonlar::find()->all();
+        return $this->render('elektron',[
+            // 'farmonlar'=>$farmonlar
+        ]);
+    }
+    public function actionPedagoglar()
+    {
+        return $this->render('pedagoglar');
+    }
+
+    public function actionOtaOnalar()
+    {
+        return $this->render('ota-onalar');
+    }
+
+    public function actionSavolJavob()
+    {
+        return $this->render('savol-javoblar');
+    }
+
+    public function actionAriza()
+    {
+        $ariza = Ariza::find()->all();
+        return $this->render('ariza',[
+            'ariza'=>$ariza
+        ]);
+    }
+
+    public function actionMttlar()
+    {
+        return $this->render('mttlar');
+    }
+
+    public function actionQabulhona()
+    {
+        $model = new ContactForm();
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+            if ($model->sendEmail(Yii::$app->params['adminEmail'])) {
+                Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
+            } else {
+                Yii::$app->session->setFlash('error', 'There was an error sending your message.');
+            }
+
+            return $this->refresh();
+        } else {
+            return $this->render('qabulhona', [
+                'model' => $model,
+            ]);
+        }
     }
 }

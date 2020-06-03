@@ -13,7 +13,7 @@ use dosamigos\tinymce\TinyMce;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'title')->textarea(['rows' => 6]) ?><?= $form->field($model, 'title')->widget(TinyMce::className(), [
+    <?= $form->field($model, 'title')->widget(TinyMce::className(), [
     'options' => ['rows' => 9],
     'language' => 'es',
     'clientOptions' => [
