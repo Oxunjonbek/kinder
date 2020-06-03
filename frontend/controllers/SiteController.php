@@ -21,6 +21,7 @@ use common\models\TarkibiyStructure;
 use common\models\Tadbir;
 use common\models\Tanlov;
 use common\models\Elonlar;
+use common\models\Qonunlar;
 
 /**
  * Site controller
@@ -330,5 +331,13 @@ class SiteController extends Controller
     public function actionPedagog()
     {
         return $this->render('pedagog');
+    }
+
+    public function actionQonunlar()
+    {
+        $qonunlar = Qonunlar::find()->all();
+        return $this->render('qonunlar',[
+            'qonunlar'=>$qonunlar
+        ]);
     }
 }
