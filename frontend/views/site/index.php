@@ -82,7 +82,7 @@ $this->title = 'KinderGarden';
                                 <!-- BEGIN .panel -->
                                 <div class="panel">
                                     <div class="p-title">
-                                        <h2>Latest</h2>
+                                        <h2>Tадбирлар</h2>
                                     </div>
                                     <div class="article-list">
 
@@ -141,7 +141,7 @@ $this->title = 'KinderGarden';
                                 <!-- BEGIN .panel -->
                                 <div class="panel">
                                     <div class="p-title">
-                                        <h2 style="background-color: #b3b3b6;">Featured</h2>
+                                        <h2 style="background-color: #b3b3b6;">Танловлар</h2>
                                     </div>
                                     <div class="article-list">
 
@@ -201,9 +201,9 @@ $this->title = 'KinderGarden';
                         <!-- BEGIN .panel -->
                         <div class="panel">
                             <div class="p-title">
-                                <h2>Design News</h2>
+                                <h2>Эьлонлар ва тендорлар</h2>
                             </div>
-                            <a href="blog.html" class="upper-title">Read More<i class="fa fa-caret-right"></i></a>
+                            <a href="blog.html" class="upper-title">Батафсил<i class="fa fa-caret-right"></i></a>
                             <div>
                                 <div class="panel-split">
                                     <div class="left-side">

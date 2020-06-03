@@ -16,7 +16,7 @@
                         <!-- BEGIN .widget -->
                         <div class="widget">
                             <div class="w-title tab-a" >
-                                <h3 style="padding-left: 12px; padding-right: 12px;">So'nggi yangiliklar</h3><h3 style="padding-left: 12px;padding-right: 12px;"">Ko'p o'qilgan yangiliklar</h3>
+                                <h3 style="padding-left: 15px; padding-right: 14px;">Сўнги янгиликлар</h3><h3 style="padding-left: 12px;padding-right: 12px;">Кўп ўқилган янгиликлар</h3>
                             </div>
                             <div class="tab-d">
 
@@ -135,7 +135,7 @@
                         <!-- BEGIN .widget -->
                         <div class="widget">
                             <div class="w-title">
-                                <h3>Maqolalar</h3>
+                                <h3>Mақолалар</h3>
                             </div>
                             <div class="article-list">
                                 
@@ -186,10 +186,10 @@
                         <!-- BEGIN .widget -->
                         <div class="widget">
                             <div class="w-title">
-                                <h3>Hamkor Tashkilotlar</h3>
+                                <h3>Ҳамкор ташкилотлар</h3>
                             </div>
                             <div class="review-list">
-                                <a href="blog.html" class="upper-title">More Reviews<i class="fa fa-caret-right"></i></a>
+                                <a href="blog.html" class="upper-title"><i class="fa fa-caret-right"></i></a>
                                 
                                 <div class="item">
                                     <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-6.jpg" alt="" class="item-photo" /></a>
@@ -259,7 +259,7 @@
                         <!-- BEGIN .widget -->
                         <div class="widget">
                             <div class="w-title">
-                                <h3>Kalit so'zlar</h3>
+                                <h3>Калит сўзлар</h3>
                             </div>
                             <div class="tagcloud">
                                 <a href="blog.html">Omnes</a><a href="blog.html">definitionem</a><a href="blog.html">accommodare</a><a href="blog.html">intellegat</a><a href="blog.html">quas</a><a href="blog.html">theophrastus</a><a href="blog.html">commune</a><a href="blog.html">eleifend</a>
