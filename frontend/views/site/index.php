@@ -40,7 +40,7 @@ $this->title = 'KinderGarden';
                                     <a href="post.html">
                                         <span class="slider-overlay">
                                             <strong>Euismod princips consequuntur ius no ad has graece appareat</strong>
-                                            <span>Adhuc repudiare id pri. Ex aeque aliquid bonorum mea, cu sea invidunt sapientem ullamcorper. Invenire sententiae te vim...</span>
+                                            <span>Adhuc repudiare id pri. Ex aeque aliquid bonorum mea, cu sea invidunt sapientem ullamcorper. Invenire sententiae te vim</span>
                                         </span>
                                         <img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-26.jpg" class="setborder" alt="" title="" />
                                     </a>
@@ -92,7 +92,7 @@ $this->title = 'KinderGarden';
                                             <div class="item-header">
                                                 <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$tadbirlar[0]->image?>" alt="" class="item-photo" /></a>
                                                 <div class="article-slide">
-                                                    <h3><a href="post.html"></a><?=$tadbirlar[0]->title?></a></h3>
+                                                    <h3><a href="post.html"></a><?php substr($tadbirlar[0]->title, 0, 20); echo $tadbirlar[0]->title ;?></a></h3>
                                                     <!-- <a href="post.html" class="info-line">
                                                         <span>4 JAN, 2014</span>
                                                         <span>by Orange-Themes</span>
@@ -101,47 +101,44 @@ $this->title = 'KinderGarden';
                                                 </div>
                                             </div>
                                             <div class="item-content">
-                                                <p><?php echo substr($tadbirlar[0]->text, 0, 150);  ?>...</p>
+                                                <p><?php  substr($tadbirlar[0]->text, 0, 120); echo $tadbirlar[0]->text ; ?></p>
                                             </div>
                                         </div>
-<?php 
-// echo '<pre>';
-// var_dump($tadbirlar[1]->image);
-//  exit();
- ?>
+<?php foreach ($tadbirlar as  $value) : ?>
                                         <div class="item">
-                                            <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$tadbirlar[1]->image?>" alt="" class="item-photo" /></a>
+                                            <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$value->image?>" alt="" class="item-photo" /></a>
                                             <div class="item-content">
-                                                <h3><a href="post.html"><?=$tadbirlar[1]->title?></a></h3>
+                                                <h3><a href="post.html"><?php 
+                                                substr($value->title, 0, 20); echo $value->title?></a></h3>
                                                <!--  <span>4 Jan, 2014</span>
                                                 <a href="post.html#comments"><span>3 Comments</span> -->
                                                 </a>
                                             </div>
                                         </div>
-
-                                        <div class="item">
+<?php endforeach; ?>
+                                       <!--  <div class="item">
                                             <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$tadbirlar[2]->image?>" alt="" class="item-photo" /></a>
                                             <div class="item-content">
                                                 <h3><a href="post.html"><?=$tadbirlar[2]->title?></a></h3>
-                                                <!-- <span>4 Jan, 2014</span>
-                                                <a href="post.html#comments"><span>3 Comments</span> -->
+                                                <span>4 Jan, 2014</span>
+                                                <a href="post.html#comments"><span>3 Comments</span>
                                                 </a>
                                                 <div class="ot-star-rating">
                                                     <span style="width:70%"><strong class="rating">3.50</strong> out of 5</span></div>
                                             </div>
-                                        </div>
+                                        </div> -->
 
-                                        <div class="item">
+                                        <!-- <div class="item">
                                             <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$tadbirlar[3]->image?>" alt="" class="item-photo" /></a>
                                             <div class="item-content">
-                                                <h3><a href="post.html"><?=$tadbirlar[3]->title?></a></h3>
+                                                <h3><a href="post.html"><?=$tadbirlar[3]->title?></a></h3> -->
                                                 <!-- <span>4 Jan, 2014</span>
                                                 <a href="post.html#comments"><span>3 Comments</span> -->
-                                                </a>
-                                                <div class="ot-star-rating">
-                                                   <!--  <span style="width:70%"><strong class="rating">3.50</strong> out of 5</span> --></div>
+                                                <!-- </a>
+                                                <div class="ot-star-rating"> -->
+                                                   <!--  <span style="width:70%"><strong class="rating">3.50</strong> out of 5</span> --><!-- </div>
                                             </div>
-                                        </div>
+                                        </div> -->
 
                                     </div>
                                 <!-- END .panel -->
@@ -161,7 +158,8 @@ $this->title = 'KinderGarden';
                                             <div class="item-header">
                                                 <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$tanlovlar[0]->image?>" alt="" class="item-photo" /></a>
                                                 <div class="article-slide">
-                                                    <h3><a href="post.html"><?=$tanlovlar[0]->title?></a></h3>
+                                                    <h3><a href="post.html"><?php
+                                                    substr($tanlovlar[0]->title, 0, 20); echo $tanlovlar[0]->title?></a></h3>
                                                     <!-- <a href="post.html" class="info-line"> -->
                                                         <!-- <span>4 JAN, 2014</span>
                                                         <span>by Orange-Themes</span>
@@ -170,14 +168,14 @@ $this->title = 'KinderGarden';
                                                 </div>
                                             </div>
                                             <div class="item-content">
-                                                <p><?php echo substr($tanlovlar[0]->text, 0, 150);  ?>...</p>
+                                                <p><?php  substr($tanlovlar[0]->text, 0, 120); echo $tanlovlar[0]->text ?></p>
                                             </div>
                                         </div>
-
+<?php foreach ($tanlovlar as  $value) : ?>
                                         <div class="item">
-                                            <a href="#"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$tanlovlar[1]->image?>" alt="" class="item-photo" /></a>
+                                            <a href="#"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$value->image?>" alt="" class="item-photo" /></a>
                                             <div class="item-content">
-                                                <h3><a href="post.html"><?=$tanlovlar[0]->title?></a></h3>
+                                                <h3><a href="post.html"><?php substr($value->text, 0, 05); echo $value->title ?></a></h3>
                                                 <!-- <span>4 Jan, 2014</span>
                                                 <a href="post.html#comments"><span>3 Comments</span> -->
                                                 </a>
@@ -185,26 +183,8 @@ $this->title = 'KinderGarden';
                                                     <span style="width:60%"><strong class="rating">3</strong> out of 5</span></div>
                                             </div>
                                         </div>
-
-                                        <div class="item">
-                                            <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$tanlovlar[1]->image?>" alt="" class="item-photo" /></a>
-                                            <div class="item-content">
-                                                <h3><a href="post.html"><?=$tanlovlar[1]->title?></a></h3>
-                                                <!-- <span>4 Jan, 2014</span>
-                                                <a href="post.html#comments"><span>3 Comments</span> -->
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div class="item">
-                                            <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$tanlovlar[2]->image?>" alt="" class="item-photo" /></a>
-                                            <div class="item-content">
-                                                <h3><a href="post.html"><?=$tanlovlar[1]->title?></a></h3>
-                                                <!-- <span>4 Jan, 2014</span>
-                                                <a href="post.html#comments"><span>3 Comments</span> -->
-                                                </a>
-                                            </div>
-                                        </div>
+<?php endforeach; ?>
+                                       
 
                                     </div>
                                 <!-- END .panel -->
@@ -315,7 +295,7 @@ $this->title = 'KinderGarden';
                                             <strong>Price</strong>
                                         </div>
                                     </div>
-                                    <p>Bold and beautiful, I am sure there is something here for everyone! <a href="post-review.html">Read More ...</a></p>
+                                    <p>Bold and beautiful, I am sure there is something here for everyone! <a href="post-review.html">Read More </a></p>
                                 </div>
                                 
                                 <div class="item">
@@ -335,7 +315,7 @@ $this->title = 'KinderGarden';
                                             <strong>Price</strong>
                                         </div>
                                     </div>
-                                    <p>Bold and beautiful, I am sure there is something here for everyone! <a href="post-review.html">Read More ...</a></p>
+                                    <p>Bold and beautiful, I am sure there is something here for everyone! <a href="post-review.html">Read More </a></p>
                                 </div>
                                 
                                 <div class="item">
@@ -355,7 +335,7 @@ $this->title = 'KinderGarden';
                                             <strong>Price</strong>
                                         </div>
                                     </div>
-                                    <p>Bold and beautiful, I am sure there is something here for everyone! <a href="post-review.html">Read More ...</a></p>
+                                    <p>Bold and beautiful, I am sure there is something here for everyone! <a href="post-review.html">Read More </a></p>
                                 </div>
 
                             </div>
