@@ -95,10 +95,14 @@ a:focus {
 
 .left {
 	float: left;
+	padding-left:50px;
+	font-weight: bold;
+
 }
 
 .right {
 	float: right;
+	
 }
 
 i.fa {
@@ -1375,9 +1379,12 @@ li p {
 	margin-bottom: 8px;
 }
 
-.blog-list.style-1 .item .item-content {
+.blog-list.style-1 .item .item-content{
 	display: block;
-	margin-left: 400px;
+	margin-left: 250px;
+	font-family: Times New Roman;
+	font-size: 20px;
+	font-weight:bold;
 }
 
 .blog-list.style-1 .item .item-footer:after {
