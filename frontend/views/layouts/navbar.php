@@ -8,12 +8,12 @@ use yii\helpers\Url;
 
                         <ul class="menu">
                             <li><a href="index.html">Bosh sahifa</a></li>
-                            <li><a href="<?=Url::to('site/tadbirlar')?>">Бўлим ҳақида</a>
+                            <li><a href="<?=Url::to(['site/tadbirlar'])?>">Бўлим ҳақида</a>
                                 <ul class="sub-menu">
-                                    <li><a href="<?=Url::to('site/rahbariyat')?>">Рахбарият</a></li>
-                                    <li><a href="<?=Url::to('site/tuzilma')?>">Тузилма</a></li>
-                                    <li><a href="<?=Url::to('site/tarkibiy')?>">Таркибий тузилма</a></li>
-                                    <li><a href="<?=Url::to('site/vakansiyalar')?>">Ваканциялар</a></li>
+                                    <li><a href="<?=Url::to(['site/rahbariyat'])?>">Рахбарият</a></li>
+                                    <li><a href="<?=Url::to(['site/tuzilma'])?>">Тузилма</a></li>
+                                    <li><a href="<?=Url::to(['site/tarkibiy'])?>">Таркибий тузилма</a></li>
+                                    <li><a href="<?=Url::to(['site/vakansiyalar'])?>">Ваканциялар</a></li>
                                 </ul>
                             </li>
 
@@ -24,9 +24,9 @@ use yii\helpers\Url;
                                             <!-- BEGIN .menu-block -->
                                             <li class="menu-block column4 color-light">
                                                 <div class="menu-content category-menu">
-                                                    <a href="<?=Url::to('site/tadbirlar')?>">Тадбирлар</a>
-                                                    <a href="<?=Url::to('site/tanlovlar')?>">Танловлар</a>
-                                                    <a href="<?=Url::to('site/elonlar')?>">Эълонлар ва тендерлар</a>
+                                                    <a href="<?=Url::to(['site/tadbirlar'])?>">Тадбирлар</a>
+                                                    <a href="<?=Url::to(['site/tanlovlar'])?>">Танловлар</a>
+                                                    <a href="<?=Url::to(['site/elonlar'])?>">Эълонлар ва тендерлар</a>
                                                 </div>
                                                 <!-- END .menu-block -->
                                             </li>
@@ -42,7 +42,7 @@ use yii\helpers\Url;
                                                         <!-- <div class="article-icons">
                                                             <span class="article-icon">4 JAN, 2014</span>
                                                             <a href="post.html#comments" class="article-icon">3 COMMENTS</a>
-                                                            <a href="<?=Url::to('site/ariza')?>" class="article-icon">Orange-Themes</a>
+                                                            <a href="<?=Url::to(['site/ariza'])?>" class="article-icon">Orange-Themes</a>
                                                         </div> -->
                                                     </div>
                                                 </div>
@@ -92,33 +92,33 @@ use yii\helpers\Url;
                             </li>
                             <li><a href="<?=Url::to('#')?>">Ҳужжатлар</a>
                                 <ul class="sub-menu">
-                                    <li><a href="<?=Url::to('site/qonunlar')?>">Қонунлар</a></li>
-                                    <li><a href="<?=Url::to('site/standartlar')?>">Давлат стандартлари</a></li>
-                                    <li><a href="<?=Url::to('site/nizom')?>">Бўлим низоми</a></li>
-                                    <li><a href="<?=Url::to('site/farmonlar')?>">Президент фармон ва қарорлари</a></li>
-                                    <li><a href="<?=Url::to('site/tavsiyalar')?>">Низом ва тавсиялар</a></li>
-                                    <li><a href="<?=Url::to('site/qarorlar')?>">ВМ қарор ва фармойишлари</a></li>
-                                    <li><a href="<?=Url::to('site/hujjatlar')?>">Ички ҳужжатлар</a></li>
+                                    <li><a href="<?=Url::to(['site/qonunlar'])?>">Қонунлар</a></li>
+                                    <li><a href="<?=Url::to(['site/standartlar'])?>">Давлат стандартлари</a></li>
+                                    <li><a href="<?=Url::to(['site/nizom'])?>">Бўлим низоми</a></li>
+                                    <li><a href="<?=Url::to(['site/farmonlar'])?>">Президент фармон ва қарорлари</a></li>
+                                    <li><a href="<?=Url::to(['site/tavsiyalar'])?>">Низом ва тавсиялар</a></li>
+                                    <li><a href="<?=Url::to(['site/qarorlar'])?>">ВМ қарор ва фармойишлари</a></li>
+                                    <li><a href="<?=Url::to(['site/hujjatlar'])?>">Ички ҳужжатлар</a></li>
                                 </ul>
                             </li> 
                             <li><a href="<?=Url::to('#')?>">Интерактив хизматлар</a>
                                 <ul class="sub-menu">
-                                    <li><a href="<?=Url::to('site/elektron')?>">МТТда электрон навбат ва бўш ўринлар ҳақида маълумот</a></li>
-                                    <li><a href="<?=Url::to('site/pedagoglar')?>">Педагогларга
+                                    <li><a href="<?=Url::to(['site/elektron'])?>">МТТда электрон навбат ва бўш ўринлар ҳақида маълумот</a></li>
+                                    <li><a href="<?=Url::to(['site/pedagoglar'])?>">Педагогларга
 </a></li>
-                                    <li><a href="<?=Url::to('site/ota-onalar')?>">Ота-оналарга
+                                    <li><a href="<?=Url::to(['site/ota-onalar'])?>">Ота-оналарга
 </a></li>
-                                    <li><a href="<?=Url::to('site/savol-javob')?>">Савол-жавоблар</a></li>
-                                    <li><a href="<?=Url::to('site/ariza')?>">Ариза ва бланкалар намунаси</a></li>
+                                    <li><a href="<?=Url::to(['site/savol-javob'])?>">Савол-жавоблар</a></li>
+                                    <li><a href="<?=Url::to(['site/ariza'])?>">Ариза ва бланкалар намунаси</a></li>
                                 </ul>
                             </li>
-                            <li><a href="<?=Url::to('site/mttlar')?>">МТТлар</a></li>
-                            <li><a href="<?=Url::to('site/qabulhona')?>">Виртуал қабулхона</a></li>
-                            <li><a href="<?=Url::to('site/contact')?>" style="border-bottom: 3px solid #1AB3EE;">Алоқа</a></li>
+                            <li><a href="<?=Url::to(['site/mttlar'])?>">МТТлар</a></li>
+                            <li><a href="<?=Url::to(['site/qabulhona'])?>">Виртуал қабулхона</a></li>
+                            <li><a href="<?=Url::to(['site/contact'])?>" style="border-bottom: 3px solid #1AB3EE;">Алоқа</a></li>
                         </ul>
 
                         <div class="search-block">
-                            <form action="<?=Url::to('site/ariza')?>">
+                            <form action="<?=Url::to(['site/ariza'])?>">
                                 <input type="text" class="search-value" value="" />
                                 <input type="submit" class="search-button" value="&#xf002;" />
                             </form>
