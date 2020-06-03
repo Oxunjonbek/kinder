@@ -15,7 +15,7 @@ use dosamigos\tinymce\TinyMce;
 
     <?= $form->field($model, 'name')->widget(TinyMce::className(), [
     'options' => ['rows' => 9],
-    'language' => 'es',
+    'language' => 'en_GB',
     'clientOptions' => [
         'plugins' => [
             "advlist autolink lists link charmap print preview anchor",
@@ -27,7 +27,7 @@ use dosamigos\tinymce\TinyMce;
 ]);?>
 <?= $form->field($model, 'address')->widget(TinyMce::className(), [
     'options' => ['rows' => 9],
-    'language' => 'es',
+    'language' => 'en_GB',
     'clientOptions' => [
         'plugins' => [
             "advlist autolink lists link charmap print preview anchor",
