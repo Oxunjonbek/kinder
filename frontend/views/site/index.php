@@ -157,46 +157,50 @@ $this->title = 'KinderGarden';
 
                                         <div class="item main-artice light">
                                             <div class="item-header">
-                                                <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-15.jpg" alt="" class="item-photo" /></a>
+                                                <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$tanlovlar[0]->image?>" alt="" class="item-photo" /></a>
                                                 <div class="article-slide">
-                                                    <h3><a href="post.html">BMW E60 Test Drive from TOP GEAR</a></h3>
+                                                    <h3><a href="post.html"><?=$tanlovlar[0]->title?></a></h3>
                                                     <a href="post.html" class="info-line">
-                                                        <span>4 JAN, 2014</span>
+                                                        <!-- <span>4 JAN, 2014</span>
                                                         <span>by Orange-Themes</span>
-                                                        <span>11 comments</span>
+                                                        <span>11 comments</span> -->
                                                     </a>
                                                 </div>
                                             </div>
                                             <div class="item-content">
-                                                <p>Sotheby’s in London is getting ready for another seasonal display of wealth, as some of world’s</p>
+                                                <p><?=$tanlovlar[0]->text ?></p>
                                             </div>
                                         </div>
 
                                         <div class="item">
-                                            <a href="#"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-1.jpg" alt="" class="item-photo" /></a>
+                                            <a href="#"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$tanlovlar[1]->image?>" alt="" class="item-photo" /></a>
                                             <div class="item-content">
-                                                <h3><a href="post.html">BMW 530D Tunign from Hamman</a></h3>
-                                                <span>4 Jan, 2014</span>
-                                                <a href="post.html#comments"><span>3 Comments</span></a>
-                                                <div class="ot-star-rating"><span style="width:60%"><strong class="rating">3</strong> out of 5</span></div>
+                                                <h3><a href="post.html"><?=$tanlovlar[0]->title?></a></h3>
+                                                <!-- <span>4 Jan, 2014</span>
+                                                <a href="post.html#comments"><span>3 Comments</span> -->
+                                                </a>
+                                                <div class="ot-star-rating">
+                                                    <span style="width:60%"><strong class="rating">3</strong> out of 5</span></div>
                                             </div>
                                         </div>
 
                                         <div class="item">
-                                            <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-2.jpg" alt="" class="item-photo" /></a>
+                                            <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$tanlovlar[1]->image?>" alt="" class="item-photo" /></a>
                                             <div class="item-content">
-                                                <h3><a href="post.html">Eurozone Manufacturing Industry Rises Sharply in January</a></h3>
-                                                <span>4 Jan, 2014</span>
-                                                <a href="post.html#comments"><span>3 Comments</span></a>
+                                                <h3><a href="post.html"><?=$tanlovlar[1]->title?></a></h3>
+                                                <!-- <span>4 Jan, 2014</span>
+                                                <a href="post.html#comments"><span>3 Comments</span> -->
+                                                </a>
                                             </div>
                                         </div>
 
                                         <div class="item">
-                                            <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-3.jpg" alt="" class="item-photo" /></a>
+                                            <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$tanlovlar[2]->image?>" alt="" class="item-photo" /></a>
                                             <div class="item-content">
-                                                <h3><a href="post.html">Unexpected Drop in Euro Area</a></h3>
-                                                <span>4 Jan, 2014</span>
-                                                <a href="post.html#comments"><span>3 Comments</span></a>
+                                                <h3><a href="post.html"><?=$tanlovlar[1]->title?></a></h3>
+                                                <!-- <span>4 Jan, 2014</span>
+                                                <a href="post.html#comments"><span>3 Comments</span> -->
+                                                </a>
                                             </div>
                                         </div>
 
