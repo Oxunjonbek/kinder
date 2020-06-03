@@ -3,7 +3,7 @@
 						<!-- BEGIN .panel -->
 						<div class="panel">
 							<div class="p-title">
-								<h2>Blog Style #1</h2>
+								<h2>Elonlar</h2>
 							</div>
 							<div class="blog-list style-1">
 								<?php foreach ($elon as $key => $value) : ?>

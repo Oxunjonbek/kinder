@@ -18,29 +18,29 @@ $this->title = 'KinderGarden';
                                 <div class="slider-image">
                                     <a href="post.html" class="active">
                                         <span class="slider-overlay">
-                                            <strong>Euismod princips consequuntur ius no ad has graece appareat</strong>
-                                            <span>Adhuc repudiare id pri. Ex aeque aliquid bonorum mea, cu sea invidunt sapientem ullamcorper. Invenire sententiae te vim...</span>
+                                            <strong><?=$elon->title;?></strong>
+                                            <span><?=$elon->text;?></span>
                                         </span>
-                                        <img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-23.jpg" class="setborder" alt="" title="" />
+                                        <img src="<?=Yii::getAlias('@web')?>/admin/uploads/elonlar/<?=$elon->image;?>" class="setborder" alt="" title="" />
                                     </a>
                                     <a href="post.html">
                                         <span class="slider-overlay">
-                                            <strong>Euismod princips consequuntur ius no ad has graece appareat</strong>
-                                            <span>Adhuc repudiare id pri. Ex aeque aliquid bonorum mea, cu sea invidunt sapientem ullamcorper. Invenire sententiae te vim...</span>
+                                            <strong><?=$tadbir->title;?></strong>
+                                            <span><?=$tadbir->text;?></span>
                                         </span>
-                                        <img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-24.jpg" class="setborder" alt="" title="" />
+                                        <img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$tadbir->image;?>" class="setborder" alt="" title="" />
                                     </a>
                                     <a href="post.html">
                                         <span class="slider-overlay">
-                                            <strong>Euismod princips consequuntur ius no ad has graece appareat</strong>
-                                            <span>Adhuc repudiare id pri. Ex aeque aliquid bonorum mea, cu sea invidunt sapientem ullamcorper. Invenire sententiae te vim...</span>
+                                            <strong><?=$tanlov->title;?></strong>
+                                            <span><?=$tanlov->text;?></span>
                                         </span>
-                                        <img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-25.jpg" class="setborder" alt="" title="" />
+                                        <img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$tanlov->image;?>" class="setborder" alt="" title="" />
                                     </a>
                                     <a href="post.html">
                                         <span class="slider-overlay">
-                                            <strong>Euismod princips consequuntur ius no ad has graece appareat</strong>
-                                            <span>Adhuc repudiare id pri. Ex aeque aliquid bonorum mea, cu sea invidunt sapientem ullamcorper. Invenire sententiae te vim...</span>
+                                            <strong>Design</strong>
+                                            <span>Sotheby’s in London is getting ready for another seasonal display of wealth, as some of world’s. Sotheby’s in London is getting ready for another seasonal display of wealth, as some of world’s.</span>
                                         </span>
                                         <img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-26.jpg" class="setborder" alt="" title="" />
                                     </a>
@@ -48,26 +48,26 @@ $this->title = 'KinderGarden';
                                 <ul class="slider-navigation">
                                     <li class="active">
                                         <a href="#" data-target="1">
-                                            <strong>Ut tantas mediocrem nec vix error accusam forensibus ne</strong>
-                                            <span>Ut vix decore epicurei, eos id similique mediocritatem. An vix platonem sapientem salutandi, quem assum impedit per no. Nostrud maiorum maiestatis duo ex. Est congue postea suscipiantur te, vidit novum petentium nec ea, eos agam deserunt ut</span>
+                                            <strong><?=$elon->title;?></strong>
+                                            <span><?=$elon->text;?></span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" data-target="2">
-                                            <strong>Sea ea noluisse reprimique repudiandae vis at natum comprehensam</strong>
-                                            <span>An vix platonem sapientem salutandi, quem assum impedit per no. Nostrud maiorum maiestatis duo ex. Est congue postea suscipiantur te, vidit novum petentium nec ea, eos agam deserunt ut.</span>
+                                            <strong><?=$tanlov->title;?></strong>
+                                            <span><?=$tanlov->text;?></span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" data-target="3">
-                                            <strong>Ad duo erat omnes dissentiet sea voluptaria concludaturque ne</strong>
-                                            <span>Ea mutat contentiones pri, ex eam minim eloquentiam, has nostrud feugiat admodum et. Oportere aliquando vulputate ei quo, ad pro brute tritani. Cum eu idque dicta oratio, per an ferri posidonium.</span>
+                                            <strong><?=$tadbir->title;?></strong>
+                                            <span><?=$tadbir->text;?></span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" data-target="4">
-                                            <strong>Paulo quidam maluisset ei vim vel nobis nominavi ei</strong>
-                                            <span>Eos et fabulas perfecto. Ei tacimates forensibus est. Mea natum graece recteque ad, autem moderatius eam te, et cum ferri liber assueverit.</span>
+                                            <strong>Design</strong>
+                                            <span>Sotheby’s in London is getting ready for another seasonal display of wealth, as some of world’s. Sotheby’s in London is getting ready for another seasonal display of wealth, as some of world’s.</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -88,46 +88,56 @@ $this->title = 'KinderGarden';
 
                                         <div class="item main-artice">
                                             <div class="item-header">
-                                                <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-16.jpg" alt="" class="item-photo" /></a>
+                                                <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$tadbirlar[0]->image?>" alt="" class="item-photo" /></a>
                                                 <div class="article-slide">
-                                                    <h3><a href="post.html">BMW E60 Test Drive from TOP GEAR</a></h3>
-                                                    <a href="post.html" class="info-line">
+                                                    <h3><a href="post.html"></a><?=$tadbirlar[0]->title?></a></h3>
+                                                    <!-- <a href="post.html" class="info-line">
                                                         <span>4 JAN, 2014</span>
                                                         <span>by Orange-Themes</span>
                                                         <span>11 comments</span>
-                                                    </a>
+                                                    </a> -->
                                                 </div>
                                             </div>
                                             <div class="item-content">
-                                                <p>Sotheby’s in London is getting ready for another seasonal display of wealth, as some of world’s</p>
+                                                <p><?=$tadbirlar[0]->text?></p>
+                                            </div>
+                                        </div>
+<?php 
+// echo '<pre>';
+// var_dump($tadbirlar[1]->image);
+//  exit();
+ ?>
+                                        <div class="item">
+                                            <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$tadbirlar[1]->image?>" alt="" class="item-photo" /></a>
+                                            <div class="item-content">
+                                                <h3><a href="post.html"><?=$tadbirlar[1]->title?></a></h3>
+                                               <!--  <span>4 Jan, 2014</span>
+                                                <a href="post.html#comments"><span>3 Comments</span> -->
+                                                </a>
                                             </div>
                                         </div>
 
                                         <div class="item">
-                                            <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-1.jpg" alt="" class="item-photo" /></a>
+                                            <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$tadbirlar[2]->image?>" alt="" class="item-photo" /></a>
                                             <div class="item-content">
-                                                <h3><a href="post.html">BMW 530D Tunign from Hamman</a></h3>
-                                                <span>4 Jan, 2014</span>
-                                                <a href="post.html#comments"><span>3 Comments</span></a>
+                                                <h3><a href="post.html"><?=$tadbirlar[2]->title?></a></h3>
+                                                <!-- <span>4 Jan, 2014</span>
+                                                <a href="post.html#comments"><span>3 Comments</span> -->
+                                                </a>
+                                                <div class="ot-star-rating">
+                                                    <span style="width:70%"><strong class="rating">3.50</strong> out of 5</span></div>
                                             </div>
                                         </div>
 
                                         <div class="item">
-                                            <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-2.jpg" alt="" class="item-photo" /></a>
+                                            <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$tadbirlar[3]->image?>" alt="" class="item-photo" /></a>
                                             <div class="item-content">
-                                                <h3><a href="post.html">Eurozone Manufacturing Industry Rises Sharply in January</a></h3>
-                                                <span>4 Jan, 2014</span>
-                                                <a href="post.html#comments"><span>3 Comments</span></a>
-                                                <div class="ot-star-rating"><span style="width:70%"><strong class="rating">3.50</strong> out of 5</span></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="item">
-                                            <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-3.jpg" alt="" class="item-photo" /></a>
-                                            <div class="item-content">
-                                                <h3><a href="post.html">Unexpected Drop in Euro Area</a></h3>
-                                                <span>4 Jan, 2014</span>
-                                                <a href="post.html#comments"><span>3 Comments</span></a>
+                                                <h3><a href="post.html"><?=$tadbirlar[3]->title?></a></h3>
+                                                <!-- <span>4 Jan, 2014</span>
+                                                <a href="post.html#comments"><span>3 Comments</span> -->
+                                                </a>
+                                                <div class="ot-star-rating">
+                                                   <!--  <span style="width:70%"><strong class="rating">3.50</strong> out of 5</span> --></div>
                                             </div>
                                         </div>
 
