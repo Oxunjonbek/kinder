@@ -21,11 +21,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'format'=>'raw'
         ],
         'name',
-        'phone'
-        // [
-        //     'attribute'=>'text',
-        //     'format'=>'raw'
-        // ],        'image'
+        'phone',
+        'image'
     ];
 
     $columns[] = [

@@ -17,6 +17,7 @@ class Structure extends \yii\db\ActiveRecord
     /**
      * {@inheritdoc}
      */
+    public $img;
     public static function tableName()
     {
         return 'structure';
@@ -30,7 +31,8 @@ class Structure extends \yii\db\ActiveRecord
         return [
             [['name', 'prof', 'phone'], 'required'],
             [['name'], 'string', 'max' => 300],
-            [['prof', 'phone'], 'string', 'max' => 255],
+            [['prof', 'phone','image'], 'string', 'max' => 255],
+            [['img'], 'file', 'skipOnEmpty' => true, 'extensions' => 'png, jpg,gif,jpeg'],
         ];
     }
 

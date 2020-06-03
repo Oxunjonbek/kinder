@@ -18,7 +18,7 @@ class TarkibiyStructureSearch extends TarkibiyStructure
     {
         return [
             [['id'], 'integer'],
-            [['title', 'name', 'phone'], 'safe'],
+            [['title', 'name', 'phone','image'], 'safe'],
         ];
     }
 
@@ -63,6 +63,7 @@ class TarkibiyStructureSearch extends TarkibiyStructure
 
         $query->andFilterWhere(['like', 'title', $this->title])
             ->andFilterWhere(['like', 'name', $this->name])
+            ->andFilterWhere(['like', 'image', $this->image])
             ->andFilterWhere(['like', 'phone', $this->phone]);
 
         return $dataProvider;

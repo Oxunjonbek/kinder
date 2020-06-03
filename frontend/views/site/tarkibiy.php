@@ -9,7 +9,7 @@
 								<?php foreach ($tarkibiy as  $value) : ?>
 								<div class="item">
 									<div class="item-header">
-										<a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-16.jpg" alt="" class="item-photo" /></a>
+										<a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tarkibiy/<?=$value->image ?>" alt="" class="item-photo" /></a>
 									</div>
 									<div class="item-content">
 										<a href="blog.html" class="category-link" style="color: #c32929;"><strong> <?=$value->name ?></strong></a>

@@ -16,6 +16,8 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'prof')->textInput(['maxlength' => true]) ?>
 
+    <?= $form->field($model, 'img')->fileInput(['maxlength' => true]) ?>
+
     <?= $form->field($model, 'phone')->textInput(['maxlength' => true]) ?>
 
     <div class="form-group">
