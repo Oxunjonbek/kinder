@@ -4,11 +4,11 @@
                         <!-- BEGIN .widget -->
                         <div class="widget">
                             <div class="w-title">
-                                <h3>Advertisement</h3>
+                                <h3>Murojaatlar</h3>
                             </div>
                             <div class="banner">
-                                <a href="#" class="upper-title">PLACE YOUR AD HERE<i class="fa fa-caret-down"></i></a>
-                                <a href="#" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/no-banner-300x250.jpg" alt="" /></a>
+                                <a href="#" class="upper-title">Savollaringizni yo'llang<i class="fa fa-caret-down"></i></a>
+                                <a href="#" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/no-banner-300x250.png" alt="" /></a>
                             </div>
                         <!-- END .widget -->
                         </div>

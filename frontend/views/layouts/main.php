@@ -66,7 +66,7 @@ AppAsset::register($this);
 
                     <div class="header-block">
                         <div class="header-logo">
-                            <a href="index.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/header-logo.png" alt="" /></a>
+                            <a href="<?=Url::to(['site/index'])?>"><img src="<?=Yii::getAlias('@web')?>/foto/images/header-logo.png" alt="" /></a>
                             <!-- <h1><a href="index.html">NOVOMag</a></h1> -->
                         </div>
                         <div class="header-banner">
