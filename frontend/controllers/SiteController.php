@@ -310,7 +310,7 @@ class SiteController extends Controller
         ]);
     }
 
-    public function actionVakansiya()
+    public function actionVakansiyalar()
     {
         $vakant = Vacansy::find()->all();
         return $this->render('vakansiya',[
