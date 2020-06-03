@@ -89,10 +89,12 @@ class SiteController extends Controller
         $elon = Elonlar::find()->orderBy(['id'=>SORT_DESC])->one();
         $tadbir = Tadbir::find()->orderBy(['id'=>SORT_DESC])->one();
         $tanlov = Tanlov::find()->orderBy(['id'=>SORT_DESC])->one();
+        $tadbirlar = Tadbir::find()->orderBy(['id'=>SORT_DESC])->limit(4)->all();
         return $this->render('index',[
             'elon'=>$elon,
             'tadbir'=>$tadbir,
-            'tanlov'=>$tanlov
+            'tanlov'=>$tanlov,
+            'tadbirlar'=>$tadbirlar
         ]);
     }
 
