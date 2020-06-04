@@ -7,7 +7,7 @@ use yii\helpers\Url;
 	<!-- BEGIN .panel -->
 	<div class="panel">
 		<div class="p-title">
-			<h2>Blog Style #2</h2>
+			<h2>Tanlovlar</h2>
 		</div>
 		<div class="blog-list style-2">
 

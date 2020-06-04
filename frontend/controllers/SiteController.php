@@ -318,9 +318,17 @@ class SiteController extends Controller
 
     public function actionTanlovlar()
     {
-        $tanlov = Tanlov::find()->all();
+        $query = Tadbir::find()->orderBy(['id' => SORT_DESC]);
+    $countQuery = clone $query;
+    $pages = new Pagination(['totalCount' => $countQuery->count(), 'pageSize' => 10]);
+    $pages->pageSizeParam = false;
+    $tadbir = $query->offset($pages->offset)
+        ->limit($pages->limit)
+        ->all();
+
         return $this->render('tanlov',[
-            'tanlov'=>$tanlov
+            'tanlov'=>$tanlov,
+            'pages'=>$pages
         ]);
     }
 
