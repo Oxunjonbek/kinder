@@ -1,6 +1,6 @@
 <?php 
 use yii\widgets\LinkPager; 
-
+use yii\helpers\Url;
 ?>
 <div class="main-content">
 
@@ -14,8 +14,8 @@ use yii\widgets\LinkPager;
 			<?php foreach ($tadbir as $blog) :?>
 				<div class="item">
 					<div class="item-header">
-						<a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$blog->image ?>" alt="" class="item-photo" /></a>
-						<h3><a href="post.html"><?=$blog->title ?> </a></h3>
+						<a href="<?=Url::to(['site/tadbir-single','id'=>$blog->id])?>"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$blog->image ?>" alt="" class="item-photo" /></a>
+						<h3><a href="<?=Url::to(['site/tadbir-single','id'=>$blog->id])?>"><?=$blog->title ?> </a></h3>
 					</div>
 					<div class="item-content">
 					</div>
