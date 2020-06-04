@@ -107,9 +107,9 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
 
                                         <div class="item main-artice light">
                                             <div class="item-header">
-                                                <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$tanlov->image?>" alt="" class="item-photo" /></a>
-                                                <div class="article-slide">
-                                                    <h3><a href="post.html"><?=$tanlov->title?></a></h3>
+                                                <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$tanlov->image?>" alt="" class="item-photo" style="height:214px;" /></a>
+                                                <div class="article-slide" >
+                                                    <h3 ><a href="post.html"><?=$tanlov->title?></a></h3>
                                                     <!-- <a href="post.html" class="info-line">
                                                         <span>4 JAN, 2014</span>
                                                         <span>by Orange-Themes</span>
@@ -117,7 +117,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                                     </a> -->
                                                 </div>
                                             </div>
-                                            <div class="item-content">
+                                            <div class="item-content" >
                                                 <p><?=$tanlov->text?></p>
                                             </div>
                                         </div>
