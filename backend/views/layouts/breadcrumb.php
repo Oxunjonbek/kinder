@@ -19,13 +19,13 @@
         </div><!-- /.col -->
         <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-                <?php // if ($pathInfo != '' && $pathInfo != 'site/index'){  ?>
+                
                 <li class="breadcrumb-item"><a href="<?= Url::to(['site/index']) ?>">Главный</a></li>
-                <?php //if ($array[1] == 'create' || $array[1] == 'update' || $array[1] == 'view'){ ?>
+               
                     <li class="breadcrumb-item"><a href="<?//= Url::to([$url]) ?>">Список</a></li>
-                <?php// } ?>
+                
                 <li class="breadcrumb-item active"><?= $this->title ?></li>
-                <?php// } ?>
+                
             </ol>
         </div>
     </div>
