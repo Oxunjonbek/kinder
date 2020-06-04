@@ -75,7 +75,7 @@ $tanlov = Tanlov::find()->orderBy(['id'=>SORT_ASC])->limit(3)->all();
                         </div>
                         <div class="header-banner">
                             <a href="#" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/no-banner-728x90.png" alt="" /></a>
-                           
+                            
                         </div>
                     </div>
                     
@@ -83,68 +83,72 @@ $tanlov = Tanlov::find()->orderBy(['id'=>SORT_ASC])->limit(3)->all();
                 </div>
 
 
-    <?= $this->render(
-        'navbar.php'
-    ) ?>
+                <?= $this->render(
+                    'navbar.php'
+                ) ?>
                 
                 <!-- END .header -->
             </header>
-                        <!-- BEGIN .content -->
+            <!-- BEGIN .content -->
             <section class="content has-sidebar">
 
-             <?= $this->render(
-        'wrapper.php'
-    ) ?>   
-                <!-- BEGIN .wrapper -->
-                <div class="wrapper">
-            <?=$content?>
-            
-                        <?= $this->render(
-        'aside.php'
-    ) ?>         
-                            </div>
-                <!-- END .wrapper -->
-
-
+               <?= $this->render(
+                'wrapper.php'
+            ) ?>   
+            <!-- BEGIN .wrapper -->
+            <div class="wrapper">
+                <?=$content?>
                 
+                <?= $this->render(
+                    'aside.php'
+                ) ?>         
+            </div>
+            <!-- END .wrapper -->
+
+
+            
             <!-- BEGIN .content -->
-            </section>
-            <!-- BEGIN .footer -->
-            <footer class="footer">
+        </section>
+        <!-- BEGIN .footer -->
+        <footer class="footer">
 
-                <!-- BEGIN .wrapper -->
-                <div class="wrapper">
+            <!-- BEGIN .wrapper -->
+            <div class="wrapper">
 
-                    <!-- BEGIN .footer-widgets -->
-                    <div class="footer-widgets">
+                <!-- BEGIN .footer-widgets -->
+                <div class="footer-widgets">
 
-                        <!-- BEGIN .widget -->
-                        <div class="widget">
-                            <div class="w-title">
-                                <h3>About</h3>
-                            </div>
-                            <div>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis</p>
-                                <img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-5.jpg" alt="" />
-                            </div>
-                            <!-- END .widget -->
+                    <!-- BEGIN .widget -->
+                    <div class="widget">
+                        <div class="w-title">
+                            <h3>Biz haqimizda</h3>
                         </div>
-                        <!-- BEGIN .widget -->
-                        <div class="widget">
-                            <div class="w-title">
-                                <h3>LATEST ARTICLES</h3>
-                            </div>
-                            <div class="article-list">
-                        <?php foreach ($tadbir as $key => $value) : ?>
+                        <div>
+                            <p>Manzil: Surxondaryo viloyati Denov shahri
+
+                                Telefon: +998(91) 510-05-88
+
+                            E-mail: info@denov-mtm.uz</p>
+                            <img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-5.jpg" alt="" />
+                        </div>
+                        <!-- END .widget -->
+                    </div>
+                    <!-- BEGIN .widget -->
+                    <div class="widget">
+                        <div class="w-title">
+                            <h3>Tadbirlar</h3>
+                        </div>
+                        <div class="article-list">
+                            <?php foreach ($tadbir as $key => $value) : ?>
 
                                 <div class="item">
                                     <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$value->image?>" alt="" class="item-photo" /></a>
                                     <div class="item-content">
                                         <h3><a href="post.html"><?=$value->title?></a></h3>
                                         <!-- <span>4 Jan, 2014</span>
-                                        <a href="post.html#comments"><span>3 Comments</span></a> -->
+                                            <a href="post.html#comments"><span>3 Comments</span></a> -->
+                                        </div>
                                     </div>
-                                </div>
                                 <?php endforeach; ?>
                                 <!-- <div class="item">
                                     <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-2.jpg" alt="" class="item-photo" /></a>
@@ -168,42 +172,42 @@ $tanlov = Tanlov::find()->orderBy(['id'=>SORT_ASC])->limit(3)->all();
                             <!-- END .widget -->
 
                         </div>
-                         <!-- BEGIN .widget -->
+                        <!-- BEGIN .widget -->
                         <div class="widget">
                             <div class="w-title">
-                                <h3>LATEST ARTICLES</h3>
+                                <h3>Tanlovlar</h3>
                             </div>
                             <div class="article-list">
-                        <?php foreach ($tanlov as $key => $value) : ?>
+                                <?php foreach ($tanlov as $key => $value) : ?>
 
-                                <div class="item">
-                                    <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$value->image?>" alt="" class="item-photo" /></a>
-                                    <div class="item-content">
-                                        <h3><a href="post.html"><?=$value->title?></a></h3>
+                                    <div class="item">
+                                        <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$value->image?>" alt="" class="item-photo" /></a>
+                                        <div class="item-content">
+                                            <h3><a href="post.html"><?=$value->title?></a></h3>
                                         <!-- <span>4 Jan, 2014</span>
-                                        <a href="post.html#comments"><span>3 Comments</span></a> -->
+                                            <a href="post.html#comments"><span>3 Comments</span></a> -->
+                                        </div>
                                     </div>
-                                </div>
                                 <?php endforeach; ?>
                             </div>
                             <!-- END .widget -->
-                      
-                        <!-- END .footer-widgets -->
+                            
+                            <!-- END .footer-widgets -->
+                        </div>
+                        
+                        <!-- END .wrapper -->
                     </div>
+
                     
-                    <!-- END .wrapper -->
-                </div>
+                    <!-- END .footer -->
+                </footer>
+                
+                <!-- END .boxed -->
+            </div>
 
-               
-                <!-- END .footer -->
-            </footer>
-            
-            <!-- END .boxed -->
-        </div>
+            <!-- Scripts -->
 
-        <!-- Scripts -->
-
-        <?php $this->endBody() ?>
-    </body>
-    </html>
-    <?php $this->endPage() ?>
+            <?php $this->endBody() ?>
+        </body>
+        </html>
+        <?php $this->endPage() ?>
