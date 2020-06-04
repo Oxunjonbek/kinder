@@ -11,7 +11,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                         <!-- BEGIN .panel -->
                         <div class="panel">
                             <div class="slider">
-                                <div class="slider-image" style="width: 518px; height: 327px;">
+                                <div class="slider-image" style="width: 798px; height: 427px; margin-bottom: 10px;">
                                     <?php foreach ($tadbirlar as $key => $value) : ?>
                                     <a href="post.html" class="active">
                                         <span class="slider-overlay" style="font-size: 20px;">
@@ -50,44 +50,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                         <img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-26.jpg" class="setborder" alt="" title="" />
                                     </a> -->
                                 </div>
-                                <ul class="slider-navigation">
-                                        <?php $r = 1;if ($r==1) {
-                                            $s = 'active';
-                                        }else{
-                                            $s='';
-                                        } foreach ($tadbirlar as $key => $value) : ?>
-                                    <li class="<?=$s?>" style="width: 279px; height: 79px;">
-                                        <a href="#" data-target="<?=$r?>">
-
-                                            <strong><?=$value->title?></strong>
-                                            <!-- <span>Ўзбекистан Республикаси Президентининг 2018 йил 2-февралдаги “Хотин-қизларни қўллаб-қувватлаш...</span> -->
-
-                                        </a>
-                                    <?php  endforeach; $r++ ?>
-                                    </li>
-                                    <!-- <li>
-                                        <a href="#" data-target="2">
-
-                                            <strong>Sea ea noluisse reprimique repudiandae vis at natum comprehensam</strong>
-                                            <span>An vix platonem sapientem salutandi, quem assum impedit per no. Nostrud maiorum maiestatis duo ex. Est congue postea suscipiantur te, vidit novum petentium nec ea, eos agam deserunt ut.</span>
-
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" data-target="3">
-
-                                            <strong>Ad duo erat omnes dissentiet sea voluptaria concludaturque ne</strong>
-                                            <span>Ea mutat contentiones pri, ex eam minim eloquentiam, has nostrud feugiat admodum et. Oportere aliquando vulputate ei quo, ad pro brute tritani. Cum eu idque dicta oratio, per an ferri posidonium.</span>
-
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" data-target="4">
-                                            <strong>Paulo quidam maluisset ei vim vel nobis nominavi ei</strong>
-                                            <span>Eos et fabulas perfecto. Ei tacimates forensibus est. Mea natum graece recteque ad, autem moderatius eam te, et cum ferri liber assueverit.</span>
-                                        </a>
-                                    </li> -->
-                                </ul>
+                               
                             </div>
                         <!-- END .panel -->
                         </div>
