@@ -191,7 +191,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                 <!-- BEGIN .panel -->
                                 <div class="panel">
                                     <div class="p-title">
-                                        <h2>Latest Reviews</h2>
+                                        <h2>Бизни кузатиб боринг</h2>
                                     </div>
                                     <a href="#" class="upper-title">Read More<i class="fa fa-caret-right"></i></a>
                                     <div class="review-block">
@@ -274,7 +274,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                 <!-- BEGIN .panel -->
                                 <div class="panel">
                                     <div class="p-title">
-                                        <h2>Latest Videos</h2>
+                                        <h2>Фойдали манзиллар</h2>
                                     </div>
                                     <div class="video-carousel">
                                         <a href="#" class="carousel-left"><i class="fa fa-chevron-left"></i></a>
@@ -283,7 +283,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                         <div class="inner-carousel">
                                             <?php foreach ($tadbirs as $key => $value) : ?>
                                             <div class="item">
-                                                <a href="#"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$value->image?>" class="item-photo" alt="" /></a>
+                                                <a href=""><img src="<?=Yii::getAlias('@web')?>/foto/images/1.png?>" class="item-photo" alt="" /></a>
                                                 <h3><a href="#"><?=$value->title?></a></h3>
                                             </div>
                                         <?php endforeach; ?>
