@@ -12,17 +12,19 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                         <div class="panel">
                             <div class="slider">
                                 <div class="slider-image" style="width: 518px; height: 327px;">
+                                    <?php foreach ($tadbirlar as $key => $value) : ?>
                                     <a href="post.html" class="active">
                                         <span class="slider-overlay">
 
 
-                                            <strong>25- Май «Хайр боғчам» онлайн кўрик-танлови ғолиблари</strong>
-                                            <span>Ўзбекистан Республикаси Президентининг 2018 йил 2-февралдаги “Хотин-қизларни қўллаб-қувватлаш...</span>
+                                            <strong><?=$value->title?></strong>
+                                            <span><?=$value->text?></span>
 
                                         </span>
-                                        <img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-23.jpg" class="setborder" alt="" title="" />
+                                        <img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$value->image?>" class="setborder" alt="" title="" />
                                     </a>
-                                    <a href="post.html">
+                                    <?php endforeach; ?>
+                                    <!-- <a href="post.html">
                                         <span class="slider-overlay">
 
                                             <strong>Euismod princips consequuntur ius no ad has graece appareat</strong>
@@ -46,7 +48,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                             <span>Adhuc repudiare id pri. Ex aeque aliquid bonorum mea, cu sea invidunt sapientem ullamcorper. Invenire sententiae te vim...</span>
                                         </span>
                                         <img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-26.jpg" class="setborder" alt="" title="" />
-                                    </a>
+                                    </a> -->
                                 </div>
                                 <ul class="slider-navigation">
                                     <li class="active" style="width: 279px; height: 79px;">
@@ -185,13 +187,13 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                             <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-2.jpg" alt="" class="item-photo" /></a>
                                             <div class="item-content">
 
-                                                <h3><a href="post.html"><?php $val = substr($value->text, 0, 40); echo $val ?></a></h3>
+                                                <h3><a href="post.html"></a></h3>
                                                 <!-- <span>4 Jan, 2014</span>
                                                 <a href="post.html#comments"><span>3 Comments</span> -->
                                                 </a>
                                                 <div class="ot-star-rating">
                                                     <span style="width:60%"><strong class="rating">3</strong> out of 5</span></div>
-=======
+
                                                 <h3><a href="post.html">Eurozone Manufacturing Industry Rises Sharply in January</a></h3>
                                                 <span>4 Jan, 2014</span>
                                                 <a href="post.html#comments"><span>3 Comments</span></a>
