@@ -2,14 +2,8 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'KinderGarden';
-?>
-
-                
-
-                    
-
-                    
+$this->title = 'Бойсун тумани мактабгача таьлим бўлими';
+?>                    
                     <div class="main-content">
 
                         <!-- BEGIN .panel -->
@@ -18,8 +12,8 @@ $this->title = 'KinderGarden';
                                 <div class="slider-image">
                                     <a href="post.html" class="active">
                                         <span class="slider-overlay">
-                                            <strong>Euismod princips consequuntur ius no ad has graece appareat</strong>
-                                            <span>Adhuc repudiare id pri. Ex aeque aliquid bonorum mea, cu sea invidunt sapientem ullamcorper. Invenire sententiae te vim...</span>
+                                            <strong>25- Май «Хайр боғчам» онлайн кўрик-танлови ғолиблари</strong>
+                                            <span>Ўзбекистан Республикаси Президентининг 2018 йил 2-февралдаги “Хотин-қизларни қўллаб-қувватлаш...</span>
                                         </span>
                                         <img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-23.jpg" class="setborder" alt="" title="" />
                                     </a>
@@ -48,8 +42,8 @@ $this->title = 'KinderGarden';
                                 <ul class="slider-navigation">
                                     <li class="active">
                                         <a href="#" data-target="1">
-                                            <strong>Ut tantas mediocrem nec vix error accusam forensibus ne</strong>
-                                            <span>Ut vix decore epicurei, eos id similique mediocritatem. An vix platonem sapientem salutandi, quem assum impedit per no. Nostrud maiorum maiestatis duo ex. Est congue postea suscipiantur te, vidit novum petentium nec ea, eos agam deserunt ut</span>
+                                            <strong>25- Май «Хайр боғчам» онлайн кўрик-танлови ғолиблари</strong>
+                                            <span>Ўзбекистан Республикаси Президентининг 2018 йил 2-февралдаги “Хотин-қизларни қўллаб-қувватлаш...</span>
                                         </a>
                                     </li>
                                     <li>
