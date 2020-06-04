@@ -6,7 +6,7 @@ $rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `t
         // var_dump($rows);exit();
 ?>                    
 <aside id="sidebar">
-    
+
     <!-- BEGIN .widget -->
     <div class="widget" >
         <div class="w-title" >
@@ -18,7 +18,7 @@ $rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `t
         </div>
         <!-- END .widget -->
     </div>
-    
+
     <!-- BEGIN .widget -->
     <div class="widget">
         <div class="w-title tab-a"  >
@@ -130,7 +130,7 @@ $rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `t
                                         </div>
                                     </div>
                                 <?php endforeach; ?>
-                                
+
 <!-- 
                                 <div class="more-button">
                                     <a href="blog.html">Ва ҳоказо ...</a>
@@ -143,7 +143,11 @@ $rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `t
                         <!-- BEGIN .widget -->
                         <div class="widget">
                             <div class="w-title">
+
                                 <h3 style="background-color: rgb(11, 82, 100);">Ҳамкор ташкилотлар</h3>
+
+                                <h3>Фойдали Манзиллар</h3>
+
                             </div>
                             <div class="review-list">
                                 <a href="blog.html" class="upper-title"><i class="fa fa-caret-right"></i></a>
@@ -156,7 +160,7 @@ $rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `t
                                     <h3><a href="https://president.uz/" target="_blank">Ўзбекистон Республикаси Давлат Хукумати Портали</a></h3>
                                 </center>
                             </div>
-                            
+
                             <div class="item">
                                 <center>
                                     <a href="https://lex.uz/" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/2.png" class="item-photo" alt="" /></a>
@@ -166,9 +170,19 @@ $rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `t
                                 </center>
                             </div>
 
+
                             <div class="w-gallery">
                                 <a href="photo-gallery.html" class="upper-title">More Galleries<i class="fa fa-caret-right"></i></a>
+
                                                     
+
+                                <div class="w-photos">
+                                    <a href="#" class="gallery-link-left"><i class="fa fa-chevron-left"></i></a>
+                                    <a href="#" class="gallery-link-right"><i class="fa fa-chevron-right"></i></a>
+                                </div>
+
+
+
                             <div class="item">
                                 <center> 
                                     <a href="https://lex.uz/" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/3.png" class="item-photo" alt="" /></a>
@@ -178,7 +192,7 @@ $rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `t
                                 </center>
 
                             </div>
-                            
+
                             <div class="item">
                              <center>
                                 <a href="http://senat.gov.uz " target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/4.png" class="item-photo" alt="" /></a>
@@ -187,7 +201,7 @@ $rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `t
                                 <h3><a href="http://senat.gov.uz" target="_blank">Ўзбекистон Республикаси Олий Мажлиси Сенати</a></h3>
                             </center>
                         </div>
-                        
+
                         <div class="item">
                             <center>
                                 <a href="http://parliament.gov.uz" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/5.png" class="item-photo" alt="" /></a>
@@ -200,7 +214,7 @@ $rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `t
                     </div>
                     <!-- END .widget -->
                 </div>
-                
+
                 <!-- BEGIN .widget -->
                 <div class="widget">
                     <div class="w-title">
@@ -212,7 +226,7 @@ $rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `t
                             <a href="#" class="gallery-link-left"><i class="fa fa-chevron-left"></i></a>
                             <a href="#" class="gallery-link-right"><i class="fa fa-chevron-right"></i></a>
                             <div class="photo-images">
-                                <a href="photo-gallery-single.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-11.jpg" alt="" /></a>
+                                <a href="photo-gallery-single.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-15.jpg" alt="" /></a>
                                 <a href="photo-gallery-single.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-12.jpg" alt="" /></a>
                                 <a href="photo-gallery-single.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-13.jpg" alt="" /></a>
                                 <a href="photo-gallery-single.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-14.jpg" alt="" /></a>
@@ -221,21 +235,21 @@ $rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `t
                     </div>
                     <!-- END .widget -->
                 </div>
-                
+
                 <!-- BEGIN .widget -->
                 <div class="widget">
                     <div class="w-title">
                         <h3 style="background-color: rgb(11, 82, 100);">Калит сўзлар</h3>
                     </div>
                     <div class="tagcloud">
-                        <a href="blog.html">Omnes</a><a href="blog.html">definitionem</a><a href="blog.html">accommodare</a><a href="blog.html">intellegat</a><a href="blog.html">quas</a><a href="blog.html">theophrastus</a><a href="blog.html">commune</a><a href="blog.html">eleifend</a>
-                        <a href="blog.html">Omnes</a><a href="blog.html">definitionem</a><a href="blog.html">intellegat</a><a href="blog.html">accommodare</a><a href="#">quas</a><a href="blog.html">commune</a><a href="blog.html">eleifend</a>
+                        <a href="https://lex.uz/">Qonun</a><a href="https://lex.uz/">Qarorlar</a><a href="https://lex.uz/">Nizomlar</a><a href="https://lex.uz/">Tuzilma</a><a href="https://lex.uz/">MMt</a><a href="https://lex.uz/">nizomlar</a><a href="https://lex.uz/">tartib</a><a href="https://lex.uz/">kodeks</a>
+                        <a href="https://lex.uz/">hujjat</a><a href="https://lex.uz/">ariza</a><a href="https://lex.uz/">intellegat</a><a href="https://lex.uz/">savol</a><a href="#">bog`cha</a><a href="blog.html">kalit</a><a href="blog.html">intensiv</a>
                     </div>
                     <!-- END .widget -->
                 </div>
-                
+
                 <!-- BEGIN .widget -->
-                
+
                 <!-- END .widget -->
 
             </aside>

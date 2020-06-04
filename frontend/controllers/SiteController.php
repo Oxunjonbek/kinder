@@ -26,6 +26,7 @@ use common\models\Qonunlar;
 use common\models\Nizom;
 use common\models\Farmonlar;
 use common\models\Ariza;
+use yii\data\Pagination; 
 
 /**
  * Site controller
@@ -290,10 +291,20 @@ class SiteController extends Controller
     }
 
     public function actionTadbirlar()
-    {
-        $tadbir = Tadbir::find()->all();
+    {   
+       
+
+    $query = Tadbir::find()->orderBy(['id' => SORT_DESC]);
+    $countQuery = clone $query;
+    $pages = new Pagination(['totalCount' => $countQuery->count(), 'pageSize' => 10]);
+    $pages->pageSizeParam = false;
+    $tadbir = $query->offset($pages->offset)
+        ->limit($pages->limit)
+        ->all();
+
         return $this->render('tadbirlar',[
-            'tadbir'=>$tadbir
+            'tadbir'=>$tadbir,
+            'pages'=>$pages
         ]);
     }
 
