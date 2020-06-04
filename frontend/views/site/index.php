@@ -17,8 +17,8 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                         <span class="slider-overlay">
 
 
-                                            <strong><?php $title = substr($value->title,0,19);echo $title;?></strong>
-                                            <span><?php $text = substr($value->text,0,119);echo $text;?></span>
+                                            <strong><?=$value->title?></strong>
+                                            <span><?=$value->text?></span>
 
                                         </span>
                                         <img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$value->image?>" class="setborder" alt="" title="" />
