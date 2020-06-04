@@ -10,8 +10,12 @@ use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
 use common\widgets\Alert;
+use common\models\Tadbir;
+use common\models\Tanlov;
 
 AppAsset::register($this);
+$tadbir = Tadbir::find()->orderBy(['id'=>SORT_ASC])->limit(3)->all();
+$tanlov = Tanlov::find()->orderBy(['id'=>SORT_ASC])->limit(3)->all();
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -125,24 +129,24 @@ AppAsset::register($this);
                             </div>
                             <!-- END .widget -->
                         </div>
-                        
                         <!-- BEGIN .widget -->
                         <div class="widget">
                             <div class="w-title">
-                                <h3>Latest Articles</h3>
+                                <h3>LATEST ARTICLES</h3>
                             </div>
                             <div class="article-list">
+                        <?php foreach ($tadbir as $key => $value) : ?>
 
                                 <div class="item">
-                                    <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-1.jpg" alt="" class="item-photo" /></a>
+                                    <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$value->image?>" alt="" class="item-photo" /></a>
                                     <div class="item-content">
-                                        <h3><a href="post.html">BMW 530D Tunign from Hamman</a></h3>
-                                        <span>4 Jan, 2014</span>
-                                        <a href="post.html#comments"><span>3 Comments</span></a>
+                                        <h3><a href="post.html"><?=$value->title?></a></h3>
+                                        <!-- <span>4 Jan, 2014</span>
+                                        <a href="post.html#comments"><span>3 Comments</span></a> -->
                                     </div>
                                 </div>
-                                
-                                <div class="item">
+                                <?php endforeach; ?>
+                                <!-- <div class="item">
                                     <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-2.jpg" alt="" class="item-photo" /></a>
                                     <div class="item-content">
                                         <h3><a href="post.html">Eurozone Manufacturing Industry Rises Sharply in January</a></h3>
@@ -158,49 +162,39 @@ AppAsset::register($this);
                                         <span>4 Jan, 2014</span>
                                         <a href="post.html#comments"><span>0 Comments</span></a>
                                     </div>
-                                </div>
+                                </div> -->
 
                             </div>
                             <!-- END .widget -->
+
                         </div>
-                        
-                        <!-- BEGIN .widget -->
-                        <!-- <div class="widget">
+                         <!-- BEGIN .widget -->
+                        <div class="widget">
                             <div class="w-title">
-                                <h3>Tag Cloud</h3>
+                                <h3>LATEST ARTICLES</h3>
                             </div>
-                            <div class="tagcloud">
-                                <a href="blog.html">Omnes</a><a href="blog.html">definitionem</a><a href="blog.html">intellegat</a><a href="blog.html">accommodare</a><a href="blog.html">quas</a><a href="blog.html">theophrastus</a><a href="blog.html">commune</a><a href="blog.html">eleifend</a>
-                                <a href="blog.html">Omnes</a><a href="blog.html">definitionem</a><a href="blog.html">intellegat</a><a href="blog.html">accommodare</a><a href="blog.html">quas</a><a href="blog.html">theophrastus</a><a href="blog.html">commune</a><a href="blog.html">eleifend</a>
-                                <a href="blog.html">Omnes</a><a href="blog.html">definitionem</a><a href="blog.html">intellegat</a><a href="blog.html">accommodare</a><a href="blog.html">quas</a><a href="blog.html">theophrastus</a><a href="blog.html">commune</a><a href="blog.html">eleifend</a>
-                            </div>
-                        </div> -->
-                            <!-- END .widget -->
+                            <div class="article-list">
+                        <?php foreach ($tanlov as $key => $value) : ?>
 
+                                <div class="item">
+                                    <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$value->image?>" alt="" class="item-photo" /></a>
+                                    <div class="item-content">
+                                        <h3><a href="post.html"><?=$value->title?></a></h3>
+                                        <!-- <span>4 Jan, 2014</span>
+                                        <a href="post.html#comments"><span>3 Comments</span></a> -->
+                                    </div>
+                                </div>
+                                <?php endforeach; ?>
+                            </div>
+                            <!-- END .widget -->
+                      
                         <!-- END .footer-widgets -->
                     </div>
                     
                     <!-- END .wrapper -->
                 </div>
 
-                <div class="footer-bottom">
-                    <!-- BEGIN .wrapper -->
-                    <div class="wrapper">
-
-                        <p class="left">Copyright &copy; 2014 <b>NOVOMag Theme</b>. Theme by <a href="http://orange-themes.com" target="_blank">Orane-Themes.com</a>, powered by Wordpress.</p>
-                        <ul class="right">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="#" target="_blank">Purchase</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="full-width.html">Terms</a></li>
-                            <li><a href="full-width.html">Site Map</a></li>
-                        </ul>
-                        <div class="clear-float"></div>
-                        
-                        <!-- END .wrapper -->
-                    </div>
-                </div>
-                
+               
                 <!-- END .footer -->
             </footer>
             
