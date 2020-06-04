@@ -68,7 +68,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
 
                                         <div class="item main-artice">
                                             <div class="item-header">
-                                                <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$tadbir->image?>" alt="" class="item-photo" /></a>
+                                                <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$tadbir->image?>" alt="" class="item-photo" style="width: 374px; height: 215px;"/></a>
                                                 <div class="article-slide">
                                                     <h3><a href="post.html"><?=$tadbir->title?></a></h3>
                                                     <!-- <a href="post.html" class="info-line">
@@ -78,8 +78,8 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                                     </a> -->
                                                 </div>
                                             </div>
-                                            <div class="item-content">
-                                                <p><?=$tadbir->text?></p>
+                                            <div class="item-content" >
+                                                <p style="color:black;"><?=$tadbir->text?></p>
                                             </div>
                                         </div>
                                         <?php foreach ($item3 as  $value) : ?>
