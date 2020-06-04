@@ -190,7 +190,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                           
                                             <p>
                                                 <?php $tad = mb_substr($tadbir->text,0,119); echo $tad?>
-                                                <a href="post-review.html">Read More ...</a></p>
+                                                <a href="post-review.html"> Read More ...</a></p>
                                         </div>
 
                                         <div class="item">
@@ -201,7 +201,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                            
                                             <p>
                                                 <?php $tad = mb_substr($tanlov->text,0,119); echo $tad?>
-                                                <a href="post-review.html">Read More ...</a></p>
+                                                <a href="post-review.html"> Read More ...</a></p>
                                         </div>
 
                                         <div class="item">
@@ -211,8 +211,8 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                                 </a></h3>
                                             
                                             <p>
-                                                 <?php $tad = mb_substr($elon->text,0,119); echo $tad?>
-                                                <a href="post-review.html">Read More ...</a></p>
+                                                 <?php $tad = mb_substr($elon->text,0,119); echo $tad?><a href="post-review.html"> Read More ...</a>
+                                                </p>
                                         </div>
 
                                     </div>

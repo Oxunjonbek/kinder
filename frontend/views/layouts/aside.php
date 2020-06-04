@@ -32,8 +32,9 @@ $rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `t
                     <div class="item">
                         <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-1.jpg" alt="" class="item-photo" /></a>
                         <div class="item-content">
-                            <h3><a href="post.html"><?=$value['title'];
-                                            // var_dump($value['title']);exit();?></a></h3>
+                            <h3><a href="post.html">
+                                <?php $val = mb_substr($value['title'],0,50); echo $val?>
+                                        </a></h3>
                                             <!-- <span>4 Jan, 2014</span>
                                                 <a href="post.html#comments"><span>3 Comments</span></a> -->
                                             </div>
@@ -124,9 +125,9 @@ $rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `t
                                     <div class="item">
                                         <a href="lex.uz"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/lex.uz.png" alt="" class="item-photo" /></a>
                                         <div class="item-content">
-                                            <h3><a href="post.html"><?=$value->name?></a></h3>
-                                        <!-- <span>4 Jan, 2014</span>
-                                            <a href="post.html#comments"><span>3 Comments</span></a> -->
+                                            <h3><a href="post.html">
+                                                    <?php $val = mb_substr($value->name,0,50); echo $val?>
+                                                </a></h3>
                                         </div>
                                     </div>
                                 <?php endforeach; ?>
