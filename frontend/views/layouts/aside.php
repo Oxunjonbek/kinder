@@ -166,6 +166,15 @@ $rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `t
                                 </center>
                             </div>
 
+
+                            <div class="w-gallery">
+                                <a href="photo-gallery.html" class="upper-title">More Galleries<i class="fa fa-caret-right"></i></a>
+                                <div class="w-photos">
+                                    <a href="#" class="gallery-link-left"><i class="fa fa-chevron-left"></i></a>
+                                    <a href="#" class="gallery-link-right"><i class="fa fa-chevron-right"></i></a>
+                                </div>
+
+
                             <div class="item">
                                 <center> 
                                     <a href="https://lex.uz/" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/3.png" class="item-photo" alt="" /></a>
@@ -173,6 +182,7 @@ $rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `t
                                 <center>
                                     <h3><a href="https://lex.uz/" target="_blank">Ўзбекистон Республикаси Президенти Матбуот Хизмати</a></h3>
                                 </center>
+
                             </div>
 
                             <div class="item">
