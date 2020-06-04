@@ -143,10 +143,7 @@ $rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `t
                         <!-- BEGIN .widget -->
                         <div class="widget">
                             <div class="w-title">
-
-                                <h3 style="background-color: rgb(11, 82, 100);">Ҳамкор ташкилотлар</h3>
-
-                                <h3>Фойдали Манзиллар</h3>
+                                <h3 style="background-color: rgb(11, 82, 100);">Фойдали Манзиллар</h3>
 
                             </div>
                             <div class="review-list">
