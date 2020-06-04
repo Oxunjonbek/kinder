@@ -24,70 +24,70 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                         <img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$value->image?>" class="setborder" alt="" title="" />
                     </a>
                 <?php endforeach; ?>
-                                </div>
+            </div>
 
-                            </div>
-                            <!-- END .panel -->
+        </div>
+        <!-- END .panel -->
+    </div>
+
+    <!-- BEGIN .panel-split -->
+    <div class="panel-split">
+        <div class="left-side">
+
+            <!-- BEGIN .panel -->
+            <div class="panel">
+                <div class="p-title">
+                   <h2 style="background-color: rgb(11, 82, 100);">Tадбирлар</h2>
+               </div>
+               <div class="article-list">
+
+                <div class="item main-artice">
+                    <div class="item-header">
+                        <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$tadbir->image?>" alt="" class="item-photo" style="width: 374px; height: 215px;"/></a>
+                        <div class="article-slide">
+                            <h3><a href="post.html">
+                                <?php $tad = mb_substr($tadbir->title,0,50); echo $tad?>...
+                            </a></h3>
                         </div>
+                    </div>
+                    <div class="item-content" >
+                        <p style="color:black;">
+                            <?php $tad = mb_substr($tadbir->text,0,119); echo $tad?>...
+                        </p>
+                    </div>
+                </div>
+                <?php foreach ($item3 as $key => $value) : ?>
+                    <div class="item">
+                        <a href="#"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$value->image?>" alt="" class="item-photo" /></a>
+                        <div class="item-content">
+                            <h3><a href="post.html">
+                                <?php $val = mb_substr($value->title,0,50); echo $val?>...
+                            </a></h3>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
 
-                        <!-- BEGIN .panel-split -->
-                        <div class="panel-split">
-                            <div class="left-side">
+            </div>
+            <!-- END .panel -->
+        </div>
 
-                                <!-- BEGIN .panel -->
-                                <div class="panel">
-                                    <div class="p-title">
-                                        <h2 style="background-color: rgb(11, 82, 100);">Tадбирлар</h2>
-                                    </div>
-                                    <div class="article-list">
+    </div>
+    <div class="right-side">
 
-                                        <div class="item main-artice">
-                                            <div class="item-header">
-                                                <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$tadbir->image?>" alt="" class="item-photo" style="width: 374px; height: 215px;"/></a>
-                                                <div class="article-slide">
-                                                    <h3><a href="post.html">
-                                                            <?php $tad = mb_substr($tadbir->title,0,50); echo $tad?>...
-                                                        </a></h3>
-                                                </div>
-                                            </div>
-                                            <div class="item-content" >
-                                                <p style="color:black;">
-                                                        <?php $tad = mb_substr($tadbir->text,0,119); echo $tad?>...
-                                                    </p>
-                                            </div>
-                                        </div>
-                                        <?php foreach ($item3 as $key => $value) : ?>
-                                            <div class="item">
-                                                <a href="#"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$value->image?>" alt="" class="item-photo" /></a>
-                                                <div class="item-content">
-                                                    <h3><a href="post.html">
-                                                        <?php $val = mb_substr($value->title,0,50); echo $val?>...
-                                                        </a></h3>
-                                                </div>
-                                            </div>
-                                        <?php endforeach; ?>
+        <!-- BEGIN .panel -->
+        <div class="panel">
+            <div class="p-title">
+                <h2 style="background-color: #b3b3b6;">Танловлар</h2>
+            </div>
+            <div class="article-list">
 
-                                    </div>
-                                    <!-- END .panel -->
-                                </div>
-
-                            </div>
-                            <div class="right-side">
-
-                                <!-- BEGIN .panel -->
-                                <div class="panel">
-                                    <div class="p-title">
-                                        <h2 style="background-color: #b3b3b6;">Танловлар</h2>
-                                    </div>
-                                    <div class="article-list">
-
-                                        <div class="item main-artice light">
-                                            <div class="item-header">
-                                                <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$tanlov->image?>" alt="" class="item-photo" style="height:214px;" /></a>
-                                                <div class="article-slide" >
-                                                    <h3 ><a href="post.html">
-                                                            <?php $tad = mb_substr($tanlov->title,0,50); echo $tad?>...
-                                                        </a></h3>
+                <div class="item main-artice light">
+                    <div class="item-header">
+                        <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$tanlov->image?>" alt="" class="item-photo" style="height:214px;" /></a>
+                        <div class="article-slide" >
+                            <h3 ><a href="post.html">
+                                <?php $tad = mb_substr($tanlov->title,0,50); echo $tad?>...
+                            </a></h3>
                                                     <!-- <a href="post.html" class="info-line">
                                                         <span>4 JAN, 2014</span>
                                                         <span>by Orange-Themes</span>
@@ -97,8 +97,8 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                             </div>
                                             <div class="item-content" >
                                                 <p>
-                                                        <?php $tan = mb_substr($tanlov->text,0,119); echo $tan?>...
-                                                    </p>
+                                                    <?php $tan = mb_substr($tanlov->text,0,119); echo $tan?>...
+                                                </p>
                                             </div>
                                         </div>
 
@@ -116,181 +116,181 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                             </div>
                                         <?php endforeach; ?>
                                     </div>
-                                            <!-- END .panel -->
-                                        </div>
-
-                                    </div>
-                                    <!-- END .panel-split -->
-                                </div>
-
-                                <!-- BEGIN .panel -->
-                                <div class="panel">
-                                    <div class="p-title">
-                                        <h2  style="background-color: rgb(11, 82, 100);">Эьлонлар ва тендорлар</h2>
-                                    </div>
-                                    <a href="blog.html" class="upper-title">Батафсил<i class="fa fa-caret-right"></i></a>
-                                    <div>
-                                        <div class="panel-split">
-                                            <div class="left-side">
-                                                <div class="article-list">
-
-                                                    <div class="item main-artice light">
-                                                        <div class="item-header">
-                                                            <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/elonlar/<?=$elon->image?>" alt="" class="item-photo" /></a>
-                                                            <div class="article-slide">
-                                                                <h3><a href="post.html">
-                                                                    <?php $tad = mb_substr($elon->title,0,50); echo $tad?>
-                                                    ...
-                                                    </a></h3>
-                                                            </div>
-                                                        </div>
-                                                        <div class="item-content">
-                                                            <p>
-                                                                <?php $tad = mb_substr($elon->text,0,119); echo $tad?>
-                                                    ...</p>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div class="right-side">
-                                                <div class="article-list">
-
-                                                    <?php foreach ($elonlar as $key => $value) : ?>
-                                            <div class="item">
-                                                <a href="#"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/elonlar/<?=$value->image?>" alt="" class="item-photo" /></a>
-                                                <div class="item-content">
-                                                    <h3><a href="post.html">
-                                                        <?php $tad = mb_substr($value->title,0,50); echo $tad?>
-                                                    </a></h3>
-                                                </div>
-                                            </div>
-                                        <?php endforeach; ?>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                     <!-- END .panel -->
                                 </div>
 
-                                <!-- BEGIN .panel -->
-                                <div class="panel">
-                                    <div class="p-title">
-                                        <h2 style="background-color: rgb(11, 82, 100);">Бизни кузатиб боринг</h2>
-                                    </div>
-                                    <a href="#" class="upper-title">Read More<i class="fa fa-caret-right"></i></a>
-                                    <div class="review-block">
+                            </div>
+                            <!-- END .panel-split -->
+                        </div>
 
-                                        <div class="item">
-                                            <a href="post-review.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$tadbir->image?>" class="item-photo" alt="" /></a>
-                                            <h3><a href="post-review.html">
-                                                    <?php $tad = mb_substr($tadbir->title,0,50); echo $tad?>
-                                                </a></h3>
-                                          
-                                            <p>
-                                                <?php $tad = mb_substr($tadbir->text,0,119); echo $tad?>
-                                                <a href="post-review.html"> Read More ...</a></p>
+                        <!-- BEGIN .panel -->
+                        <div class="panel">
+                            <div class="p-title">
+                                <h2  style="background-color: rgb(11, 82, 100);">Эьлонлар ва тендорлар</h2>
+                            </div>
+                            <a href="blog.html" class="upper-title">Батафсил<i class="fa fa-caret-right"></i></a>
+                            <div>
+                                <div class="panel-split">
+                                    <div class="left-side">
+                                        <div class="article-list">
+
+                                            <div class="item main-artice light">
+                                                <div class="item-header">
+                                                    <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/elonlar/<?=$elon->image?>" alt="" class="item-photo" /></a>
+                                                    <div class="article-slide">
+                                                        <h3><a href="post.html">
+                                                            <?php $tad = mb_substr($elon->title,0,50); echo $tad?>
+                                                            ...
+                                                        </a></h3>
+                                                    </div>
+                                                </div>
+                                                <div class="item-content">
+                                                    <p>
+                                                        <?php $tad = mb_substr($elon->text,0,119); echo $tad?>
+                                                    ...</p>
+                                                </div>
+                                            </div>
+
                                         </div>
+                                    </div>
+                                    <div class="right-side">
+                                        <div class="article-list">
 
-                                        <div class="item">
-                                            <a href="post-review.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$tanlov->image?>" class="item-photo" alt="" /></a>
-                                            <h3><a href="post-review.html">
-                                                    <?php $tad = mb_substr($tanlov->title,0,50); echo $tad?>
-                                                </a></h3>
-                                           
-                                            <p>
-                                                <?php $tad = mb_substr($tanlov->text,0,119); echo $tad?>
-                                                <a href="post-review.html"> Read More ...</a></p>
+                                            <?php foreach ($elonlar as $key => $value) : ?>
+                                                <div class="item">
+                                                    <a href="#"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/elonlar/<?=$value->image?>" alt="" class="item-photo" /></a>
+                                                    <div class="item-content">
+                                                        <h3><a href="post.html">
+                                                            <?php $tad = mb_substr($value->title,0,50); echo $tad?>
+                                                        </a></h3>
+                                                    </div>
+                                                </div>
+                                            <?php endforeach; ?>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END .panel -->
+                        </div>
+
+                        <!-- BEGIN .panel -->
+                        <div class="panel">
+                            <div class="p-title">
+                                <h2 style="background-color: rgb(11, 82, 100);">Бизни кузатиб боринг</h2>
+                            </div>
+                            <a href="#" class="upper-title">Read More<i class="fa fa-caret-right"></i></a>
+                            <div class="review-block">
+
+                                <div class="item">
+                                    <a href="post-review.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$tadbir->image?>" class="item-photo" alt="" /></a>
+                                    <h3><a href="post-review.html">
+                                        <?php $tad = mb_substr($tadbir->title,0,50); echo $tad?>
+                                    </a></h3>
+                                    
+                                    <p>
+                                        <?php $tad = mb_substr($tadbir->text,0,119); echo $tad?>
+                                        <a href="post-review.html"> Read More ...</a></p>
+                                    </div>
+
+                                    <div class="item">
+                                        <a href="post-review.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$tanlov->image?>" class="item-photo" alt="" /></a>
+                                        <h3><a href="post-review.html">
+                                            <?php $tad = mb_substr($tanlov->title,0,50); echo $tad?>
+                                        </a></h3>
+                                        
+                                        <p>
+                                            <?php $tad = mb_substr($tanlov->text,0,119); echo $tad?>
+                                            <a href="post-review.html"> Read More ...</a></p>
                                         </div>
 
                                         <div class="item">
                                             <a href="post-review.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/elonlar/<?=$elon->image?>" class="item-photo" alt="" /></a>
                                             <h3><a href="post-review.html">
-                                                    <?php $tad = mb_substr($elon->title,0,50); echo $tad?>
-                                                </a></h3>
+                                                <?php $tad = mb_substr($elon->title,0,50); echo $tad?>
+                                            </a></h3>
                                             
                                             <p>
-                                                 <?php $tad = mb_substr($elon->text,0,119); echo $tad?><a href="post-review.html"> Read More ...</a>
-                                                </p>
-                                        </div>
+                                               <?php $tad = mb_substr($elon->text,0,119); echo $tad?><a href="post-review.html"> Read More ...</a>
+                                           </p>
+                                       </div>
 
-                                    </div>
-                                    <!-- END .panel -->
+                                   </div>
+                                   <!-- END .panel -->
+                               </div>
+
+                               <!-- BEGIN .panel -->
+                               <div class="panel">
+                                <div class="banner banner-grid">
+                                    <a href="#" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/no-banner-300x250.jpg" alt=""></a>
+                                    <a href="#" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/no-banner-300x250.jpg" alt=""></a>
                                 </div>
-
-                                <!-- BEGIN .panel -->
-                                <div class="panel">
-                                    <div class="banner banner-grid">
-                                        <a href="#" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/no-banner-300x250.jpg" alt=""></a>
-                                        <a href="#" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/no-banner-300x250.jpg" alt=""></a>
-                                    </div>
-                                    <!-- END .panel -->
-                                </div>
-
-                                <!-- BEGIN .panel -->
-                                <div class="panel">
-                                    <div class="p-title">
-                                        <h2 style="background-color: rgb(11, 82, 100);">Фойдали манзиллар</h2>
-                                    </div>
-                                    <div class="video-carousel" >
-                                        <a href="#" class="carousel-left"><i class="fa fa-chevron-left"></i></a>
-                                        <a href="#" class="carousel-right"><i class="fa fa-chevron-right"></i></a>
-                                        <!-- BEGIN .inner-carousel -->
-                                        <div class="inner-carousel" >
-                                            
-                                            <div class="item">
-                                                <center>
-                                                     <a href="https://president.uz/" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/1.png?>" class="item-photo" alt="" /></a>
-                                                </center>
-                                                <center>
-                                                    <h3><a href="https://president.uz/" target="_blank">Ўзбекистон Республикаси Давлат Хукумати Портали</a></h3>
-                                                </center>
-                                            </div>
-                                        
-                                             <div class="item">
-                                                <center>
-                                                    <a href="https://lex.uz/" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/2.png" class="item-photo" alt="" /></a>
-                                                </center>
-                                                <center>
-                                                    <h3><a href="https://lex.uz/" target="_blank">Ўзбекистон Республикаси Миллий Қонунчилиги онлайн базаси</a></h3>
-                                                </center>
-                                            </div>
-
-                                             <div class="item">
-                                               <center> 
-                                                    <a href="https://lex.uz/" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/3.png" class="item-photo" alt="" /></a>
-                                                </center>
-                                                <center>
-                                                <h3><a href="https://lex.uz/" target="_blank">Ўзбекистон Республикаси Президенти Матбуот Хизмати</a></h3>
-                                                </center>
-                                            </div>
-                                            <div class="item">
-                                                <center>
-                                                    <a href="http://senat.gov.uz " target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/4.png" class="item-photo" alt="" /></a>
-                                                 </center>
-                                                 <center>
-                                                    <h3><a href="http://senat.gov.uz" target="_blank">Ўзбекистон Республикаси Олий Мажлиси Сенати</a></h3>
-                                                </center>
-                                            </div>
-                                            <div class="item">
-                                                <center>
-                                                    <a href="http://parliament.gov.uz" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/5.png" class="item-photo" alt="" /></a>
-                                                </center>
-                                                <center>
-                                                    <h3><a href="http://parliament.gov.uz" target="_blank">Ўзбекистон Республикаси Олий Мажлиси Қонунчилик палатаси</a></h3>
-                                                </center>
-                                            </div>
-                                        
-                                            
-                                        
-                                            <!-- END .inner-carousel -->
-                                        </div>
-                                    </div>
-                                    <!-- END .panel -->
-                                </div>
-
+                                <!-- END .panel -->
                             </div>
+
+                            <!-- BEGIN .panel -->
+                            <div class="panel">
+                                <div class="p-title">
+                                    <h2 style="background-color: rgb(11, 82, 100);">Фойдали манзиллар</h2>
+                                </div>
+                                <div class="video-carousel" >
+                                    <a href="#" class="carousel-left"><i class="fa fa-chevron-left"></i></a>
+                                    <a href="#" class="carousel-right"><i class="fa fa-chevron-right"></i></a>
+                                    <!-- BEGIN .inner-carousel -->
+                                    <div class="inner-carousel" >
+                                        
+                                        <div class="item">
+                                            <center>
+                                               <a href="https://president.uz/" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/1.png?>" class="item-photo" alt="" /></a>
+                                           </center>
+                                           <center>
+                                            <h3><a href="https://president.uz/" target="_blank">Ўзбекистон Республикаси Давлат Хукумати Портали</a></h3>
+                                        </center>
+                                    </div>
+                                    
+                                    <div class="item">
+                                        <center>
+                                            <a href="https://lex.uz/" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/2.png" class="item-photo" alt="" /></a>
+                                        </center>
+                                        <center>
+                                            <h3><a href="https://lex.uz/" target="_blank">Ўзбекистон Республикаси Миллий Қонунчилиги онлайн базаси</a></h3>
+                                        </center>
+                                    </div>
+
+                                    <div class="item">
+                                     <center> 
+                                        <a href="https://lex.uz/" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/3.png" class="item-photo" alt="" /></a>
+                                    </center>
+                                    <center>
+                                        <h3><a href="https://lex.uz/" target="_blank">Ўзбекистон Республикаси Президенти Матбуот Хизмати</a></h3>
+                                    </center>
+                                </div>
+                                <div class="item">
+                                    <center>
+                                        <a href="http://senat.gov.uz " target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/4.png" class="item-photo" alt="" /></a>
+                                    </center>
+                                    <center>
+                                        <h3><a href="http://senat.gov.uz" target="_blank">Ўзбекистон Республикаси Олий Мажлиси Сенати</a></h3>
+                                    </center>
+                                </div>
+                                <div class="item">
+                                    <center>
+                                        <a href="http://parliament.gov.uz" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/5.png" class="item-photo" alt="" /></a>
+                                    </center>
+                                    <center>
+                                        <h3><a href="http://parliament.gov.uz" target="_blank">Ўзбекистон Республикаси Олий Мажлиси Қонунчилик палатаси</a></h3>
+                                    </center>
+                                </div>
+                                
+                                
+                                
+                                <!-- END .inner-carousel -->
+                            </div>
+                        </div>
+                        <!-- END .panel -->
+                    </div>
+
+                </div>
 
 
 
