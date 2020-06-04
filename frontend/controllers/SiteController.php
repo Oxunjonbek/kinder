@@ -94,6 +94,7 @@ class SiteController extends Controller
         $elonlar = Elonlar::find()->orderBy(['id'=>SORT_DESC])->limit(4)->all();
         $item3 = Tadbir::find()->orderBy(['id'=>SORT_DESC])->limit(3)->all();
         $tanlov3 = Tanlov::find()->orderBy(['id'=>SORT_DESC])->limit(3)->all();
+        $tadbirs = Tadbir::find()->all();
         return $this->render('index',[
             'elon'=>$elon,
             'tadbir'=>$tadbir,
@@ -102,6 +103,7 @@ class SiteController extends Controller
             'tanlovlar'=>$tanlovlar,
             'elonlar'=>$elonlar,
             'item3'=>$item3,
+            'tadbirs'=>$tadbirs,
             'tanlov3'=>$tanlov3
         ]);
     }

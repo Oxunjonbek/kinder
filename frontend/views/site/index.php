@@ -281,11 +281,13 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                         <a href="#" class="carousel-right"><i class="fa fa-chevron-right"></i></a>
                                         <!-- BEGIN .inner-carousel -->
                                         <div class="inner-carousel">
+                                            <?php foreach ($tadbirs as $key => $value) : ?>
                                             <div class="item">
-                                                <a href="post-video.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-20.jpg" class="item-photo" alt="" /></a>
-                                                <h3><a href="post-video.htm">The all-new BMW i8. Official Launch Video</a></h3>
+                                                <a href="#"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$value->image?>" class="item-photo" alt="" /></a>
+                                                <h3><a href="#"><?=$value->title?></a></h3>
                                             </div>
-                                            <div class="item">
+                                        <?php endforeach; ?>
+                                            <!-- <div class="item">
                                                 <a href="post-video.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-21.jpg" class="item-photo" alt="" /></a>
                                                 <h3><a href="post-video.htm">BMW 335Dx Review</a></h3>
                                             </div>
@@ -312,7 +314,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                             <div class="item">
                                                 <a href="post-video.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-22.jpg" class="item-photo" alt="" /></a>
                                                 <h3><a href="post-video.htm">BMW M5 V8 5.0L Review</a></h3>
-                                            </div>
+                                            </div> -->
                                             <!-- END .inner-carousel -->
                                         </div>
                                     </div>
