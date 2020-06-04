@@ -122,7 +122,7 @@ $rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `t
                             <div class="article-list">
                                 <?php foreach ($qonunlar as $key => $value) : ?>
                                 <div class="item">
-                                    <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-1.jpg" alt="" class="item-photo" /></a>
+                                    <a href="lex.uz"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/lex.uz.png" alt="" class="item-photo" /></a>
                                     <div class="item-content">
                                         <h3><a href="post.html"><?=$value->name?></a></h3>
                                         <!-- <span>4 Jan, 2014</span>
