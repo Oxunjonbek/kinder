@@ -51,15 +51,21 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                     </a> -->
                                 </div>
                                 <ul class="slider-navigation">
-                                    <li class="active" style="width: 279px; height: 79px;">
-                                        <a href="#" data-target="1">
+                                        <?php $r = 1;if ($r==1) {
+                                            $s = 'active';
+                                        }else{
+                                            $s='';
+                                        } foreach ($tadbirlar as $key => $value) : ?>
+                                    <li class="<?=$s?>" style="width: 279px; height: 79px;">
+                                        <a href="#" data-target="<?=$r?>">
 
-                                            <strong>25- Май «Хайр боғчам» онлайн кўрик-танлови ғолиблари</strong>
-                                            <span>Ўзбекистан Республикаси Президентининг 2018 йил 2-февралдаги “Хотин-қизларни қўллаб-қувватлаш...</span>
+                                            <strong><?=$value->title?></strong>
+                                            <!-- <span>Ўзбекистан Республикаси Президентининг 2018 йил 2-февралдаги “Хотин-қизларни қўллаб-қувватлаш...</span> -->
 
                                         </a>
+                                    <?php  endforeach; $r++ ?>
                                     </li>
-                                    <li>
+                                    <!-- <li>
                                         <a href="#" data-target="2">
 
                                             <strong>Sea ea noluisse reprimique repudiandae vis at natum comprehensam</strong>
@@ -80,7 +86,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                             <strong>Paulo quidam maluisset ei vim vel nobis nominavi ei</strong>
                                             <span>Eos et fabulas perfecto. Ei tacimates forensibus est. Mea natum graece recteque ad, autem moderatius eam te, et cum ferri liber assueverit.</span>
                                         </a>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </div>
                         <!-- END .panel -->
