@@ -87,30 +87,9 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                                 <a href="#"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$value->image?>" alt="" class="item-photo" /></a>
                                                 <div class="item-content">
                                                     <h3><a href="post.html"><?=$value->title?></a></h3>
-                                                <!-- <span>4 Jan, 2014</span>
-                                                <a href="post.html#comments"><span>3 Comments</span></a>
-                                                <div class="ot-star-rating"><span style="width:60%"><strong class="rating">3</strong> out of 5</span> -->
                                                 </div>
                                             </div>
                                         <?php endforeach; ?>
-                                        <!-- <div class="item">
-                                            <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-2.jpg" alt="" class="item-photo" /></a>
-                                            <div class="item-content">
-                                                <h3><a href="post.html">Eurozone Manufacturing Industry Rises Sharply in January</a></h3>
-                                                <span>4 Jan, 2014</span>
-                                                <a href="post.html#comments"><span>3 Comments</span></a>
-                                                <div class="ot-star-rating"><span style="width:70%"><strong class="rating">3.50</strong> out of 5</span></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="item">
-                                            <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-3.jpg" alt="" class="item-photo" /></a>
-                                            <div class="item-content">
-                                                <h3><a href="post.html">Unexpected Drop in Euro Area</a></h3>
-                                                <span>4 Jan, 2014</span>
-                                                <a href="post.html#comments"><span>3 Comments</span></a>
-                                            </div>
-                                        </div> -->
 
                                     </div>
                                     <!-- END .panel -->
@@ -175,18 +154,13 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
 
                                                     <div class="item main-artice light">
                                                         <div class="item-header">
-                                                            <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-15.jpg" alt="" class="item-photo" /></a>
+                                                            <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/elonlar/<?=$elon->image?>" alt="" class="item-photo" /></a>
                                                             <div class="article-slide">
-                                                                <h3><a href="post.html">BMW E60 Test Drive from TOP GEAR</a></h3>
-                                                                <a href="post.html" class="info-line">
-                                                                    <span>4 JAN, 2014</span>
-                                                                    <span>by Orange-Themes</span>
-                                                                    <span>11 comments</span>
-                                                                </a>
+                                                                <h3><a href="post.html"><?=$elon->title?></a></h3>
                                                             </div>
                                                         </div>
                                                         <div class="item-content">
-                                                            <p>Sotheby’s in London is getting ready for another seasonal display of wealth, as some of world’s. Sotheby’s in London is getting ready for another seasonal display of wealth, as some</p>
+                                                            <p><?=$elon->text?></p>
                                                         </div>
                                                     </div>
 
@@ -195,41 +169,17 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                             <div class="right-side">
                                                 <div class="article-list">
 
-                                                    <div class="item">
-                                                        <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-1.jpg" alt="" class="item-photo" /></a>
-                                                        <div class="item-content">
-                                                            <h3><a href="post.html">BMW 530D Tunign from Hamman</a></h3>
-                                                            <span>4 Jan, 2014</span>
-                                                            <a href="post.html#comments"><span>3 Comments</span></a>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="item">
-                                                        <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-2.jpg" alt="" class="item-photo" /></a>
-                                                        <div class="item-content">
-                                                            <h3><a href="post.html">Eurozone Manufacturing Industry Rises Sharply in January</a></h3>
-                                                            <span>4 Jan, 2014</span>
-                                                            <a href="post.html#comments"><span>3 Comments</span></a>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="item">
-                                                        <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-3.jpg" alt="" class="item-photo" /></a>
-                                                        <div class="item-content">
-                                                            <h3><a href="post.html">Unexpected Drop in Euro Area</a></h3>
-                                                            <span>4 Jan, 2014</span>
-                                                            <a href="post.html#comments"><span>3 Comments</span></a>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="item">
-                                                        <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-3.jpg" alt="" class="item-photo" /></a>
-                                                        <div class="item-content">
-                                                            <h3><a href="post.html">Unexpected Drop in Euro Area</a></h3>
-                                                            <span>4 Jan, 2014</span>
-                                                            <a href="post.html#comments"><span>3 Comments</span></a>
-                                                        </div>
-                                                    </div>
+                                                    <?php foreach ($elonlar as $key => $value) : ?>
+                                            <div class="item">
+                                                <a href="#"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/elonlar/<?=$value->image?>" alt="" class="item-photo" /></a>
+                                                <div class="item-content">
+                                                    <h3><a href="post.html"><?=$value->title?></a></h3>
+                                                <!-- <span>4 Jan, 2014</span>
+                                                <a href="post.html#comments"><span>3 Comments</span></a>
+                                                <div class="ot-star-rating"><span style="width:60%"><strong class="rating">3</strong> out of 5</span> -->
+                                                </div>
+                                            </div>
+                                        <?php endforeach; ?>
 
                                                 </div>
                                             </div>
