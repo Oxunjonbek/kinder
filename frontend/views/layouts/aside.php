@@ -2,6 +2,7 @@
 use common\models\Qonunlar;
 $qonunlar = Qonunlar::find()->limit(4)->all();
 $rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `tanlov` ON `tadbir`.`id` = `tanlov`.`id` LIMIT 0, 4')->queryAll();
+
         // var_dump($rows);exit();
          ?>                    
                     <aside id="sidebar">
@@ -38,36 +39,10 @@ $rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `t
                                         </div>
                                     </div>
                                     <?php endforeach; ?>
-                                    <!-- <div class="item">
-                                        <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-2.jpg" alt="" class="item-photo" /></a>
-                                        <div class="item-content">
-                                            <h3><a href="post.html">Eurozone Manufacturing Industry Rises Sharply in January</a></h3>
-                                            <span>15 JAN, 2014</span>
-                                            <a href="post.html#comments"><span>5 Comments</span></a>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="item">
-                                        <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-3.jpg" alt="" class="item-photo" /></a>
-                                        <div class="item-content">
-                                            <h3><a href="post.html">Unexpected Drop in Euro Area</a></h3>
-                                            <span>4 Jan, 2014</span>
-                                            <a href="post.html#comments"><span>0 Comments</span></a>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="item">
-                                        <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-3.jpg" alt="" class="item-photo" /></a>
-                                        <div class="item-content">
-                                            <h3><a href="post.html">Unexpected Drop in Euro Area</a></h3>
-                                            <span>4 Jan, 2014</span>
-                                            <a href="post.html#comments"><span>0 Comments</span></a>
-                                        </div>
-                                    </div> -->
 
-                                    <div class="more-button">
+                                    <!-- <div class="more-button">
                                         <a href="blog.html">Ва ҳоказо ...</a>
-                                    </div>
+                                    </div> -->
                                 </div>
 
                                 <!-- Second Tab -->
@@ -99,9 +74,9 @@ $rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `t
                                         </div>
                                     </div>
 
-                                    <div class="more-button">
+                                    <!-- <div class="more-button">
                                         <a href="blog.html">More Articles</a>
-                                    </div>
+                                    </div> -->
                                 </div>
 
                                 <!-- Third Tab -->
@@ -155,36 +130,11 @@ $rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `t
                                     </div>
                                 </div>
                                 <?php endforeach; ?>
-                                <!-- <div class="item">
-                                    <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-2.jpg" alt="" class="item-photo" /></a>
-                                    <div class="item-content">
-                                        <h3><a href="post.html">Eurozone Manufacturing Industry Rises Sharply in January</a></h3>
-                                        <span>15 JAN, 2014</span>
-                                        <a href="post.html#comments"><span>5 Comments</span></a>
-                                    </div>
-                                </div>
-                                
-                                <div class="item">
-                                    <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-3.jpg" alt="" class="item-photo" /></a>
-                                    <div class="item-content">
-                                        <h3><a href="post.html">Unexpected Drop in Euro Area</a></h3>
-                                        <span>4 Jan, 2014</span>
-                                        <a href="post.html#comments"><span>0 Comments</span></a>
-                                    </div>
-                                </div>
-                                
-                                <div class="item">
-                                    <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-3.jpg" alt="" class="item-photo" /></a>
-                                    <div class="item-content">
-                                        <h3><a href="post.html">Unexpected Drop in Euro Area</a></h3>
-                                        <span>4 Jan, 2014</span>
-                                        <a href="post.html#comments"><span>0 Comments</span></a>
-                                    </div>
-                                </div> -->
-
+                              
+<!-- 
                                 <div class="more-button">
                                     <a href="blog.html">Ва ҳоказо ...</a>
-                                </div>
+                                </div> -->
 
                             </div>
                         <!-- END .widget -->
