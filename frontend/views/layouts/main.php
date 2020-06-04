@@ -110,10 +110,10 @@ $tanlov = Tanlov::find()->orderBy(['id'=>SORT_ASC])->limit(3)->all();
             <!-- BEGIN .content -->
         </section>
         <!-- BEGIN .footer -->
-        <footer class="footer">
+        <footer class="footer" style="background-color: rgb(11, 82, 100);">
 
             <!-- BEGIN .wrapper -->
-            <div class="wrapper">
+            <div class="wrapper" >
 
                 <!-- BEGIN .footer-widgets -->
                 <div class="footer-widgets">
