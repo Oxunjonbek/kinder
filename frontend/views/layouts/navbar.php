@@ -4,7 +4,7 @@ use common\models\Elonlar;
 $elon = Elonlar::find()->orderBy(['id'=>SORT_DESC])->one();
 $elonlar = Elonlar::find()->orderBy(['id'=>SORT_DESC])->limit(4)->all();
 ?>
-<nav class="main-menu">
+<nav class="main-menu" style="background-color: rgb(11, 82, 100);">
 
                     <!-- BEGIN .wrapper -->
                     <div class="wrapper">

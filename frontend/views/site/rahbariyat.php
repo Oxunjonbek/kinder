@@ -2,8 +2,8 @@
 
 						<!-- BEGIN .panel -->
 						<div class="panel">
-							<div class="p-title">
-								<h2>Рахбарият</h2>
+							<div class="p-title" >
+								<h2 style="background-color: rgb(11, 82, 100);">Рахбарият</h2>
 							</div>
 							<div class="blog-list style-1">
 								<?php foreach($genels as $genel):?>

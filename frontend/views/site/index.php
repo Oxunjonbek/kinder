@@ -62,7 +62,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                 <!-- BEGIN .panel -->
                                 <div class="panel">
                                     <div class="p-title">
-                                        <h2>Tадбирлар</h2>
+                                        <h2 style="background-color: rgb(11, 82, 100);">Tадбирлар</h2>
                                     </div>
                                     <div class="article-list">
 
@@ -144,7 +144,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                 <!-- BEGIN .panel -->
                                 <div class="panel">
                                     <div class="p-title">
-                                        <h2>Эьлонлар ва тендорлар</h2>
+                                        <h2  style="background-color: rgb(11, 82, 100);">Эьлонлар ва тендорлар</h2>
                                     </div>
                                     <a href="blog.html" class="upper-title">Батафсил<i class="fa fa-caret-right"></i></a>
                                     <div>
@@ -191,7 +191,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                 <!-- BEGIN .panel -->
                                 <div class="panel">
                                     <div class="p-title">
-                                        <h2>Бизни кузатиб боринг</h2>
+                                        <h2 style="background-color: rgb(11, 82, 100);">Бизни кузатиб боринг</h2>
                                     </div>
                                     <a href="#" class="upper-title">Read More<i class="fa fa-caret-right"></i></a>
                                     <div class="review-block">
@@ -233,7 +233,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                 <!-- BEGIN .panel -->
                                 <div class="panel">
                                     <div class="p-title">
-                                        <h2>Фойдали манзиллар</h2>
+                                        <h2 style="background-color: rgb(11, 82, 100);">Фойдали манзиллар</h2>
                                     </div>
                                     <div class="video-carousel" >
                                         <a href="#" class="carousel-left"><i class="fa fa-chevron-left"></i></a>

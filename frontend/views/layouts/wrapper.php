@@ -1,5 +1,5 @@
                 <!-- BEGIN .wrapper -->
-                <div class="wrapper">
+                <div class="wrapper" style="background-color: rgb(11, 82, 100);">
 
                     <!-- BEGIN .breaking-news -->
                     <div class="breaking-news">
