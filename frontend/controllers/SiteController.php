@@ -91,12 +91,14 @@ class SiteController extends Controller
         $tanlov = Tanlov::find()->orderBy(['id'=>SORT_DESC])->one();
         $tanlovlar = Tanlov::find()->orderBy(['id'=>SORT_DESC])->limit(4)->all();
         $tadbirlar = Tadbir::find()->orderBy(['id'=>SORT_DESC])->limit(4)->all();
+        $item3 = Tadbir::find()->orderBy(['id'=>SORT_DESC])->limit(3)->all();
         return $this->render('index',[
             'elon'=>$elon,
             'tadbir'=>$tadbir,
             'tanlov'=>$tanlov,
             'tadbirlar'=>$tadbirlar,
-            'tanlovlar'=>$tanlovlar
+            'tanlovlar'=>$tanlovlar,
+            'item3'=>$item3
         ]);
     }
 
