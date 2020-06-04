@@ -238,7 +238,7 @@
                         <!-- BEGIN .widget -->
                         <div class="widget">
                             <div class="w-title">
-                                <h3>Photo Gallery</h3>
+                                <h3>Фото Галерия</h3>
                             </div>
                             <div class="w-gallery">
                                 <a href="photo-gallery.html" class="upper-title">More Galleries<i class="fa fa-caret-right"></i></a>
