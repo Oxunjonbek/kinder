@@ -308,9 +308,12 @@ class SiteController extends Controller
         ]);
     }
 
-    public function actionTadbirSingle()
+    public function actionTadbirSingle($id=null)
     {
-        return $this->render('tadbirlar-single');
+        $tadbir = Tadbir::find()->where(['id'=>$id])->one();
+        return $this->render('tadbirlar-single',[
+            'tadbir'=>$tadbir
+        ]);
     }
 
     public function actionTanlovlar()
