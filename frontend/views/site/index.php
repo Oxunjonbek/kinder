@@ -3,6 +3,18 @@
 /* @var $this yii\web\View */
 
 $this->title = 'KinderGarden';
+$sub = substr($elon->title, 0, 59);
+$sub1 = substr($elon->text, 0, 119);
+$tad = substr($tadbir->title, 0, 59);
+$tad1 = substr($tadbir->text, 0, 119);
+$tan = substr($tanlov->title, 0, 59);
+$tan1 = substr($tanlov->text, 0, 119);
+$sub2 = substr($elon->title, 0, 40);
+$sub12 = substr($elon->text, 0, 100);
+$tad2 = substr($tadbir->title, 0, 40);
+$tad12 = substr($tadbir->text, 0, 100);
+$tan2 = substr($tanlov->title, 0, 40);
+$tan12 = substr($tanlov->text, 0, 100);
 ?>
 
                 
@@ -18,22 +30,22 @@ $this->title = 'KinderGarden';
                                 <div class="slider-image">
                                     <a href="post.html" class="active">
                                         <span class="slider-overlay">
-                                            <strong><?php  substr($elon->title, 0, 20);  echo $elon->title?></strong>
-                                            <span><?php  substr($elon->text, 0, 120);  echo $elon->text?></span>
+                                            <strong><?=$sub?></strong>
+                                            <span><?=$sub1?></span>
                                         </span>
                                         <img src="<?=Yii::getAlias('@web')?>/admin/uploads/elonlar/<?=$elon->image?>" class="setborder" alt="" title="" />
                                     </a>
                                     <a href="post.html">
                                         <span class="slider-overlay">
-                                           <strong><?php  substr($tanlov->title, 0, 20);  echo $tanlov->title?></strong>
-                                            <span><?php  substr($tanlov->text, 0, 120);  echo $tanlov->text?></span>
+                                           <strong><?=$tad?></strong>
+                                            <span><?=$tad1?></span>
                                         </span>
                                         <img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$tanlov->image?>" class="setborder" alt="" title="" />
                                     </a>
                                     <a href="post.html">
                                         <span class="slider-overlay">
-                                            <strong><?php  substr($tadbir->title, 0, 20);  echo $tadbir->title?></strong>
-                                            <span><?php  substr($tadbir->text, 0, 120);  echo $tadbir->text?></span>
+                                            <strong><?=$tan?></strong>
+                                            <span><?=$tan1?></span>
                                         </span>
                                         <img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$tadbir->image?>" alt="" title="" />
                                     </a>
@@ -48,22 +60,20 @@ $this->title = 'KinderGarden';
                                 <ul class="slider-navigation">
                                     <li class="active">
                                         <a href="#" data-target="1">
-                                            <strong><?php  substr($elon->title, 0, 20);  echo $elon->title?></strong>
-                                            <span><?php  substr($elon->text, 0, 70);  echo $elon->text?></span>
+                                            <strong><?=$sub2?></strong>
+                                            <span><?=$sub12?></span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" data-target="2">
-                                            <strong><?php  substr($tanlov->title, 0, 20);  echo $tanlov->title?></strong>
-                                            <span><?php  substr($tanlov->text, 0, 70);  echo $tanlov->text?></span>
+                                            <strong><?=$tan1?></strong>
+                                            <span><?=$tan12?></span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" data-target="3">
-                                            <span class="slider-overlay">
-                                            <strong><?php  substr($tadbir->title, 0, 20);  echo $tadbir->title?></strong>
-                                            <span><?php  substr($tadbir->text, 0, 70);  echo $tadbir->text?></span>
-                                        </span>
+                                            <strong><?=$tad1?></strong>
+                                            <span><?=$tad12?></span>
                                         </a>
                                     </li>
                                     <li>
@@ -175,7 +185,7 @@ $this->title = 'KinderGarden';
                                         <div class="item">
                                             <a href="#"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$value->image?>" alt="" class="item-photo" /></a>
                                             <div class="item-content">
-                                                <h3><a href="post.html"><?php substr($value->text, 0, 05); echo $value->title ?></a></h3>
+                                                <h3><a href="post.html"><?php $val = substr($value->text, 0, 40); echo $val ?></a></h3>
                                                 <!-- <span>4 Jan, 2014</span>
                                                 <a href="post.html#comments"><span>3 Comments</span> -->
                                                 </a>
