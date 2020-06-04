@@ -276,45 +276,57 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                     <div class="p-title">
                                         <h2>Фойдали манзиллар</h2>
                                     </div>
-                                    <div class="video-carousel">
+                                    <div class="video-carousel" >
                                         <a href="#" class="carousel-left"><i class="fa fa-chevron-left"></i></a>
                                         <a href="#" class="carousel-right"><i class="fa fa-chevron-right"></i></a>
                                         <!-- BEGIN .inner-carousel -->
-                                        <div class="inner-carousel">
-                                            <?php foreach ($tadbirs as $key => $value) : ?>
+                                        <div class="inner-carousel" >
+                                            
                                             <div class="item">
-                                                <a href=""><img src="<?=Yii::getAlias('@web')?>/foto/images/1.png?>" class="item-photo" alt="" /></a>
-                                                <h3><a href="#"><?=$value->title?></a></h3>
+                                                <center>
+                                                     <a href="https://president.uz/" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/1.png?>" class="item-photo" alt="" /></a>
+                                                </center>
+                                                <center>
+                                                    <h3><a href="https://president.uz/" target="_blank">Ўзбекистон Республикаси Давлат Хукумати Портали</a></h3>
+                                                </center>
                                             </div>
-                                        <?php endforeach; ?>
-                                            <!-- <div class="item">
-                                                <a href="post-video.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-21.jpg" class="item-photo" alt="" /></a>
-                                                <h3><a href="post-video.htm">BMW 335Dx Review</a></h3>
+                                        
+                                             <div class="item">
+                                                <center>
+                                                    <a href="https://lex.uz/" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/2.png" class="item-photo" alt="" /></a>
+                                                </center>
+                                                <center>
+                                                    <h3><a href="https://lex.uz/" target="_blank">Ўзбекистон Республикаси Миллий Қонунчилиги онлайн базаси</a></h3>
+                                                </center>
                                             </div>
-                                            <div class="item">
-                                                <a href="post-video.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-22.jpg" class="item-photo" alt="" /></a>
-                                                <h3><a href="post-video.htm">BMW M5 V8 5.0L Review</a></h3>
-                                            </div>
-                                            <div class="item">
-                                                <a href="post-video.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-20.jpg" class="item-photo" alt="" /></a>
-                                                <h3><a href="post-video.htm">The all-new BMW i8. Official Launch Video</a></h3>
-                                            </div>
-                                            <div class="item">
-                                                <a href="post-video.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-21.jpg" class="item-photo" alt="" /></a>
-                                                <h3><a href="post-video.htm">BMW 335Dx Review</a></h3>
-                                            </div>
-                                            <div class="item">
-                                                <a href="post-video.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-20.jpg" class="item-photo" alt="" /></a>
-                                                <h3><a href="post-video.htm">The all-new BMW i8. Official Launch Video</a></h3>
-                                            </div>
-                                            <div class="item">
-                                                <a href="post-video.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-21.jpg" class="item-photo" alt="" /></a>
-                                                <h3><a href="post-video.htm">BMW 335Dx Review</a></h3>
+
+                                             <div class="item">
+                                               <center> 
+                                                    <a href="https://lex.uz/" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/3.png" class="item-photo" alt="" /></a>
+                                                </center>
+                                                <center>
+                                                <h3><a href="https://lex.uz/" target="_blank">Ўзбекистон Республикаси Президенти Матбуот Хизмати</a></h3>
+                                                </center>
                                             </div>
                                             <div class="item">
-                                                <a href="post-video.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-22.jpg" class="item-photo" alt="" /></a>
-                                                <h3><a href="post-video.htm">BMW M5 V8 5.0L Review</a></h3>
-                                            </div> -->
+                                                <center>
+                                                    <a href="http://senat.gov.uz " target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/4.png" class="item-photo" alt="" /></a>
+                                                 </center>
+                                                 <center>
+                                                    <h3><a href="http://senat.gov.uz" target="_blank">Ўзбекистон Республикаси Олий Мажлиси Сенати</a></h3>
+                                                </center>
+                                            </div>
+                                            <div class="item">
+                                                <center>
+                                                    <a href="http://parliament.gov.uz" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/5.png" class="item-photo" alt="" /></a>
+                                                </center>
+                                                <center>
+                                                    <h3><a href="http://parliament.gov.uz" target="_blank">Ўзбекистон Республикаси Олий Мажлиси Қонунчилик палатаси</a></h3>
+                                                </center>
+                                            </div>
+                                        
+                                            
+                                        
                                             <!-- END .inner-carousel -->
                                         </div>
                                     </div>
