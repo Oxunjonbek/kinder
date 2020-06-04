@@ -13,7 +13,7 @@
 									</div>
 									
 									<div class="item-content" style="padding-top:20px;">
-										<strong class="category-link">Direktor</strong>
+										<strong class="category-link">Лавозими</strong>
 										<h3 style="font-family: Times New Roman; font-weight: bold;"><?=$genel->name?></h3>
 										<p ><?=$genel->title?></p>
 									</div>

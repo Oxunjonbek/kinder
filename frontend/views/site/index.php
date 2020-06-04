@@ -199,62 +199,21 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                         <div class="item">
                                             <a href="post-review.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$tadbir->image?>" class="item-photo" alt="" /></a>
                                             <h3><a href="post-review.html"><?=$tadbir->title?></a></h3>
-                                            <div class="rating-table">
-                                                <div class="rate-item">
-                                                    <div class="right ot-star-rating">
-                                                       <!--  <span style="width:60%"><strong class="rating">3</strong> out of 5</span> -->
-                                                    </div>
-                                                    <strong>Design</strong>
-                                                </div>
-                                                <div class="rate-item">
-                                                    <div class="right ot-star-rating"><span style="width:50%"><strong class="rating">2.5</strong> out of 5</span></div>
-                                                    <strong>Engine</strong>
-                                                </div>
-                                                <div class="rate-item">
-                                                    <div class="right ot-star-rating"><span style="width:70%"><strong class="rating">3.5</strong> out of 5</span></div>
-                                                    <strong>Price</strong>
-                                                </div>
-                                            </div>
+                                          
                                             <p><?=$tadbir->text?><a href="post-review.html">Read More ...</a></p>
                                         </div>
 
                                         <div class="item">
                                             <a href="post-review.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$tanlov->image?>" class="item-photo" alt="" /></a>
                                             <h3><a href="post-review.html"><?=$tanlov->title?></a></h3>
-                                            <div class="rating-table">
-                                                <div class="rate-item">
-                                                    <div class="right ot-star-rating"><span style="width:60%"><strong class="rating">3</strong> out of 5</span></div>
-                                                    <strong>Design</strong>
-                                                </div>
-                                                <div class="rate-item">
-                                                    <div class="right ot-star-rating"><span style="width:20%"><strong class="rating">1</strong> out of 5</span></div>
-                                                    <strong>Engine</strong>
-                                                </div>
-                                                <div class="rate-item">
-                                                    <div class="right ot-star-rating"><span style="width:90%"><strong class="rating">4.5</strong> out of 5</span></div>
-                                                    <strong>Price</strong>
-                                                </div>
-                                            </div>
+                                           
                                             <p><?=$tanlov->text?><a href="post-review.html">Read More ...</a></p>
                                         </div>
 
                                         <div class="item">
                                             <a href="post-review.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/elonlar/<?=$elon->image?>" class="item-photo" alt="" /></a>
                                             <h3><a href="post-review.html"><?=$elon->title?></a></h3>
-                                            <div class="rating-table">
-                                                <div class="rate-item">
-                                                    <div class="right ot-star-rating"><span style="width:80%"><strong class="rating">4</strong> out of 5</span></div>
-                                                    <strong>Design</strong>
-                                                </div>
-                                                <div class="rate-item">
-                                                    <div class="right ot-star-rating"><span style="width:100%"><strong class="rating">5</strong> out of 5</span></div>
-                                                    <strong>Engine</strong>
-                                                </div>
-                                                <div class="rate-item">
-                                                    <div class="right ot-star-rating"><span style="width:60%"><strong class="rating">3</strong> out of 5</span></div>
-                                                    <strong>Price</strong>
-                                                </div>
-                                            </div>
+                                            
                                             <p><?=$elon->text?><a href="post-review.html">Read More ...</a></p>
                                         </div>
 
