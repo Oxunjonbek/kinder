@@ -1,4 +1,7 @@
-                    
+<?php 
+$rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `tanlov` ON `tadbir`.`id` = `tanlov`.`id` LIMIT 0, 4')->queryAll();
+        // var_dump($rows);exit();
+         ?>                    
                     <aside id="sidebar">
                         
                         <!-- BEGIN .widget -->
@@ -22,16 +25,18 @@
 
                                 <!-- First Tab -->
                                 <div class="article-list">
+                                    <?php foreach ($rows as $key => $value) : ?>
                                     <div class="item">
                                         <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-1.jpg" alt="" class="item-photo" /></a>
                                         <div class="item-content">
-                                            <h3><a href="post.html">BMW 530D Tunign from Hamman</a></h3>
-                                            <span>4 Jan, 2014</span>
-                                            <a href="post.html#comments"><span>3 Comments</span></a>
+                                            <h3><a href="post.html"><?=$value['title'];
+                                            // var_dump($value['title']);exit();?></a></h3>
+                                            <!-- <span>4 Jan, 2014</span>
+                                            <a href="post.html#comments"><span>3 Comments</span></a> -->
                                         </div>
                                     </div>
-                                    
-                                    <div class="item">
+                                    <?php endforeach; ?>
+                                    <!-- <div class="item">
                                         <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-2.jpg" alt="" class="item-photo" /></a>
                                         <div class="item-content">
                                             <h3><a href="post.html">Eurozone Manufacturing Industry Rises Sharply in January</a></h3>
@@ -56,7 +61,7 @@
                                             <span>4 Jan, 2014</span>
                                             <a href="post.html#comments"><span>0 Comments</span></a>
                                         </div>
-                                    </div>
+                                    </div> -->
 
                                     <div class="more-button">
                                         <a href="blog.html">More Articles</a>
