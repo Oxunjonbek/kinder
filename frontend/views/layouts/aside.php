@@ -203,7 +203,6 @@ $rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `t
                                     <a href="#" class="gallery-link-left"><i class="fa fa-chevron-left"></i></a>
                                     <a href="#" class="gallery-link-right"><i class="fa fa-chevron-right"></i></a>
                                     <div class="photo-images">
-                                        <a href="photo-gallery-single.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-11.jpg" alt="" /></a>
                                         <a href="photo-gallery-single.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-12.jpg" alt="" /></a>
                                         <a href="photo-gallery-single.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-13.jpg" alt="" /></a>
                                         <a href="photo-gallery-single.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-14.jpg" alt="" /></a>
