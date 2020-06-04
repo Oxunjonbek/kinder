@@ -1,4 +1,6 @@
 <?php 
+use common\models\Qonunlar;
+$qonunlar = Qonunlar::find()->limit(4)->all();
 $rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `tanlov` ON `tadbir`.`id` = `tanlov`.`id` LIMIT 0, 4')->queryAll();
         // var_dump($rows);exit();
          ?>                    
@@ -64,7 +66,7 @@ $rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `t
                                     </div> -->
 
                                     <div class="more-button">
-                                        <a href="blog.html">More Articles</a>
+                                        <a href="blog.html">Ва ҳоказо ...</a>
                                     </div>
                                 </div>
 
@@ -140,20 +142,20 @@ $rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `t
                         <!-- BEGIN .widget -->
                         <div class="widget">
                             <div class="w-title">
-                                <h3>Mақолалар</h3>
+                                <h3>Қонунлар</h3>
                             </div>
                             <div class="article-list">
-                                
+                                <?php foreach ($qonunlar as $key => $value) : ?>
                                 <div class="item">
                                     <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-1.jpg" alt="" class="item-photo" /></a>
                                     <div class="item-content">
-                                        <h3><a href="post.html">BMW 530D Tunign from Hamman</a></h3>
-                                        <span>4 Jan, 2014</span>
-                                        <a href="post.html#comments"><span>3 Comments</span></a>
+                                        <h3><a href="post.html"><?=$value->name?></a></h3>
+                                        <!-- <span>4 Jan, 2014</span>
+                                        <a href="post.html#comments"><span>3 Comments</span></a> -->
                                     </div>
                                 </div>
-                                
-                                <div class="item">
+                                <?php endforeach; ?>
+                                <!-- <div class="item">
                                     <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-2.jpg" alt="" class="item-photo" /></a>
                                     <div class="item-content">
                                         <h3><a href="post.html">Eurozone Manufacturing Industry Rises Sharply in January</a></h3>
@@ -178,10 +180,10 @@ $rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `t
                                         <span>4 Jan, 2014</span>
                                         <a href="post.html#comments"><span>0 Comments</span></a>
                                     </div>
-                                </div>
+                                </div> -->
 
                                 <div class="more-button">
-                                    <a href="blog.html">More Articles</a>
+                                    <a href="blog.html">Ва ҳоказо ...</a>
                                 </div>
 
                             </div>
