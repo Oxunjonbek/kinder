@@ -14,10 +14,10 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                 <div class="slider-image" style="width: 518px; height: 327px;">
                                     <?php foreach ($tadbirlar as $key => $value) : ?>
                                     <a href="post.html" class="active">
-                                        <span class="slider-overlay">
+                                        <span class="slider-overlay" style="font-size: 20px;">
 
 
-                                            <strong><?=$value->title?></strong>
+                                            <strong ><?=$value->title?></strong>
                                             
 
                                         </span>
