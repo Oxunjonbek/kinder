@@ -144,30 +144,15 @@ $tanlov = Tanlov::find()->orderBy(['id'=>SORT_ASC])->limit(3)->all();
                                 <div class="item">
                                     <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$value->image?>" alt="" class="item-photo" /></a>
                                     <div class="item-content">
-                                        <h3><a href="post.html"><?=$value->title?></a></h3>
+                                        <h3><a href="post.html">
+                                            <?php $val = mb_substr($value->title,0,119); echo $val?>...
+                                        </a></h3>
                                         <!-- <span>4 Jan, 2014</span>
                                             <a href="post.html#comments"><span>3 Comments</span></a> -->
                                         </div>
                                     </div>
                                 <?php endforeach; ?>
-                                <!-- <div class="item">
-                                    <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-2.jpg" alt="" class="item-photo" /></a>
-                                    <div class="item-content">
-                                        <h3><a href="post.html">Eurozone Manufacturing Industry Rises Sharply in January</a></h3>
-                                        <span>15 JAN, 2014</span>
-                                        <a href="post.html#comments"><span>5 Comments</span></a>
-                                    </div>
-                                </div>
-                                
-                                <div class="item">
-                                    <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-3.jpg" alt="" class="item-photo" /></a>
-                                    <div class="item-content">
-                                        <h3><a href="post.html">Unexpected Drop in Euro Area</a></h3>
-                                        <span>4 Jan, 2014</span>
-                                        <a href="post.html#comments"><span>0 Comments</span></a>
-                                    </div>
-                                </div> -->
-
+                               
                             </div>
                             <!-- END .widget -->
 
@@ -183,7 +168,8 @@ $tanlov = Tanlov::find()->orderBy(['id'=>SORT_ASC])->limit(3)->all();
                                     <div class="item">
                                         <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$value->image?>" alt="" class="item-photo" /></a>
                                         <div class="item-content">
-                                            <h3><a href="post.html"><?=$value->title?></a></h3>
+                                            <h3><a href="post.html">
+                                                <?php $val = mb_substr($value->title,0,119); echo $val?>...</a></h3>
                                         <!-- <span>4 Jan, 2014</span>
                                             <a href="post.html#comments"><span>3 Comments</span></a> -->
                                         </div>
