@@ -9,7 +9,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                         <!-- BEGIN .panel -->
                         <div class="panel">
                             <div class="slider">
-                                <div class="slider-image">
+                                <div class="slider-image" style="width: 518px; height: 327px;">
                                     <a href="post.html" class="active">
                                         <span class="slider-overlay">
                                             <strong>25- Май «Хайр боғчам» онлайн кўрик-танлови ғолиблари</strong>
@@ -40,7 +40,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                     </a>
                                 </div>
                                 <ul class="slider-navigation">
-                                    <li class="active">
+                                    <li class="active" style="width: 279px; height: 79px;">
                                         <a href="#" data-target="1">
                                             <strong>25- Май «Хайр боғчам» онлайн кўрик-танлови ғолиблари</strong>
                                             <span>Ўзбекистан Республикаси Президентининг 2018 йил 2-февралдаги “Хотин-қизларни қўллаб-қувватлаш...</span>
