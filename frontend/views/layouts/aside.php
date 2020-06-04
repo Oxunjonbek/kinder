@@ -127,7 +127,8 @@ $rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `t
                                         <a href="lex.uz"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/lex.uz.png" alt="" class="item-photo" /></a>
                                         <div class="item-content">
                                             <h3><a href="post.html">
-                                                    <?php $val = mb_substr($value->name,0,50); echo $val?>
+                                                    <?php //$val = mb_substr($value->name,0,50); echo $val
+                                                    $value->name?>
                                                 </a></h3>
                                         </div>
                                     </div>
