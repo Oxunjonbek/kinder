@@ -18,7 +18,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
 
 
                                             <strong><?=$value->title?></strong>
-                                            <span><?=$value->text?></span>
+                                            
 
                                         </span>
                                         <img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$value->image?>" class="setborder" alt="" title="" />
