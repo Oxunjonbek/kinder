@@ -7,7 +7,7 @@ use yii\helpers\Url;
                     <div class="wrapper">
 
                         <ul class="menu">
-                            <li><a href="<?=Url::to(['site/index'])?>">Bosh sahifa</a></li>
+                            <li><a href="<?=Url::to(['site/index'])?>">Бош саҳифа</a></li>
                             <li><a href="<?=Url::to(['site/tadbirlar'])?>">Бўлим ҳақида</a>
                                 <ul class="sub-menu">
                                     <li><a href="<?=Url::to(['site/rahbariyat'])?>">Рахбарият</a></li>
@@ -113,7 +113,7 @@ use yii\helpers\Url;
                                 </ul>
                             </li>
                             <li><a href="<?=Url::to(['site/mttlar'])?>">МТТлар</a></li>
-                            <li><a href="<?=Url::to(['site/qabulhona'])?>">Виртуал қабулхона</a></li>
+                            
                             <li><a href="<?=Url::to(['site/contact'])?>" style="border-bottom: 3px solid #1AB3EE;">Алоқа</a></li>
                         </ul>
 
