@@ -98,10 +98,13 @@ $tanlov = Tanlov::find()->orderBy(['id'=>SORT_ASC])->limit(3)->all();
             <!-- BEGIN .wrapper -->
             <div class="wrapper">
                 <?=$content?>
-                
-                <?= $this->render(
+               <?php $action = Yii::$app->controller->action->id;
+               // var_dump(!$action == 'contact');exit();
+ if ($action != 'contact') {
+                    echo $this->render(
                     'aside.php'
-                ) ?>         
+                );
+                } ?>      
             </div>
             <!-- END .wrapper -->
 

@@ -46,13 +46,13 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                                 <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$tadbir->image?>" alt="" class="item-photo" style="width: 374px; height: 215px;"/></a>
                                                 <div class="article-slide">
                                                     <h3><a href="post.html">
-                                                            <?php $tad = mb_substr($tadbir->title,0,50); echo $tad?>...
+                                                            <?=$tadbir->title?>
                                                         </a></h3>
                                                 </div>
                                             </div>
                                             <div class="item-content" >
                                                 <p style="color:black;">
-                                                        <?php $tad = mb_substr($tadbir->text,0,119); echo $tad?>...
+                                                        <?$tadbir->text?>
                                                     </p>
                                             </div>
                                         </div>
@@ -61,7 +61,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                                 <a href="#"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$value->image?>" alt="" class="item-photo" /></a>
                                                 <div class="item-content">
                                                     <h3><a href="post.html">
-                                                        <?php $val = mb_substr($value->title,0,50); echo $val?>...
+                                                        <?=$value->title?>...
                                                         </a></h3>
                                                 </div>
                                             </div>
@@ -86,7 +86,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                                 <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$tanlov->image?>" alt="" class="item-photo" style="height:214px;" /></a>
                                                 <div class="article-slide" >
                                                     <h3 ><a href="post.html">
-                                                            <?php $tad = mb_substr($tanlov->title,0,50); echo $tad?>...
+                                                            <?=$tanlov->title?>...
                                                         </a></h3>
                                                     <!-- <a href="post.html" class="info-line">
                                                         <span>4 JAN, 2014</span>
@@ -97,7 +97,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                             </div>
                                             <div class="item-content" >
                                                 <p>
-                                                        <?php $tan = mb_substr($tanlov->text,0,119); echo $tan?>...
+                                                        <?=$tanlov->text?>
                                                     </p>
                                             </div>
                                         </div>
@@ -107,7 +107,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                                 <a href="#"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$value->image?>" alt="" class="item-photo" /></a>
                                                 <div class="item-content">
                                                     <h3><a href="post.html">
-                                                        <?php $tad = mb_substr($value->title,0,50); echo $tad?>
+                                                        <?=$value->title?>
                                                     ...</a></h3>
                                                 <!-- <span>4 Jan, 2014</span>
                                                 <a href="post.html#comments"><span>3 Comments</span></a>
@@ -139,14 +139,14 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                                             <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/elonlar/<?=$elon->image?>" alt="" class="item-photo" /></a>
                                                             <div class="article-slide">
                                                                 <h3><a href="post.html">
-                                                                    <?php $tad = mb_substr($elon->title,0,50); echo $tad?>
+                                                                    <?=$elon->title?>
                                                     ...
                                                     </a></h3>
                                                             </div>
                                                         </div>
                                                         <div class="item-content">
                                                             <p>
-                                                                <?php $tad = mb_substr($elon->text,0,119); echo $tad?>
+                                                                <?=$elon->text?>
                                                     ...</p>
                                                         </div>
                                                     </div>
@@ -161,7 +161,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                                 <a href="#"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/elonlar/<?=$value->image?>" alt="" class="item-photo" /></a>
                                                 <div class="item-content">
                                                     <h3><a href="post.html">
-                                                        <?php $tad = mb_substr($value->title,0,50); echo $tad?>
+                                                        <?=$value->title?>
                                                     </a></h3>
                                                 </div>
                                             </div>
@@ -185,33 +185,33 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                         <div class="item">
                                             <a href="post-review.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$tadbir->image?>" class="item-photo" alt="" /></a>
                                             <h3><a href="post-review.html">
-                                                    <?php $tad = mb_substr($tadbir->title,0,50); echo $tad?>
+                                                    <?=$tadbir->title?>
                                                 </a></h3>
                                           
                                             <p>
-                                                <?php $tad = mb_substr($tadbir->text,0,119); echo $tad?>
+                                                <?=$tadbir->text?>
                                                 <a href="post-review.html"> Read More ...</a></p>
                                         </div>
 
                                         <div class="item">
                                             <a href="post-review.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$tanlov->image?>" class="item-photo" alt="" /></a>
                                             <h3><a href="post-review.html">
-                                                    <?php $tad = mb_substr($tanlov->title,0,50); echo $tad?>
+                                                    <?=$tanlov->title?>
                                                 </a></h3>
                                            
                                             <p>
-                                                <?php $tad = mb_substr($tanlov->text,0,119); echo $tad?>
+                                                <?=$tanlov->text?>
                                                 <a href="post-review.html"> Read More ...</a></p>
                                         </div>
 
                                         <div class="item">
                                             <a href="post-review.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/elonlar/<?=$elon->image?>" class="item-photo" alt="" /></a>
                                             <h3><a href="post-review.html">
-                                                    <?php $tad = mb_substr($elon->title,0,50); echo $tad?>
+                                                    <?=$elon->title?>
                                                 </a></h3>
                                             
                                             <p>
-                                                 <?php $tad = mb_substr($elon->text,0,119); echo $tad?><a href="post-review.html"> Read More ...</a>
+                                                 <?=$elon->text?><a href="post-review.html"> Read More ...</a>
                                                 </p>
                                         </div>
 

@@ -1,5 +1,6 @@
 <?php 
 use common\models\Qonunlar;
+use yii\helpers\Url;
 $qonunlar = Qonunlar::find()->limit(4)->all();
 $rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `tanlov` ON `tadbir`.`id` = `tanlov`.`id` LIMIT 0, 4')->queryAll();
 
@@ -13,7 +14,7 @@ $rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `t
             <h3 style="background-color: rgb(11, 82, 100);">Мурожаатлар</h3>
         </div>
         <div class="banner">
-            <a href="#" class="upper-title">Саволларингизни йўлланг<i class="fa fa-caret-down"></i></a>
+            <a href="<?=Url::to(['site/contact'])?>" class="upper-title">Саволларингизни йўлланг<i class="fa fa-caret-down"></i></a>
             <a href="#" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/no-banner-300x250.png" alt="" /></a>
         </div>
         <!-- END .widget -->

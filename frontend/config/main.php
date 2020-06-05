@@ -41,6 +41,8 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                'post/page/<page:\d+>' => 'post/index',
+                'post/' => 'post/index',
             ],
         ],
         

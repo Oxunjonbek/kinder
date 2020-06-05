@@ -292,13 +292,13 @@ class SiteController extends Controller
 
     public function actionTadbirlar()
     {   
-       
 
-    $query = Tadbir::find()->orderBy(['id' => SORT_DESC]);
-    $countQuery = clone $query;
-    $pages = new Pagination(['totalCount' => $countQuery->count(), 'pageSize' => 10]);
-    $pages->pageSizeParam = false;
-    $tadbir = $query->offset($pages->offset)
+
+        $query = Tadbir::find()->orderBy(['id' => SORT_DESC]);
+        $countQuery = clone $query;
+        $pages = new Pagination(['totalCount' => $countQuery->count(), 'pageSize' => 10]);
+        $pages->pageSizeParam = false;
+        $tadbir = $query->offset($pages->offset)
         ->limit($pages->limit)
         ->all();
 
@@ -319,10 +319,10 @@ class SiteController extends Controller
     public function actionTanlovlar()
     {
         $query = Tadbir::find()->orderBy(['id' => SORT_DESC]);
-    $countQuery = clone $query;
-    $pages = new Pagination(['totalCount' => $countQuery->count(), 'pageSize' => 10]);
-    $pages->pageSizeParam = false;
-    $tadbir = $query->offset($pages->offset)
+        $countQuery = clone $query;
+        $pages = new Pagination(['totalCount' => $countQuery->count(), 'pageSize' => 10]);
+        $pages->pageSizeParam = false;
+        $tadbir = $query->offset($pages->offset)
         ->limit($pages->limit)
         ->all();
 
@@ -342,9 +342,18 @@ class SiteController extends Controller
 
     public function actionTuzilma()
     {
-        $tuzilma = Structure::find()->all();
+        $query = Structure::find();
+        // $pages = new Pagination(['totalCount' => $query->count()]);
+        $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
+        $tuzilma = $query->offset($pages->offset)
+        ->limit($pages->limit)
+        ->all();
+
+
+        // $tuzilma = Structure::find()->all();
         return $this->render('tuzilma',[
-            'tuzilma'=>$tuzilma
+            'tuzilma'=>$tuzilma,
+            'pages'=>$pages
         ]);
     }
 
