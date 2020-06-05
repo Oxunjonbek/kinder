@@ -18,7 +18,7 @@ class NizomSearch extends Nizom
     {
         return [
             [['id'], 'integer'],
-            [['title', 'text', 'image'], 'safe'],
+            [['title', 'text'], 'safe'],
         ];
     }
 
@@ -62,8 +62,7 @@ class NizomSearch extends Nizom
         ]);
 
         $query->andFilterWhere(['like', 'title', $this->title])
-            ->andFilterWhere(['like', 'text', $this->text])
-            ->andFilterWhere(['like', 'image', $this->image]);
+            ->andFilterWhere(['like', 'text', $this->text]);
 
         return $dataProvider;
     }

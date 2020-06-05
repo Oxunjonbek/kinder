@@ -29,49 +29,42 @@ $rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `t
             <div class="article-list">
                 <?php foreach ($rows as $key => $value) : ?>
                     <div class="item">
-                        <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-1.jpg" alt="" class="item-photo" /></a>
+                        <a href="#"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-1.jpg" alt="" class="item-photo" /></a>
                         <div class="item-content">
-                            <h3><a href="post.html">
-                                <?php //$val = mb_substr($value['title'],0,19); echo $val
-                                echo $value['title']?>
+                            <h3><a href="#">
+                                <?=$value['title']?>
                             </a></h3>
-                                            <!-- <span>4 Jan, 2014</span>
-                                                <a href="post.html#comments"><span>3 Comments</span></a> -->
                                             </div>
                                         </div>
                                     <?php endforeach; ?>
-
-                                    <!-- <div class="more-button">
-                                        <a href="blog.html">Ва ҳоказо ...</a>
-                                    </div> -->
                                 </div>
 
                                 <!-- Second Tab -->
                                 <div class="article-list">
                                     <div class="item">
-                                        <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-3.jpg" alt="" class="item-photo" /></a>
+                                        <a href="#"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-3.jpg" alt="" class="item-photo" /></a>
                                         <div class="item-content">
-                                            <h3><a href="post.html">Unexpected Drop in Euro Area</a></h3>
+                                            <h3><a href="#">Unexpected Drop in Euro Area</a></h3>
                                             <span>4 Jan, 2014</span>
-                                            <a href="post.html#comments"><span>0 Comments</span></a>
+                                            <a href="##comments"><span>0 Comments</span></a>
                                         </div>
                                     </div>
 
                                     <div class="item">
-                                        <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-1.jpg" alt="" class="item-photo" /></a>
+                                        <a href="#"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-1.jpg" alt="" class="item-photo" /></a>
                                         <div class="item-content">
-                                            <h3><a href="post.html">BMW 530D Tunign from Hamman</a></h3>
+                                            <h3><a href="#">BMW 530D Tunign from Hamman</a></h3>
                                             <span>4 Jan, 2014</span>
-                                            <a href="post.html#comments"><span>3 Comments</span></a>
+                                            <a href="##comments"><span>3 Comments</span></a>
                                         </div>
                                     </div>
                                     
                                     <div class="item">
-                                        <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-2.jpg" alt="" class="item-photo" /></a>
+                                        <a href="#"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-2.jpg" alt="" class="item-photo" /></a>
                                         <div class="item-content">
-                                            <h3><a href="post.html">Eurozone Manufacturing Industry Rises Sharply in January</a></h3>
+                                            <h3><a href="#">Eurozone Manufacturing Industry Rises Sharply in January</a></h3>
                                             <span>15 JAN, 2014</span>
-                                            <a href="post.html#comments"><span>5 Comments</span></a>
+                                            <a href="##comments"><span>5 Comments</span></a>
                                         </div>
                                     </div>
 
@@ -87,7 +80,7 @@ $rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `t
                                         <div class="item-content">
                                             <h3>Lennon Taskill</h3>
                                             <p>An essent possim mandamus sit. Sea ne sale vocibus delicatissimi, diam eruditi deserunt.</p>
-                                            <span><a href="post.html">View Comment</a></span>
+                                            <span><a href="#">View Comment</a></span>
                                             <span>4 Jan, 2014</span>
                                         </div>
                                     </div>
@@ -96,7 +89,7 @@ $rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `t
                                         <div class="item-content">
                                             <h3><a href="#">Albano Ottaviano</a></h3>
                                             <p>An essent possim mandamus sit. Sea ne sale vocibus delicatissimi, diam eruditi deserunt.</p>
-                                            <span><a href="post.html">View Comment</a></span>
+                                            <span><a href="#">View Comment</a></span>
                                             <span>4 Jan, 2014</span>
                                         </div>
                                     </div>
@@ -105,7 +98,7 @@ $rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `t
                                         <div class="item-content">
                                             <h3><a href="#">Muireadhach Eutimio</a></h3>
                                             <p>An essent possim mandamus sit. Sea ne sale vocibus delicatissimi, diam eruditi deserunt.</p>
-                                            <span><a href="post.html">View Comment</a></span>
+                                            <span><a href="#">View Comment</a></span>
                                             <span>4 Jan, 2014</span>
                                         </div>
                                     </div>
@@ -125,18 +118,13 @@ $rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `t
                                     <div class="item">
                                         <a href="lex.uz"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/lex.uz.png" alt="" class="item-photo" /></a>
                                         <div class="item-content">
-                                            <h3><a href="post.html">
-                                                    <?php //$val = mb_substr($value->name,0,50); echo $val
-                                                    $value->name?>
+                                            <h3><a href="#">
+                                                    <?=$value->name?>
                                                 </a></h3>
                                             </div>
                                         </div>
                                     <?php endforeach; ?>
 
-<!-- 
-                                <div class="more-button">
-                                    <a href="blog.html">Ва ҳоказо ...</a>
-                                </div> -->
 
                             </div>
                             <!-- END .widget -->

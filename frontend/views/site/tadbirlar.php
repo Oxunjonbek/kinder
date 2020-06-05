@@ -7,7 +7,7 @@ use yii\helpers\Url;
 	<!-- BEGIN .panel -->
 	<div class="panel">
 		<div class="p-title">
-			<h2>Tanlovlar</h2>
+			<h2>Tadbirlar</h2>
 		</div>
 		<div class="blog-list style-2">
 
@@ -18,14 +18,20 @@ use yii\helpers\Url;
 						<h3><a href="<?=Url::to(['site/tadbir-single','id'=>$blog->id])?>"><?=$blog->title ?> </a></h3>
 					</div>
 					<div class="item-content">
+						<p>
+							<?php $tad = mb_substr($blog->text,0,200); ?>
+							<?=$tad?>...
+						</p>
 					</div>
 					<div class="item-footer">
-						<a href="blog.html" class="left" style="color: #c32929;"><strong>Design</strong></a>
+						<a href="#" class="left" style="color: #c32929;">
+							<strong>Янгиликлар</strong>
+						</a>
 					</div>
 				</div>
-						
+				
 			<?php endforeach; ?>
-<?= LinkPager::widget([
+			<?= LinkPager::widget([
 				'pagination' => $pages,
 			]);?>	
 		</div>
@@ -33,7 +39,7 @@ use yii\helpers\Url;
 	</div>
 
 	<!-- BEGIN .panel -->
-	<div class="panel">
+	<!-- <div class="panel">
 		<div class="pagination">
 			<a href="#" class="prev page-numbers"><i class="fa fa-caret-left"></i></a>
 			<a href="#" class="page-numbers">1</a>
@@ -43,7 +49,7 @@ use yii\helpers\Url;
 			<a href="#" class="page-numbers">6</a>
 			<a href="#" class="next page-numbers"><i class="fa fa-caret-right"></i></a>
 		</div>
-		<!-- END .panel -->
-	</div>
+	</div> -->
+	<!-- END .panel -->
 
 </div>

@@ -1,3 +1,6 @@
+<?php 
+use yii\widgets\LinkPager;
+?>
 <div class="main-content">
 
 						<!-- BEGIN .panel -->
@@ -30,18 +33,8 @@
 						<!-- END .panel -->
 						</div>
 
-						<!-- BEGIN .panel -->
-						<div class="panel">
-							<!-- <div class="pagination">
-								<a href="#" class="prev page-numbers"><i class="fa fa-caret-left"></i></a>
-								<a href="#" class="page-numbers">1</a>
-								<a href="#" class="page-numbers current">2</a>
-								<a href="#" class="page-numbers">3</a>
-								<a href="#" class="page-numbers">4</a>
-								<a href="#" class="page-numbers">6</a>
-								<a href="#" class="next page-numbers"><i class="fa fa-caret-right"></i></a>
-							</div> -->
-						<!-- END .panel -->
-						</div>
+	<?= LinkPager::widget([
+		'pagination' => $pages,
+	]); ?>
 
 					</div>

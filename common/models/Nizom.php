@@ -17,7 +17,6 @@ class Nizom extends \yii\db\ActiveRecord
     /**
      * {@inheritdoc}
      */
-    public $img;
     public static function tableName()
     {
         return 'nizom';
@@ -29,10 +28,8 @@ class Nizom extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['title', 'text', 'image'], 'required'],
+            [['title', 'text'], 'required'],
             [['title', 'text'], 'string'],
-            [['image'], 'string', 'max' => 255],
-            [['img'], 'file', 'skipOnEmpty' => true, 'extensions' => 'png, jpg,gif,jpeg'],
         ];
     }
 
@@ -45,7 +42,6 @@ class Nizom extends \yii\db\ActiveRecord
             'id' => 'ID',
             'title' => 'Title',
             'text' => 'Text',
-            'image' => 'Image',
         ];
     }
 }

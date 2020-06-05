@@ -318,11 +318,10 @@ class SiteController extends Controller
 
     public function actionTanlovlar()
     {
-        $query = Tadbir::find()->orderBy(['id' => SORT_DESC]);
-        $countQuery = clone $query;
-        $pages = new Pagination(['totalCount' => $countQuery->count(), 'pageSize' => 10]);
-        $pages->pageSizeParam = false;
-        $tadbir = $query->offset($pages->offset)
+        $query = Tanlov::find();
+        // $pages = new Pagination(['totalCount' => $query->count()]);
+        $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
+        $tanlov = $query->offset($pages->offset)
         ->limit($pages->limit)
         ->all();
 
@@ -334,9 +333,14 @@ class SiteController extends Controller
 
     public function actionElonlar()
     {
-        $elon = Elonlar::find()->all();
+        $query = Elonlar::find();
+        $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
+        $elon = $query->offset($pages->offset)
+        ->limit($pages->limit)
+        ->all();
         return $this->render('elon',[
-            'elon'=>$elon
+            'elon'=>$elon,
+            'pages'=>$pages
         ]);
     }
 
@@ -348,9 +352,6 @@ class SiteController extends Controller
         $tuzilma = $query->offset($pages->offset)
         ->limit($pages->limit)
         ->all();
-
-
-        // $tuzilma = Structure::find()->all();
         return $this->render('tuzilma',[
             'tuzilma'=>$tuzilma,
             'pages'=>$pages
@@ -359,26 +360,49 @@ class SiteController extends Controller
 
     public function actionTarkibiy()
     {
-        $tarkibiy = TarkibiyStructure::find()->all();
+        // $tarkibiy = TarkibiyStructure::find()->all();
+        
+        $query = TarkibiyStructure::find();
+        // $pages = new Pagination(['totalCount' => $query->count()]);
+        $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
+        $tarkibiy = $query->offset($pages->offset)
+        ->limit($pages->limit)
+        ->all();
+
+
         return $this->render('tarkibiy',[
-            'tarkibiy'=>$tarkibiy
+            'tarkibiy'=>$tarkibiy,
+            'pages'=>$pages
         ]);
     }
 
     public function actionVakansiyalar()
     {
-        $vakant = Vacansy::find()->all();
+
+        $query = Vacansy::find();
+        // $pages = new Pagination(['totalCount' => $query->count()]);
+        $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
+        $vakant = $query->offset($pages->offset)
+        ->limit($pages->limit)
+        ->all();
         return $this->render('vakansiya',[
-            'vakant'=>$vakant
+            'vakant'=>$vakant,
+            'pages'=>$pages
         ]);
     }
 
     public function actionRahbariyat()
     {
-        $genels = Genel::find()->all();
+        $query = Genel::find();
+        // $pages = new Pagination(['totalCount' => $query->count()]);
+        $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
+        $genels = $query->offset($pages->offset)
+        ->limit($pages->limit)
+        ->all();
         return $this->render('rahbariyat',
             [
-                'genels'=>$genels
+                'genels'=>$genels,
+                'pages'=>$pages
             ]);
     }
 
@@ -389,32 +413,52 @@ class SiteController extends Controller
 
     public function actionQonunlar()
     {
-        $nizomlar = Nizom::find()->all();
-        return $this->render('nizomlar',[
-            'nizomlar'=>$nizomlar
+        $query = Qonunlar::find();
+        $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
+        $qonunlar = $query->offset($pages->offset)
+        ->limit($pages->limit)
+        ->all();
+        return $this->render('qonunlar',[
+            'qonunlar'=>$qonunlar,
+            'pages'=>$pages
         ]);
     }
 
     public function actionStandartlar()
     {
-        $nizomlar = Nizom::find()->all();
-        return $this->render('nizomlar',[
-            'nizomlar'=>$nizomlar
+        $query = Qonunlar::find();
+        $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
+        $qonunlar = $query->offset($pages->offset)
+        ->limit($pages->limit)
+        ->all();
+        return $this->render('qonunlar',[
+            'qonunlar'=>$qonunlar,
+            'pages'=>$pages
         ]);
     }
     public function actionNizom()
     {
-        $nizomlar = Nizom::find()->all();
+        $query = Nizom::find();
+        $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
+        $nizomlar = $query->offset($pages->offset)
+        ->limit($pages->limit)
+        ->all();
         return $this->render('nizomlar',[
-            'nizomlar'=>$nizomlar
+            'nizomlar'=>$nizomlar,
+            'pages'=>$pages
         ]);
     }
 
     public function actionTavsiyalar()
     {
-        $nizomlar = Nizom::find()->all();
+        $query = Nizom::find();
+        $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
+        $nizomlar = $query->offset($pages->offset)
+        ->limit($pages->limit)
+        ->all();
         return $this->render('nizomlar',[
-            'nizomlar'=>$nizomlar
+            'nizomlar'=>$nizomlar,
+            'pages'=>$pages
         ]);
     }
     public function actionFarmonlar()
