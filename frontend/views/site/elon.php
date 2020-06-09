@@ -24,12 +24,9 @@ use yii\helpers\Url;
 							</a>
 						</h3>
 					</div>
-					<div class="item-content">
-						<p>
-							<?php $tad = mb_substr($blog->text,0,200); ?>
-							<?=$tad?>...
-						</p>
-					</div>
+					<!-- <div class="item-content">
+						
+					</div> -->
 					<div class="item-footer">
 						<a href="#" class="left" style="color: #c32929;">
 							<strong>Янгиликлар</strong>

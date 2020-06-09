@@ -22,13 +22,13 @@ class AppAsset extends AssetBundle
         "foto/css/custom-colors.css",
         "foto/css/responsive.css",
         "foto/css/ie-ancient.css",
-        "foto/css/demo-settings.css",
+        // "foto/css/demo-settings.css",
     ];
     public $js = [
         "foto/jscript/jquery-latest.min.js",
         "foto/jscript/theme-scripts.js",
         "foto/jscript/lightbox.js",
-        "foto/jscript/demo-settings.js",
+        // "foto/jscript/demo-settings.js",
     ];
     public $depends = [
         'yii\web\YiiAsset',

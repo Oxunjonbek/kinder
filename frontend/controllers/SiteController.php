@@ -15,6 +15,7 @@ use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
 use common\models\Genel;
+use common\models\Mtt;
 use common\models\Vacansy;
 use common\models\Structure;
 use common\models\TarkibiyStructure;
@@ -22,10 +23,15 @@ use common\models\Tadbir;
 use common\models\Tanlov;
 use common\models\Elonlar;
 use common\models\Qonunlar;
-// use common\models\Standartlar;
+use common\models\Standart;
 use common\models\Nizom;
 use common\models\Farmonlar;
 use common\models\Ariza;
+use common\models\Bm;
+use common\models\Ichki;
+use common\models\Interaktiv;
+use common\models\Pedagog;
+use common\models\Qabulhona;
 use yii\data\Pagination; 
 
 /**
@@ -331,6 +337,15 @@ class SiteController extends Controller
         ]);
     }
 
+    public function actionTanlovSingle($id=null)
+    {
+        $tanlov = Tanlov::find()->where(['id'=>$id])->one();
+        // var_dump($tanlov['title']) ;exit();
+        return $this->render('tanlov-single',[
+            'tanlov'=>$tanlov
+        ]);
+    }
+
     public function actionElonlar()
     {
         $query = Elonlar::find();
@@ -341,6 +356,13 @@ class SiteController extends Controller
         return $this->render('elon',[
             'elon'=>$elon,
             'pages'=>$pages
+        ]);
+    }
+
+    public function actionElonSingle($id=null)
+    {
+        $elon = Elonlar::find()->where(['id'=>$id])->one(); return $this->render('elon-single',[
+            'elon'=>$elon
         ]);
     }
 
@@ -361,7 +383,7 @@ class SiteController extends Controller
     public function actionTarkibiy()
     {
         // $tarkibiy = TarkibiyStructure::find()->all();
-        
+
         $query = TarkibiyStructure::find();
         // $pages = new Pagination(['totalCount' => $query->count()]);
         $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
@@ -406,9 +428,12 @@ class SiteController extends Controller
             ]);
     }
 
-    public function actionPedagog()
+    public function actionPedagoglar()
     {
-        return $this->render('pedagog');
+        $pedagoglar = Pedagog::find()->all(); 
+        return $this->render('pedagoglar',[
+            'pedagoglar'=>$pedagoglar
+        ]);
     }
 
     public function actionQonunlar()
@@ -426,14 +451,26 @@ class SiteController extends Controller
 
     public function actionStandartlar()
     {
-        $query = Qonunlar::find();
+        $query = Standart::find();
         $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
         $qonunlar = $query->offset($pages->offset)
         ->limit($pages->limit)
         ->all();
-        return $this->render('qonunlar',[
+        return $this->render('standartlar',[
             'qonunlar'=>$qonunlar,
             'pages'=>$pages
+        ]);
+    }
+    public function actionQarorlar()
+    {
+        $bm = Bm::find()->all();
+        // $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
+        // $bm = $query->offset($pages->offset)
+        // ->limit($pages->limit)
+        // ->all();
+        return $this->render('bm',[
+            'bm'=>$bm,
+            // 'pages'=>$pages
         ]);
     }
     public function actionNizom()
@@ -445,6 +482,19 @@ class SiteController extends Controller
         ->all();
         return $this->render('nizomlar',[
             'nizomlar'=>$nizomlar,
+            'pages'=>$pages
+        ]);
+    }
+
+    public function actionIchki()
+    {
+        $query = Ichki::find();
+        $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
+        $ichki = $query->offset($pages->offset)
+        ->limit($pages->limit)
+        ->all();
+        return $this->render('ichki',[
+            'ichki'=>$ichki,
             'pages'=>$pages
         ]);
     }
@@ -463,17 +513,14 @@ class SiteController extends Controller
     }
     public function actionFarmonlar()
     {
-        $farmonlar = Farmonlar::find()->all();
+        $query = Farmonlar::find();
+        $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
+        $farmonlar = $query->offset($pages->offset)
+        ->limit($pages->limit)
+        ->all();
         return $this->render('farmonlar',[
-            'farmonlar'=>$farmonlar
-        ]);
-    }
-
-    public function actionQarorlar()
-    {
-        $farmonlar = Farmonlar::find()->all();
-        return $this->render('qarorlar',[
-            'farmonlar'=>$farmonlar
+            'farmonlar'=>$farmonlar,
+            'pages'=>$pages
         ]);
     }
 
@@ -487,14 +534,10 @@ class SiteController extends Controller
 
     public function actionElektron()
     {
-        // $farmonlar = Farmonlar::find()->all();
+        $interaktiv = Interaktiv::find()->all();
         return $this->render('elektron',[
-            // 'farmonlar'=>$farmonlar
+            'interaktiv'=>$interaktiv
         ]);
-    }
-    public function actionPedagoglar()
-    {
-        return $this->render('pedagoglar');
     }
 
     public function actionOtaOnalar()
@@ -517,13 +560,26 @@ class SiteController extends Controller
 
     public function actionMttlar()
     {
-        return $this->render('mttlar');
+        $mttlar = Mtt::find()->all();
+        return $this->render('mttlar',compact('mttlar'));
     }
 
     public function actionQabulhona()
     {
-        $model = new ContactForm();
+        $model = new Qabulhona();
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+            echo '<pre>';
+            var_dump($model);exit();
+            $files = UploadedFile::getInstance($model, 'files');
+            if (!empty($files)) {
+                $model->file = random_int(0,9999). '.' . $files->extension;
+            }
+            if ($model->save()) {
+                if (!empty($files)) {
+                    $files->saveAs('uploads/file/' . $model->file);
+                    return $this->refresh();
+                }
+            }
             if ($model->sendEmail(Yii::$app->params['adminEmail'])) {
                 Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
             } else {

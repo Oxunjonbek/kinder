@@ -1,0 +1,50 @@
+<?php
+
+namespace common\models;
+
+use Yii;
+
+/**
+ * This is the model class for table "mtt".
+ *
+ * @property int $id
+ * @property string $name
+ * @property string $prof
+ * @property string $phone
+ * @property string $address
+ */
+class Mtt extends \yii\db\ActiveRecord
+{
+    /**
+     * {@inheritdoc}
+     */
+    public static function tableName()
+    {
+        return 'mtt';
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function rules()
+    {
+        return [
+            [['name', 'prof', 'phone', 'address'], 'required'],
+            [['name', 'prof', 'phone', 'address'], 'string', 'max' => 300],
+        ];
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function attributeLabels()
+    {
+        return [
+            'id' => 'ID',
+            'name' => 'Name',
+            'prof' => 'Prof',
+            'phone' => 'Phone',
+            'address' => 'Address',
+        ];
+    }
+}

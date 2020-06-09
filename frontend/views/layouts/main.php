@@ -43,22 +43,6 @@ $tanlov = Tanlov::find()->orderBy(['id'=>SORT_ASC])->limit(3)->all();
                 <!-- BEGIN .wrapper -->
                 <div class="wrapper">
 
-                        <!-- <ul class="le-first">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="shortcodes.html">Shortcodes</a></li>
-                            <li><a href="blog.html">Blog</a>
-                                <ul class="sub-menu">
-                                    <li><a href="blog-second.html">Blog style #2</a></li>
-                                    <li><a href="post.html">Post page</a></li>
-                                    <li><a href="post-no-comments.html">Post page w/ comments</a></li>
-                                    <li><a href="post-no-comments.html">Post page w/ review</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="post.html">Post Page</a></li>
-                            <li><a href="photo-gallery.html">Photo Gallery</a></li>
-                            <li><a href="full-width.html">Full Page</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                        </ul> -->
                         
                     </div>
                     <!-- END .wrapper -->
@@ -97,14 +81,12 @@ $tanlov = Tanlov::find()->orderBy(['id'=>SORT_ASC])->limit(3)->all();
             ) ?>   
             <!-- BEGIN .wrapper -->
             <div class="wrapper">
+
                 <?=$content?>
-               <?php $action = Yii::$app->controller->action->id;
-               // var_dump(!$action == 'contact');exit();
- if ($action != 'contact') {
-                    echo $this->render(
+                 <?php echo $this->render(
                     'aside.php'
-                );
-                } ?>      
+                ); ?>
+                   
             </div>
             <!-- END .wrapper -->
 
@@ -145,13 +127,12 @@ $tanlov = Tanlov::find()->orderBy(['id'=>SORT_ASC])->limit(3)->all();
                             <?php foreach ($tadbir as $key => $value) : ?>
 
                                 <div class="item">
-                                    <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$value->image?>" alt="" class="item-photo" /></a>
+                                    <a href="<?=Url::to(['site/tadbir-single','id'=>$value->id])?>"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$value->image?>" alt="" class="item-photo" /></a>
                                     <div class="item-content">
-                                        <h3><a href="post.html">
+                                        <h3><a href="<?=Url::to(['site/tadbir-single','id'=>$value->id])?>">
                                             <?php $val = mb_substr($value->title,0,119); echo $val?>...
                                         </a></h3>
-                                        <!-- <span>4 Jan, 2014</span>
-                                            <a href="post.html#comments"><span>3 Comments</span></a> -->
+
                                         </div>
                                     </div>
                                 <?php endforeach; ?>
@@ -169,12 +150,10 @@ $tanlov = Tanlov::find()->orderBy(['id'=>SORT_ASC])->limit(3)->all();
                                 <?php foreach ($tanlov as $key => $value) : ?>
 
                                     <div class="item">
-                                        <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$value->image?>" alt="" class="item-photo" /></a>
+                                        <a href="<?=Url::to(['site/tadbir-single','id'=>$value->id])?>"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$value->image?>" alt="" class="item-photo" /></a>
                                         <div class="item-content">
-                                            <h3><a href="post.html">
+                                            <h3><a href="<?=Url::to(['site/tadbir-single','id'=>$value->id])?>">
                                                 <?php $val = mb_substr($value->title,0,119); echo $val?>...</a></h3>
-                                        <!-- <span>4 Jan, 2014</span>
-                                            <a href="post.html#comments"><span>3 Comments</span></a> -->
                                         </div>
                                     </div>
                                 <?php endforeach; ?>

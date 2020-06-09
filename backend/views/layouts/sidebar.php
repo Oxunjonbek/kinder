@@ -53,6 +53,59 @@
                         </p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="<?= Url::to(['mtt/index']) ?>" class="nav-link <?=($pathInfo == 'mtt/index' ? 'active' : '')?>">
+                        <i class="nav-icon far fa-plus-square"></i>
+                        <p>
+                            МТТлар
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="<?= Url::to(['interaktiv/index']) ?>" class="nav-link <?=($pathInfo == 'interaktiv/index' ? 'active' : '')?>">
+                        <i class="nav-icon far fa-plus-square"></i>
+                        <p>
+                            МТТда электрон навбат ва бўш ўринлар ҳақида маълумот
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="<?= Url::to(['pedagog/index']) ?>" class="nav-link <?=($pathInfo == 'pedagog/index' ? 'active' : '')?>">
+                        <i class="nav-icon far fa-plus-square"></i>
+                        <p>
+                            Педагогларга
+
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="<?= Url::to(['ichki/index']) ?>" class="nav-link <?=($pathInfo == 'ichki/index' ? 'active' : '')?>">
+                        <i class="nav-icon far fa-plus-square"></i>
+                        <p>
+                            Ichki
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="<?= Url::to(['standart/index']) ?>" class="nav-link <?=($pathInfo == 'standart/index' ? 'active' : '')?>">
+                        <i class="nav-icon far fa-plus-square"></i>
+                        <p>
+                            Standart
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="<?= Url::to(['bm/index']) ?>" class="nav-link <?=($pathInfo == 'bm/index' ? 'active' : '')?>">
+                        <i class="nav-icon far fa-plus-square"></i>
+                        <p>
+                            Bm
+                        </p>
+                    </a>
+                </li>
 
                 <li class="nav-item">
                     <a href="<?= Url::to(['elonlar/index']) ?>" class="nav-link <?=($pathInfo == 'elonlar/index' ? 'active' : '')?>">
