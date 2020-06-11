@@ -37,16 +37,11 @@ $elonlar = Elonlar::find()->orderBy(['id'=>SORT_DESC])->limit(4)->all();
                                             <li class="menu-block column4">
                                                 <div class="menu-content featured-post">
                                                     <div class="item-photo">
-                                                        <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/elonlar/<?=$elon->image?>" alt="" /></a>
-                                                        <h3><a href="post.html"><?=$elon->title?></a></h3>
+                                                        <a href="<?=Url::to(['site/elonlar'])?>"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/elonlar/<?=$elon->image?>" alt="" /></a>
+                                                        <h3><a href="<?=Url::to(['site/elonlar'])?>"><?=$elon->title?></a></h3>
                                                     </div>
                                                     <div class="item-content">
                                                         <p><?=$elon->text?></p>
-                                                        <!-- <div class="article-icons">
-                                                            <span class="article-icon">4 JAN, 2014</span>
-                                                            <a href="post.html#comments" class="article-icon">3 COMMENTS</a>
-                                                            <a href="<?=Url::to(['site/ariza'])?>" class="article-icon">Orange-Themes</a>
-                                                        </div> -->
                                                     </div>
                                                 </div>
                                                 <!-- END .menu-block -->
@@ -56,38 +51,12 @@ $elonlar = Elonlar::find()->orderBy(['id'=>SORT_DESC])->limit(4)->all();
                                                 <div class="menu-content article-list">
                                                     <?php foreach ($elonlar as $key => $value) : ?>
                                                     <div class="item">
-                                                        <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/elonlar/<?=$value->image?>" alt="" class="item-photo" /></a>
+                                                        <a href="<?=Url::to(['site/elonlar'])?>"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/elonlar/<?=$value->image?>" alt="" class="item-photo" /></a>
                                                         <div class="item-content">
-                                                            <h3><a href="post.html"><?=$value->title?></a></h3>
-                                                           <!--  <span>4 Jan, 2014</span>
-                                                            <a href="post.html#comments"><span>3 Comments</span></a> -->
+                                                            <h3><a href="<?=Url::to(['site/elonlar'])?>"><?=$value->title?></a></h3>
                                                         </div>
                                                     </div>
                                                 <?php endforeach; ?>
-                                                    <!-- <div class="item">
-                                                        <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-2.jpg" alt="" class="item-photo" /></a>
-                                                        <div class="item-content">
-                                                            <h3><a href="post.html">Eurozone Manufacturing Industry Rises Sharply in January</a></h3>
-                                                            <span>15 JAN, 2014</span>
-                                                            <a href="post.html#comments"><span>5 Comments</span></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="item">
-                                                        <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-3.jpg" alt="" class="item-photo" /></a>
-                                                        <div class="item-content">
-                                                            <h3><a href="post.html">Unexpected Drop in Euro Area</a></h3>
-                                                            <span>4 Jan, 2014</span>
-                                                            <a href="post.html#comments"><span>0 Comments</span></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="item">
-                                                        <a href="post.html"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-3.jpg" alt="" class="item-photo" /></a>
-                                                        <div class="item-content">
-                                                            <h3><a href="post.html">Unexpected Drop in Euro Area</a></h3>
-                                                            <span>4 Jan, 2014</span>
-                                                            <a href="post.html#comments"><span>0 Comments</span></a>
-                                                        </div>
-                                                    </div> -->
                                                 </div>
                                                 <!-- END .menu-block -->
                                             </li>

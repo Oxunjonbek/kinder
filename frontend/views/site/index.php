@@ -51,9 +51,9 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                                 </div>
                                             </div>
                                             <div class="item-content" >
-                                                <p style="color:black;">
+                                               <!--  <p style="color:black;">
                                                         <?=$tadbir->text?>
-                                                    </p>
+                                                    </p> -->
                                             </div>
                                         </div>
                                         <?php foreach ($item3 as $key => $value) : ?>
@@ -91,9 +91,9 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                                 </div>
                                             </div>
                                             <div class="item-content" >
-                                                <p>
+                                                <!-- <p>
                                                         <?=$tanlov->text?>
-                                                    </p>
+                                                    </p> -->
                                             </div>
                                         </div>
 
@@ -138,9 +138,9 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                                             </div>
                                                         </div>
                                                         <div class="item-content">
-                                                            <p>
+                                                           <!--  <p>
                                                                 <?=$elon->text?>
-                                                    </p>
+                                                    </p> -->
                                                         </div>
                                                     </div>
 
@@ -153,7 +153,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                             <div class="item">
                                                 <a href="<?=Url::to(['site/tanlov-single','id'=>$value->id])?>"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/elonlar/<?=$value->image?>" alt="" class="item-photo" /></a>
                                                 <div class="item-content">
-                                                    <h3><a href="<?=Url::to(['site/elon'])?>">
+                                                    <h3><a href="<?=Url::to(['site/elonlar'])?>">
                                                         <?=$value->title?>
                                                     </a></h3>
                                                 </div>
@@ -182,7 +182,6 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                                 </a></h3>
                                           
                                             <p>
-                                                <?=$tadbir->text?>
                                                 <a href="<?=Url::to(['site/tadbir-single','id'=>$tadbir->id])?>"> Read More </a></p>
                                         </div>
 
@@ -193,7 +192,6 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                                 </a></h3>
                                            
                                             <p>
-                                                <?=$tanlov->text?>
                                                 <a href="<?=Url::to(['site/tanlov-single','id'=>$tanlov->id])?>"> Read More </a></p>
                                         </div>
 
@@ -204,7 +202,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                                 </a></h3>
                                             
                                             <p>
-                                                 <?=$elon->text?><a href="<?=Url::to(['site/elon-single','id'=>$elon->id])?>"> Read More </a>
+                                                 <a href="<?=Url::to(['site/elon-single','id'=>$elon->id])?>"> Read More </a>
                                                 </p>
                                         </div>
 
