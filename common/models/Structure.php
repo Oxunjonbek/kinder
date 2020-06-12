@@ -43,9 +43,9 @@ class Structure extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Name',
-            'prof' => 'Prof',
-            'phone' => 'Phone',
+            'name' => 'Ф.И.О',
+            'prof' => 'Лавозими',
+            'phone' => 'Телефон',
         ];
     }
 }

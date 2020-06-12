@@ -39,8 +39,8 @@ class Qonunlar extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Name',
-            'address' => 'Address',
+            'name' => 'Қонун номи',
+            'address' => 'Url манзил',
         ];
     }
 }

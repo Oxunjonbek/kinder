@@ -7,7 +7,7 @@ use kartik\grid\GridView;
 /* @var $searchModel backend\models\search\VacansySearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Vacansies';
+$this->title = 'Бўш иш ўринлари';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="vacansy-index">
@@ -80,7 +80,7 @@ $this->params['breadcrumbs'][] = $this->title;
             '<div style="width: 100%;">',
             '<div class="card-header ui-sortable-handle">',
             '<h3 class="card-title">{summary}</h3>',
-            '<div class="card-tools">' . Html::a('<i class="fa fa-plus"></i> Добавить', ['create'], ['class' => 'btn btn-info']) . ' &nbsp;  {toggleData} &nbsp; {export}</div>',
+            '<div class="card-tools">' . Html::a('<i class="fa fa-plus"></i> Киритиш', ['create'], ['class' => 'btn btn-info']) . ' &nbsp;  {toggleData} &nbsp; {export}</div>',
             '</div>',
             '</div>'
         ],
