@@ -125,14 +125,14 @@
                     </a>
                 </li>
 
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a href="<?= Url::to(['nizom/index']) ?>" class="nav-link <?=($pathInfo == 'nizom/index' ? 'active' : '')?>">
                         <i class="nav-icon fas fa-copy"></i>
                         <p>
                             Низомлар
                         </p>
                     </a>
-                </li>
+                </li> -->
 
                 <li class="nav-item">
                     <a href="<?= Url::to(['qonunlar/index']) ?>" class="nav-link <?=($pathInfo == 'qonunlar/index' ? 'active' : '')?>">
