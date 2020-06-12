@@ -83,6 +83,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
 
                                             <div class="item main-artice light">
                                                 <div class="item-header">
+                                                   
                                                     <a href="<?=Url::to(['site/tanlov-single','id'=>$tanlov->id])?>"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$tanlov->image?>" alt="" class="item-photo" style="height:214px;" /></a>
                                                     <div class="article-slide" >
                                                         <h3 ></h3>
@@ -90,7 +91,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                                 </div>
                                                 <div class="item-content" >
                                                 <p>
-                                                        <a href="<?=Url::to(['site/tanlov-single','id'=>$value->id])?>">
+                                                        <a href="<?=Url::to(['site/tanlov-single','id'=>$tanlov->id])?>">
                                                             <?=$tanlov->title?>
                                                         </a>
                                                     </p> 
