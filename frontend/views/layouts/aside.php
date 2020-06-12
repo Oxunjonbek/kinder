@@ -1,8 +1,11 @@
 <?php 
 use common\models\Qonunlar;
+use common\models\Elonlar;
 use yii\helpers\Url;
 $qonunlar = Qonunlar::find()->limit(4)->all();
-$rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `tanlov` ON `tadbir`.`id` = `tanlov`.`id` LIMIT 0, 4')->queryAll();
+// $rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `tanlov` ON `tadbir`.`id` = `tanlov`.`id` LIMIT 0, 4')->queryAll();
+$rows = Elonlar::find()->orderBy(['id'=>SORT_DESC])->limit(4)->all();
+
 ?>                    
 <aside id="sidebar">
 
@@ -29,9 +32,9 @@ $rows = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `t
             <div class="article-list">
                 <?php foreach ($rows as $key => $value) : ?>
                     <div class="item">
-                        <a href="#"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-1.jpg" alt="" class="item-photo" /></a>
+                        <a href="<?=Url::to(['site/elon-single','id'=>$value->id])?>"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/elonlar/<?=$value['image']?>" alt="" class="item-photo" /></a>
                         <div class="item-content">
-                            <h3><a href="#">
+                            <h3><a href="<?=Url::to(['site/elon-single','id'=>$value->id])?>">
                                 <?=$value['title']?>
                             </a></h3>
                                             </div>
