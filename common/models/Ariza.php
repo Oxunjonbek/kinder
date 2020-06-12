@@ -42,8 +42,8 @@ class Ariza extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Name',
-            'files' => 'Files',
+            'name' => 'Ариза номи',
+            'files' => 'Файлни танлаг',
         ];
     }
 }
