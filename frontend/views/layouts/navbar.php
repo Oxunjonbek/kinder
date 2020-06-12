@@ -70,7 +70,7 @@ $elonlar = Elonlar::find()->orderBy(['id'=>SORT_DESC])->limit(4)->all();
                                    <!--  <li><a href="<?=Url::to(['site/standartlar'])?>">Давлат стандартлари</a></li> -->
                                     <!-- <li><a href="<?=Url::to(['site/nizom'])?>">Бўлим низоми</a></li> -->
                                     <li><a href="<?=Url::to(['site/farmonlar'])?>">Президент фармон ва қарорлари</a></li>
-                                    <li><a href="<?=Url::to(['site/tavsiyalar'])?>">Низом ва тавсиялар</a></li>
+                                    <!-- <li><a href="<?=Url::to(['site/tavsiyalar'])?>">Низом ва тавсиялар</a></li> -->
                                     <li><a href="<?=Url::to(['site/qarorlar'])?>">ВМ қарор ва фармойишлари</a></li>
                                     <li><a href="<?=Url::to(['site/ichki'])?>">Ички ҳужжатлар</a></li>
                                 </ul>
