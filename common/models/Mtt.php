@@ -41,10 +41,10 @@ class Mtt extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Name',
-            'prof' => 'Prof',
-            'phone' => 'Phone',
-            'address' => 'Address',
+            'name' => 'МТТ',
+            'prof' => 'Мудира',
+            'phone' => 'Телефон',
+            'address' => 'Манзил',
         ];
     }
 }

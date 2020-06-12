@@ -5,8 +5,8 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model common\models\Mtt */
 
-$this->title = 'Update Mtt: ' . $model->name;
-$this->params['breadcrumbs'][] = ['label' => 'Mtts', 'url' => ['index']];
+$this->title = 'МТТ: ' . $model->name;
+$this->params['breadcrumbs'][] = ['label' => 'МТТ', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->name, 'url' => ['view', 'id' => $model->id]];
 $this->params['breadcrumbs'][] = 'Update';
 ?>
