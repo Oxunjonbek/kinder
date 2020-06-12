@@ -89,14 +89,14 @@
                     </a>
                 </li>
 
-                <li class="nav-item">
+               <!--  <li class="nav-item">
                     <a href="<?= Url::to(['standart/index']) ?>" class="nav-link <?=($pathInfo == 'standart/index' ? 'active' : '')?>">
                         <i class="nav-icon far fa-plus-square"></i>
                         <p>
                             Стандарт
                         </p>
                     </a>
-                </li>
+                </li> -->
 
                 <li class="nav-item">
                     <a href="<?= Url::to(['bm/index']) ?>" class="nav-link <?=($pathInfo == 'bm/index' ? 'active' : '')?>">

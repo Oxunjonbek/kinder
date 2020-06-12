@@ -39,8 +39,8 @@ class Standart extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Name',
-            'address' => 'Address',
+            'name' => 'Номи',
+            'address' => 'Манзил',
         ];
     }
 }

@@ -40,8 +40,8 @@ class Nizom extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'title' => 'Title',
-            'text' => 'Text',
+            'title' => 'Сарлавҳа',
+            'text' => 'Tекст',
         ];
     }
 }

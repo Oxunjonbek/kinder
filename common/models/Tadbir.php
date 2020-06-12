@@ -43,9 +43,9 @@ class Tadbir extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'title' => 'Title',
-            'text' => 'Text',
-            'image' => 'Image',
+            'title' => 'Сарлавҳа',
+            'text' => 'Текст',
+            'image' => 'Расм',
         ];
     }
 }

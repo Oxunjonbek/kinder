@@ -7,7 +7,7 @@ use kartik\grid\GridView;
 /* @var $searchModel backend\models\search\TarkibiyStructureSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Tarkibiy Structures';
+$this->title = 'Таркибий тузилма';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="tarkibiy-structure-index">

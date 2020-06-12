@@ -42,9 +42,9 @@ class Vacansy extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Name',
-            'title' => 'Title',
-            'salary' => 'Salary',
+            'name' => 'Бўш иш номи',
+            'title' => 'Изоҳ',
+            'salary' => 'Бўш иш сони',
         ];
     }
 }

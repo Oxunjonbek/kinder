@@ -5,8 +5,8 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model common\models\TarkibiyStructure */
 
-$this->title = 'Update Tarkibiy Structure: ' . $model->title;
-$this->params['breadcrumbs'][] = ['label' => 'Tarkibiy Structures', 'url' => ['index']];
+$this->title = 'Таркибий тузилма: ' . $model->title;
+$this->params['breadcrumbs'][] = ['label' => 'Таркибий тузилма', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->title, 'url' => ['view', 'id' => $model->id]];
 $this->params['breadcrumbs'][] = 'Update';
 ?>

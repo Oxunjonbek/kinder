@@ -45,10 +45,10 @@ class Genel extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Name',
-            'title' => 'Title',
-            'phone' => 'Phone',
-            'image' => 'Image',
+            'name' => 'Ф.И.О',
+            'title' => 'Лавозими',
+            'phone' => 'Телефон',
+            'image' => 'Расм',
         ];
     }
 }

@@ -45,9 +45,9 @@ class TarkibiyStructure extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'title' => 'Title',
-            'name' => 'Name',
-            'phone' => 'Phone',
+            'title' => 'Лавозими',
+            'name' => 'Ф.И.О',
+            'phone' => 'Телефон',
         ];
     }
 }
