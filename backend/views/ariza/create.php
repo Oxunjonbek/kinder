@@ -5,13 +5,11 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model common\models\Ariza */
 
-$this->title = 'Create Ariza';
-$this->params['breadcrumbs'][] = ['label' => 'Arizas', 'url' => ['index']];
+$this->title = 'Аризани киритинг';
+$this->params['breadcrumbs'][] = ['label' => 'Ариза', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="ariza-create">
-
-    <h1><?= Html::encode($this->title) ?></h1>
 
     <?= $this->render('_form', [
         'model' => $model,
