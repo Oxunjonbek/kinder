@@ -5,8 +5,8 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model common\models\Nizom */
 
-$this->title = 'Create Nizom';
-$this->params['breadcrumbs'][] = ['label' => 'Nizoms', 'url' => ['index']];
+$this->title = 'Низомлар';
+$this->params['breadcrumbs'][] = ['label' => 'Низомлар', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="nizom-create">

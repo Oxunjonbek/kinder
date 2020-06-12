@@ -5,13 +5,11 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model common\models\Qonunlar */
 
-$this->title = 'Create Qonunlar';
-$this->params['breadcrumbs'][] = ['label' => 'Qonunlars', 'url' => ['index']];
+$this->title = 'Қонунлар';
+$this->params['breadcrumbs'][] = ['label' => 'Қонунлар', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="qonunlar-create">
-
-    <h1><?= Html::encode($this->title) ?></h1>
 
     <?= $this->render('_form', [
         'model' => $model,

@@ -7,7 +7,7 @@ use kartik\grid\GridView;
 /* @var $searchModel backend\models\search\TadbirSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Tadbirs';
+$this->title = 'Тадбирлар';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="tadbir-index">

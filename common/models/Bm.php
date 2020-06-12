@@ -39,8 +39,8 @@ class Bm extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Name',
-            'address' => 'Address',
+            'name' => 'Карор номи',
+            'address' => 'url манзили',
         ];
     }
 }
