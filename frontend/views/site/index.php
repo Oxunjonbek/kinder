@@ -100,7 +100,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                         <?php foreach ($tanlov3 as $key => $value) : ?>
                                             <div class="item">
                                                 <a href="<?=Url::to(['site/tanlov-single','id'=>$value->id])?>"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$value->image?>" alt="" class="item-photo" /></a>
-                                                <a href="<?=Url::to(['site/tanlov-single','id'=>$value->id])?>"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$value->image?>" alt="" class="item-photo" /></a>
+                                                
                                                 <div class="item-content">
                                                     <h3><a href="<?=Url::to(['site/tanlov-single','id'=>$value->id])?>">
                                                         <?=$value->title?>

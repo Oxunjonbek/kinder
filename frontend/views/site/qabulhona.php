@@ -21,20 +21,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
             <?= $form->field($model, 'name',['options'=>['class'=>'form-']])->textInput(['autofocus' => true]) ?>
             <?= $form->field($model, 'viloyat_id')->dropDownList([
-                0 => 'Toshkent viloyati',
-                1 => 'Toshkent',
-                2 => 'Samarqand viloyati',
-                3 =>'Sirdaryo viloyati',
-                4 =>'Jizzax viloyati',
-                5 =>'Navoiy viloyati',
-                6 =>'Buxoro viloyati',
-                7 =>'Qashqadaryo viloyati',
-                8 =>'Surxondaryo viloyati',
-                9 =>'Xorazm viloyati',
-                10 =>'Qoraqolpog`iston Respublikasi',
-                11 =>'Andijon viloyati',
-                12 =>'Farg`ona viloyati',
-                13 =>'Namangan viloyati',
+                0 => 'Бойсун тумани',
                 'autofocus' => true]); ?>
                 <?= $form->field($model, 'tuman',['options'=>[
                     'class'=>'form-']])->textInput(['autofocus' => true]) ?>
@@ -54,10 +41,10 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
                 <?= $form->field($model, 'maqom')->dropDownList([
-                    0 => 'Band ishlaydi',
-                    1 => 'Ishsiz',
-                    2 => 'Pensioner',
-                    3=>'Talaba'
+                    0 => 'Банд ишлайди',
+                    1 => 'Ишсиз',
+                    2 => 'Пенсионер',
+                    3=>'Талаба'
                 ]); ?>
 
                 <?= $form->field($model, 'murojaat_type',['options'=>[
