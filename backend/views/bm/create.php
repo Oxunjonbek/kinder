@@ -5,13 +5,11 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model common\models\Bm */
 
-$this->title = 'Create Bm';
-$this->params['breadcrumbs'][] = ['label' => 'Bms', 'url' => ['index']];
+$this->title = ' BМ қарорларини киритиш';
+$this->params['breadcrumbs'][] = ['label' => 'BМ қарорлари', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="bm-create">
-
-    <h1><?= Html::encode($this->title) ?></h1>
 
     <?= $this->render('_form', [
         'model' => $model,

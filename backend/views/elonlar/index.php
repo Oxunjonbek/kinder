@@ -7,7 +7,7 @@ use kartik\grid\GridView;
 /* @var $searchModel backend\models\OurPartnerSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Наши партнеры';
+$this->title = 'Эълонлар';
 ?>
 <div class="our-partner-index">
 
@@ -93,7 +93,7 @@ $this->title = 'Наши партнеры';
             '<div style="width: 100%;">',
             '<div class="card-header ui-sortable-handle">',
             '<h3 class="card-title">{summary}</h3>',
-            '<div class="card-tools">' . Html::a('<i class="fa fa-plus"></i> Добавить', ['create'], ['class' => 'btn btn-info']) . ' &nbsp;  {toggleData} &nbsp; {export}</div>',
+            '<div class="card-tools">' . Html::a('<i class="fa fa-plus"></i> Киритиш', ['create'], ['class' => 'btn btn-info']) . ' &nbsp;  {toggleData} &nbsp; {export}</div>',
             '</div>',
             '</div>'
         ],

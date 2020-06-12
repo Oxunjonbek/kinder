@@ -39,8 +39,8 @@ class Farmonlar extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Name',
-            'address' => 'Address',
+            'name' => 'Фармон номи',
+            'address' => 'url manzili',
         ];
     }
 }
