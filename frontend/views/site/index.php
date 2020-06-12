@@ -45,15 +45,15 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                         <div class="item-header">
                             <a href="<?=Url::to(['site/tadbir-single','id'=>$tadbir->id])?>"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$tadbir->image?>" alt="" class="item-photo" style="width: 374px; height: 215px;"/></a>
                             <div class="article-slide">
-                                <h3><a href="<?=Url::to(['site/tadbir-single','id'=>$tadbir->id])?>">
-                                    <?=$tadbir->title?>
-                                </a></h3>
+                                <h3></h3>
                             </div>
                         </div>
                         <div class="item-content" >
-                                               <!--  <p style="color:black;">
-                                                        <?=$tadbir->text?>
-                                                    </p> -->
+                                                <p style="color:black;">
+                                                        <a href="<?=Url::to(['site/tadbir-single','id'=>$tadbir->id])?>">
+                                    <?=$tadbir->title?>
+                                </a>
+                                                    </p>
                                                 </div>
                                             </div>
                                             <?php foreach ($item3 as $key => $value) : ?>
@@ -85,28 +85,30 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                                 <div class="item-header">
                                                     <a href="<?=Url::to(['site/tanlov-single','id'=>$tanlov->id])?>"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$tanlov->image?>" alt="" class="item-photo" style="height:214px;" /></a>
                                                     <div class="article-slide" >
-                                                        <h3 ><a href="<?=Url::to(['site/tanlov-single','id'=>$value->id])?>">
-                                                            <?=$tanlov->title?>
-                                                        </a></h3>
+                                                        <h3 ></h3>
                                                     </div>
                                                 </div>
                                                 <div class="item-content" >
-                                                <!-- <p>
-                                                        <?=$tanlov->text?>
-                                                    </p> -->
+                                                <p>
+                                                        <a href="<?=Url::to(['site/tanlov-single','id'=>$value->id])?>">
+                                                            <?=$tanlov->title?>
+                                                        </a>
+                                                    </p> 
                                                 </div>
                                             </div>
 
 
-                                        <?php foreach ($tanlov3 as $key => $value) : ?>
-                                            <div class="item">
-                                                <a href="<?=Url::to(['site/tanlov-single','id'=>$value->id])?>"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$value->image?>" alt="" class="item-photo" /></a>
-                                                
-                                                <div class="item-content">
-                                                    <h3><a href="<?=Url::to(['site/tanlov-single','id'=>$value->id])?>">
-                                                        <?=$value->title?>
-                                                    </a></h3>
-                                                </div>
+                                            <?php foreach ($tanlov3 as $key => $value) : ?>
+                                                <div class="item">
+                                                    <a href="<?=Url::to(['site/tanlov-single','id'=>$value->id])?>">
+                                                        <img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$value->image?>" alt="" class="item-photo" /></a>
+                                                        <div class="item-content">
+                                                            <h3><a href="<?=Url::to(['site/tanlov-single','id'=>$value->id])?>">
+                                                                <?=$value->title?>
+                                                            </a></h3>
+                                                        </div>
+                                                    </div>
+                                                <?php endforeach; ?>
 
                                             </div>
                                             <!-- END .panel -->
