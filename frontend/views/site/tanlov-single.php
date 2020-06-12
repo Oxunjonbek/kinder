@@ -1,5 +1,5 @@
 <?php 
-// var_dump($tanlov->title);exit();
+// var_dump($one);exit();
 ?>
 	<div class="main-content">
 
@@ -7,14 +7,14 @@
 						<div class="panel">
 							<div class="shortcode-content hreview">
 								<div class="article-head">
-									<h1 class="fn"><?=$tanlov['title']?></h1>
+									<h1 class="fn"><?=$one['title']?></h1>
 
 								</div>
 
 								<div class="paragraph-row">
 									<div class="column12">
 										<div class="review-photo">
-											<img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$tanlov['image']?>" alt="" />
+											<img src="<?=Yii::getAlias('@web')?>/admin/uploads/tanlov/<?=$one['image']?>" alt="" />
 										</div>
 									</div>
 									<!-- <div class="column6"> -->
@@ -32,7 +32,7 @@
 									<!-- </div> -->
 								</div>
 
-								<p class="description"><?=$tanlov['text']?></p>
+								<p class="description"><?=$one['text']?></p>
 
 							</div>
 						<!-- END .panel -->

@@ -339,10 +339,10 @@ class SiteController extends Controller
 
     public function actionTanlovSingle($id=null)
     {
-        $tanlov = Tanlov::find()->where(['id'=>$id])->one();
-        // var_dump($tanlov['title']) ;exit();
+        $one = Tanlov::find()->where(['id'=>$id])->one();
+        // var_dump($id) ;exit();
         return $this->render('tanlov-single',[
-            'tanlov'=>$tanlov
+            'one'=>$one
         ]);
     }
 
