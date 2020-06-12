@@ -110,7 +110,7 @@ $tanlov = Tanlov::find()->orderBy(['id'=>SORT_ASC])->limit(3)->all();
                         </div>
                         <div>
                             <p>Манзил: Сурхондарё вилояти </br> Бойсун туман Оби Ҳаёт махалласи.</p>
-                            <p>Телефон: +998-(76)-335-51-04</p>
+                            <p>Телефон: +99876 335 10 40</p>
                             <p>E-mail: info@boysun-mtm.uz</p>
                             
                         </div>
