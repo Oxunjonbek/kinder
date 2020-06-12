@@ -39,8 +39,8 @@ class Pedagog extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Name',
-            'prof' => 'Prof',
+            'name' => 'Хужжат Номи',
+            'prof' => 'Мавзуси',
         ];
     }
 }

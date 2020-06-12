@@ -77,7 +77,7 @@ $elonlar = Elonlar::find()->orderBy(['id'=>SORT_DESC])->limit(4)->all();
                             </li> 
                             <li><a href="<?=Url::to('#')?>">Интерактив хизматлар</a>
                                 <ul class="sub-menu">
-                                    <li><a href="<?=Url::to(['site/elektron'])?>">МТТда электрон навбат ва бўш ўринлар ҳақида маълумот</a></li>
+                                   <!-- <li><a href="<?=Url::to(['site/elektron'])?>">МТТда электрон навбат ва бўш ўринлар ҳақида маълумот</a></li>-->
                                     <li><a href="<?=Url::to(['site/pedagoglar'])?>">Педагогларга
 </a></li>
                                     <li><a href="<?=Url::to(['site/ota-onalar'])?>">Ота-оналарга

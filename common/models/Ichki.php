@@ -42,8 +42,8 @@ class Ichki extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Name',
-            'file' => 'File',
+            'name' => 'ХужжатName',
+            'file' => 'Файл',
         ];
     }
 }

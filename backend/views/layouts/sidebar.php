@@ -30,7 +30,7 @@
                     <a href="<?= Url::to(['site/index']) ?>" class="nav-link <?=($pathInfo == 'site/index' ? 'active' : '')?>">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
-                            KinderGarden
+                            Бошқарма
                             <!--<span class="right badge badge-danger">New</span>-->
                         </p>
                     </a>
@@ -49,7 +49,7 @@
                     <a href="<?= Url::to(['ariza/index']) ?>" class="nav-link <?=($pathInfo == 'ariza/index' ? 'active' : '')?>">
                         <i class="nav-icon far fa-plus-square"></i>
                         <p>
-                            Ariza
+                            Ариза
                         </p>
                     </a>
                 </li>
@@ -62,14 +62,14 @@
                     </a>
                 </li>
 
-                <li class="nav-item">
-                    <a href="<?= Url::to(['interaktiv/index']) ?>" class="nav-link <?=($pathInfo == 'interaktiv/index' ? 'active' : '')?>">
+                <!-- <li class="nav-item"> -->
+               <!--      <a href="<?= Url::to(['interaktiv/index']) ?>" class="nav-link <?=($pathInfo == 'interaktiv/index' ? 'active' : '')?>">
                         <i class="nav-icon far fa-plus-square"></i>
                         <p>
                             МТТда электрон навбат ва бўш ўринлар ҳақида маълумот
                         </p>
                     </a>
-                </li>
+                </li> -->
                 <li class="nav-item">
                     <a href="<?= Url::to(['pedagog/index']) ?>" class="nav-link <?=($pathInfo == 'pedagog/index' ? 'active' : '')?>">
                         <i class="nav-icon far fa-plus-square"></i>
@@ -84,7 +84,7 @@
                     <a href="<?= Url::to(['ichki/index']) ?>" class="nav-link <?=($pathInfo == 'ichki/index' ? 'active' : '')?>">
                         <i class="nav-icon far fa-plus-square"></i>
                         <p>
-                            Ichki
+                            Ички хужжатлар
                         </p>
                     </a>
                 </li>
@@ -93,7 +93,7 @@
                     <a href="<?= Url::to(['standart/index']) ?>" class="nav-link <?=($pathInfo == 'standart/index' ? 'active' : '')?>">
                         <i class="nav-icon far fa-plus-square"></i>
                         <p>
-                            Standart
+                            Стандарт
                         </p>
                     </a>
                 </li>
@@ -102,7 +102,7 @@
                     <a href="<?= Url::to(['bm/index']) ?>" class="nav-link <?=($pathInfo == 'bm/index' ? 'active' : '')?>">
                         <i class="nav-icon far fa-plus-square"></i>
                         <p>
-                            Bm
+                            BМ қарорлари
                         </p>
                     </a>
                 </li>
@@ -111,7 +111,7 @@
                     <a href="<?= Url::to(['elonlar/index']) ?>" class="nav-link <?=($pathInfo == 'elonlar/index' ? 'active' : '')?>">
                         <i class="nav-icon fas fa-trophy text-teal"></i>
                         <p>
-                            E'lonlar
+                           Эълонлар
                         </p>
                     </a>
                 </li>
@@ -120,7 +120,7 @@
                     <a href="<?= Url::to(['farmonlar/index']) ?>" class="nav-link <?=($pathInfo == 'contact/index' ? 'active' : '')?>">
                         <i class="nav-icon fas fa-phone-square"></i>
                         <p>
-                            Farmonlar
+                            Фармонлар
                         </p>
                     </a>
                 </li>
@@ -129,7 +129,7 @@
                     <a href="<?= Url::to(['nizom/index']) ?>" class="nav-link <?=($pathInfo == 'nizom/index' ? 'active' : '')?>">
                         <i class="nav-icon fas fa-copy"></i>
                         <p>
-                            Nizomlar
+                            Низомлар
                         </p>
                     </a>
                 </li>
@@ -138,7 +138,7 @@
                     <a href="<?= Url::to(['qonunlar/index']) ?>" class="nav-link <?=($pathInfo == 'qonunlar/index' ? 'active' : '')?>">
                         <i class="nav-icon fas fa-envelope"></i>
                         <p>
-                            Qonunlar
+                            Қонунлар
                         </p>
                     </a>
                 </li>
@@ -147,7 +147,7 @@
                     <a href="<?= Url::to(['structure/index']) ?>" class="nav-link <?=($pathInfo == 'structure/index' ? 'active' : '')?>">
                         <i class="nav-icon far fa-image"></i>
                         <p>
-                            Tuzilma
+                            Тузилма
                         </p>
                     </a>
                 </li>
@@ -156,7 +156,7 @@
                     <a href="<?= Url::to(['tadbir/index']) ?>" class="nav-link <?=($pathInfo == 'tadbir/index' ? 'active' : '')?>">
                         <i class="nav-icon fas fa-book"></i>
                         <p>
-                            Tadbir
+                            Тадбир
                         </p>
                     </a>
                 </li>
@@ -165,7 +165,7 @@
                     <a href="<?= Url::to(['tanlov/index']) ?>" class="nav-link <?=($pathInfo == 'tanlov/index' ? 'active' : '')?>">
                         <i class="nav-icon fas fa-circle"></i>
                         <p>
-                            Tanlov
+                            Танлов
                         </p>
                     </a>
                 </li>
@@ -173,7 +173,7 @@
                     <a href="<?= Url::to(['tarkibiy-structure/index']) ?>" class="nav-link <?=($pathInfo == 'tarkibiy-structure/index' ? 'active' : '')?>">
                         <i class="nav-icon fas fa-circle"></i>
                         <p>
-                            Tarkibiy stuktura
+                            Таркибий тузилма
                         </p>
                     </a>
                 </li>
@@ -181,7 +181,7 @@
                     <a href="<?= Url::to(['vacansy/index']) ?>" class="nav-link <?=($pathInfo == 'vacansy/index' ? 'active' : '')?>">
                         <i class="nav-icon fas fa-circle"></i>
                         <p>
-                            Vakansiya
+                           Ваканция
                         </p>
                     </a>
                 </li>
