@@ -109,12 +109,10 @@ $tanlov = Tanlov::find()->orderBy(['id'=>SORT_ASC])->limit(3)->all();
                             <h3>Biz haqimizda</h3>
                         </div>
                         <div>
-                            <p>Manzil: Surxondaryo viloyati Denov shahri
-
-                                Telefon: +998(91) 510-05-88
-
-                            E-mail: info@denov-mtm.uz</p>
-                            <img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-5.jpg" alt="" />
+                            <p>Манзил: Сурхондарё вилояти </br> Бойсун туман Косиблар махалласи.</p>
+                            <p>Телефон: +998-(76)-335-10-94</p>
+                            <p>E-mail: info@boysun-mtm.uz</p>
+                            
                         </div>
                         <!-- END .widget -->
                     </div>
