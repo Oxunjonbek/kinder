@@ -16,7 +16,7 @@ $rows = Elonlar::find()->orderBy(['id'=>SORT_DESC])->limit(4)->all();
         </div>
         <div class="banner">
             <a href="<?=Url::to(['site/qabulhona'])?>" class="upper-title"><i class="fa fa-caret-down"></i></a>
-            <a href="<?=Url::to(['site/qabulhona'])?>" ><img src="<?=Yii::getAlias('@web')?>/foto/images/no-banner-300x250.png" alt="" /></a>
+            <a href="<?=Url::to(['site/qabulhona'])?>" ><img src="<?=Yii::getAlias('@web')?>/foto/images/987.jpg" alt="" /></a>
         </div>
         <!-- END .widget -->
     </div>
@@ -144,7 +144,7 @@ $rows = Elonlar::find()->orderBy(['id'=>SORT_DESC])->limit(4)->all();
                                 
                                 <div class="item">
                                     <center>
-                                     <a href="https://president.uz/" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/1.png?>" class="item-photo" alt="" /></a>
+                                     <a href="https://president.uz/" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/1.png" class="item-photo" alt="" /></a>
                                  </center>
                                  <center>
                                     <h3><a href="https://president.uz/" target="_blank">Ўзбекистон Республикаси Давлат Хукумати Портали</a></h3>

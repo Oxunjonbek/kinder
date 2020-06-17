@@ -54,11 +54,11 @@ $tanlov = Tanlov::find()->orderBy(['id'=>SORT_ASC])->limit(3)->all();
 
                     <div class="header-block">
                         <div class="header-logo">
-                            <a href="<?=Url::to(['site/index'])?>"><img src="<?=Yii::getAlias('@web')?>/foto/images/header-logo.png" alt="" /></a>
+                            <a href="<?=Url::to(['site/index'])?>"><img src="<?=Yii::getAlias('@web')?>/foto/images/head.png" alt="" /></a>
                             <!-- <h1><a href="index.html">NOVOMag</a></h1> -->
                         </div>
                         <div class="header-banner">
-                            <a href="#" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/logo.png" alt="" /></a>
+                            <a href="#" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/852.jpg" alt="" /></a>
                             
                         </div>
                     </div>

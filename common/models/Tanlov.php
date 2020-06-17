@@ -32,7 +32,7 @@ class Tanlov extends \yii\db\ActiveRecord
             [['title', 'text', 'image'], 'required'],
             [['title', 'text'], 'string'],
             [['image'], 'string', 'max' => 255],
-            [['img'], 'file', 'skipOnEmpty' => true, 'extensions' => 'png, jpg,gif,jpeg'],
+            [['img'], 'file', 'skipOnEmpty' => true, 'extensions' => 'png, jpg,gif,jpeg,mp4,avi'],
         ];
     }
 
