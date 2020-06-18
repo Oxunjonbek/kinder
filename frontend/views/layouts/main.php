@@ -38,11 +38,16 @@ $tanlov = Tanlov::find()->orderBy(['id'=>SORT_ASC])->limit(3)->all();
         <!-- BEGIN .header -->
         <header class="header">
 
-            <div class="header-topmenu">
+            <div class="header-topmenu"  style="background-color: rgb(11, 82, 100);">
 
                 <!-- BEGIN .wrapper -->
-                <div class="wrapper">
+                <div class="wrapper" >
 
+                    <ul class="le-first" style="background-color: rgb(11, 82, 100);">
+                            <li style="background-color: rgb(11, 82, 100);"><a href="#">Telegram</a></li>
+                            <li style="background-color: rgb(11, 82, 100);"><a href="#">Facebook</a></li>
+                            <li style="background-color: rgb(11, 82, 100);"><a href="#">Instagram</a>
+                        </ul>
                         
                     </div>
                     <!-- END .wrapper -->
@@ -54,11 +59,11 @@ $tanlov = Tanlov::find()->orderBy(['id'=>SORT_ASC])->limit(3)->all();
 
                     <div class="header-block">
                         <div class="header-logo">
-                            <a href="<?=Url::to(['site/index'])?>"><img src="<?=Yii::getAlias('@web')?>/foto/images/header-logo.png" alt="" /></a>
+                            <a href="<?=Url::to(['site/index'])?>"><img src="<?=Yii::getAlias('@web')?>/foto/images/head.png" alt="" /></a>
                             <!-- <h1><a href="index.html">NOVOMag</a></h1> -->
                         </div>
                         <div class="header-banner">
-                            <a href="#" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/logo.png" alt="" /></a>
+                            <a href="#" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/852.jpg" alt="" /></a>
                             
                         </div>
                     </div>
@@ -109,7 +114,7 @@ $tanlov = Tanlov::find()->orderBy(['id'=>SORT_ASC])->limit(3)->all();
                             <h3>Biz haqimizda</h3>
                         </div>
                         <div>
-                            <p>Манзил: Сурхондарё вилояти </br> Бойсун туман Оби Ҳаёт махалласи.</p>
+                            <p>Манзил: Сурхондарё вилояти  Бойсун тумани </br> Оби махалласи Ҳаёт абадий кучаси.</p>
                             <p>Телефон: +99876 335 10 40</p>
                             <p>E-mail: info@boysun-mtm.uz</p>
                             

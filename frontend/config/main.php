@@ -8,6 +8,10 @@ $params = array_merge(
 
 return [
     'id' => 'app-frontend',
+    'language' => 'uz',
+    'timeZone' => 'Asia/Tashkent',
+    // 'layout' => 'techone/main',
+    'name' => 'Ўзбекистон туризм магистрали туризм транспорт коридори',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
@@ -19,6 +23,20 @@ return [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
             'identityCookie' => ['name' => '_identity-frontend', 'httpOnly' => true],
+        ],
+        'urlManager' => $urlManager,
+//        'urlManagerBackEnd' => $urlManagerBackEnd,
+        'i18n' => [
+            'translations' => [
+                '*' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'basePath' => '@frontend/messages',
+                    'sourceLanguage' => 'uz',
+                    'fileMap' => [
+                        'template' => 'template.php',
+                    ],
+                ],
+            ],
         ],
         'session' => [
             // this is the name of the session cookie used for login on the frontend
