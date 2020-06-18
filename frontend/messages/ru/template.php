@@ -1,0 +1,35 @@
+<?php
+return [
+    'Bosh sahifa'=>'Главная',
+    'Bolim haqida'=>'О разделе',
+    'Raxbariyat'=>'О разделе',    
+    'Tuzilma'=>'Структура',
+    'Tarkibiy tuzilma'=>'Структурная структура',
+    'Bo\'sh ish o\'rinlari'=>'Вакансии',
+    'Yangiliklar'=>'Yangiliklar',
+    'Tadbirlar'=>'Мероприятия',
+    'Tanlovlar'=>'Выбор',
+    'Elonlar va tendorlar'=>'Объявления и тендеры',
+    'Xujjatlar'=>'Документы',
+    'Qonunlar'=>'Законы',
+    'Prezident farmon va qarorlari'=>'Президентские указы и постановления',
+    'VM qaror va farmoyishlari'=>'Решения и приказы СП',
+    'Ichki hujjatlar'=>'Внутренние документы',
+    'Interaktiv xizmatlar'=>'Интерактивные услуги',
+    'Pedagoglar'=>'Воспитатели',
+    'ota-onalarga'=>'Родителям',
+    'Savol-javoblar'=>'Вопросы и ответы',
+    'Ariza va blanklar namunasi'=>'Образец заявки и бланки',
+    'MTTLAR'=>'ДО',
+    'Aloqa'=>'Связь',
+    'murojatlar'=>'Апелляции',
+    'So\'ngi yangiliklar'=>'Последние новости',
+    'Ko\'p o\'qiladigan yangiliklari'=>'Самые читаемые новости',
+    'Foydali manzillar'=>'Полезные адреса',
+    'Bizni kuzatib boring'=>'Подписывайтесь на нас',
+    'Fotogalereya'=>'Фотогалерея',
+    'Kalit so\'zlar'=>'Ключевые слова',
+    'Biz haqimizda'=>'О нас'
+
+
+];
