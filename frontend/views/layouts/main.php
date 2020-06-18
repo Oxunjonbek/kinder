@@ -38,11 +38,16 @@ $tanlov = Tanlov::find()->orderBy(['id'=>SORT_ASC])->limit(3)->all();
         <!-- BEGIN .header -->
         <header class="header">
 
-            <div class="header-topmenu">
+            <div class="header-topmenu"  style="background-color: rgb(11, 82, 100);">
 
                 <!-- BEGIN .wrapper -->
-                <div class="wrapper">
+                <div class="wrapper" >
 
+                    <ul class="le-first" style="background-color: rgb(11, 82, 100);">
+                            <li style="background-color: rgb(11, 82, 100);"><a href="#">Telegram</a></li>
+                            <li style="background-color: rgb(11, 82, 100);"><a href="#">Facebook</a></li>
+                            <li style="background-color: rgb(11, 82, 100);"><a href="#">Instagram</a>
+                        </ul>
                         
                     </div>
                     <!-- END .wrapper -->
