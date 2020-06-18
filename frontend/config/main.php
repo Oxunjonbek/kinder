@@ -20,6 +20,20 @@ return [
             'enableAutoLogin' => true,
             'identityCookie' => ['name' => '_identity-frontend', 'httpOnly' => true],
         ],
+        'urlManager' => $urlManager,
+//        'urlManagerBackEnd' => $urlManagerBackEnd,
+        'i18n' => [
+            'translations' => [
+                '*' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'basePath' => '@frontend/messages',
+                    'sourceLanguage' => 'uz',
+                    'fileMap' => [
+                        'template' => 'template.php',
+                    ],
+                ],
+            ],
+        ],
         'session' => [
             // this is the name of the session cookie used for login on the frontend
             'name' => 'advanced-frontend',
