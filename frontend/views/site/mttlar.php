@@ -13,22 +13,22 @@ use yii\helpers\Url; ?>
 				
 					
 				
-				<div class="item" class="col-sm" style="float: left; margin-right: 18px;">
+				<div class="item" class="col-sm" style="float: left; margin-right: 14px;">
 
 					<h3 style="text-indent: 60px;"><?=$value->name?></h3>
-					<p style="color: #339966; font-size: 18px;">
-						<span style="color: #008000;font-size: 18px; font-weight: bold;">	 Mудира:
+					<p style="color: #339966; font-size: 14px; font-family: Times New Roman;">
+						<span style="color: #008000;font-size: 14px; font-weight: bold;">	 Mудира:
 						</span>
 						<?=$value->prof?>
 					</p>
-					<p style="color: #339966; font-size: 18px;">
-						<span style="color: #008000;font-size: 18px; font-weight: bold;">Телефон:
+					<p style="color: #339966; font-size: 14px;">
+						<span style="color: #008000;font-size: 14px; font-weight: bold;">Телефон:
 						</span>
 						<?=$value->phone?>
 							
 					</p>
-					<p style="color: #339966; font-size: 18px;">
-						<span style="color: #008000;font-size: 18px; font-weight: bold;">Манзил:
+					<p style="color: #339966; font-size: 14px;">
+						<span style="color: #008000;font-size: 14px; font-weight: bold;">Манзил:
 						</span>
 						<?=$value->address?>
 							

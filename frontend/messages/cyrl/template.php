@@ -22,7 +22,7 @@ return [
     'Ariza va blanklar namunasi'=>'Ариза ва бланклар намунаси',
     'MTTLAR'=>'МТТЛАР',
     'Aloqa'=>'Алока',
-    'Murojaatlar'=>'Мурожатлар',
+    'Murojaatlar'=>'Мурожаатлар',
     'So\'ngi yangiliklar'=>'Сунги янгиликлар',
     'Ko\'p o\'qiladigan yangiliklari'=>'Куп укиладиган янгиликлар',
     'Foydali manzillar'=>'Фойдали манзиллар',

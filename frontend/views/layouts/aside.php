@@ -12,7 +12,7 @@ $rows = Elonlar::find()->orderBy(['id'=>SORT_DESC])->limit(4)->all();
     <!-- BEGIN .widget -->
     <div class="widget" >
         <div class="w-title" >
-            <h3 style="background-color: rgb(11, 82, 100);">Мурожаатлар</h3>
+            <h3 style="background-color: rgb(11, 82, 100);"><?=Yii::t('template','Murojaatlar')?></h3>
         </div>
         <div class="banner">
             <a href="<?=Url::to(['site/qabulhona'])?>" class="upper-title"><i class="fa fa-caret-down"></i></a>

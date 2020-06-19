@@ -22,7 +22,7 @@ return [
     'Ariza va blanklar namunasi'=>'Образец заявки и бланки',
     'MTTLAR'=>'ДО',
     'Aloqa'=>'Связь',
-    'murojatlar'=>'Апелляции',
+    'Murojaatlar'=>'Апелляции',
     'So\'ngi yangiliklar'=>'Последние новости',
     'Ko\'p o\'qiladigan yangiliklari'=>'Самые читаемые новости',
     'Foydali manzillar'=>'Полезные адреса',
