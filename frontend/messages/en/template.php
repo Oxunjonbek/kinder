@@ -1,6 +1,5 @@
 <?php
 return [
-    'title'=>'Бойсун тумани мактабгача таьлим бўлими',
     'Bosh sahifa'=>'Home',
     'Bolim haqida'=>'About section',
     'Raxbariyat'=>'Guide',    
@@ -23,7 +22,7 @@ return [
     'Ariza va blanklar namunasi'=>'Sample application and forms',
     'MTTLAR'=>'PE',
     'Aloqa'=>'Communication',
-    'Murojaatlar'=>'Муророжаатлар',
+    'Murojaatlar'=>'Appeals',
     'So\'ngi yangiliklar'=>'Last news',
     'Ko\'p o\'qiladigan yangiliklari'=>'Most read news',
     'Foydali manzillar'=>'Useful addresses',

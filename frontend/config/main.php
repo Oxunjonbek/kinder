@@ -8,7 +8,7 @@ $params = array_merge(
 
 return [
     'id' => 'app-frontend',
-    'language' => 'uz',
+    'language' => 'cyrl',
     'timeZone' => 'Asia/Tashkent',
     // 'layout' => 'techone/main',
     'name' => 'Ўзбекистон туризм магистрали туризм транспорт коридори',
@@ -32,7 +32,7 @@ return [
                 '*' => [
                     'class' => 'yii\i18n\PhpMessageSource',
                     'basePath' => '@frontend/messages',
-                    'sourceLanguage' => 'uz',
+                    'sourceLanguage' => 'cyrl',
                     'fileMap' => [
                         'template' => 'template.php',
                     ],
