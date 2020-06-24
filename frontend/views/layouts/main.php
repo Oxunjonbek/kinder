@@ -12,7 +12,7 @@ use frontend\assets\AppAsset;
 use common\widgets\Alert;
 use common\models\Tadbir;
 use common\models\Tanlov;
-
+use frontend\components\LanguageChange;
 AppAsset::register($this);
 $tadbir = Tadbir::find()->orderBy(['id'=>SORT_ASC])->limit(3)->all();
 $tanlov = Tanlov::find()->orderBy(['id'=>SORT_ASC])->limit(3)->all();
@@ -43,7 +43,44 @@ $lang = Yii::$app->language;
 
                 <!-- BEGIN .wrapper -->
                 <div class="wrapper" >
-                              <ul class="menu-topbar">
+                     <ul class="menu-topbar">
+                    <li class="language menu-item-has-children">
+                        <?php if (Yii::$app->language == 'uz'): ?>
+                            <a href="<?= LanguageChange::createMultipleLanguageReturnUrl('uz') ?>"
+                               class="toggle-sub-menu">
+                                <span class="fa fa-flag"></span>Uz
+                            </a>
+                            <ul class="list-language sub-menu">
+                                <li>
+                                    <a href="<?= LanguageChange::createMultipleLanguageReturnUrl('ru') ?>">
+                                        <span class="fa fa-flag"></span>RU
+                                    </a>
+                                </li>
+                            </ul>
+                        <?php elseif (Yii::$app->language == 'ru'): ?>
+                            <a href="<?= LanguageChange::createMultipleLanguageReturnUrl('ru') ?>"
+                               class="toggle-sub-menu">
+                                <span class="fa fa-flag"></span>RU
+                            </a>
+                            <ul class="list-language sub-menu">
+                                <li>
+                                    <a href="<?= LanguageChange::createMultipleLanguageReturnUrl('uz') ?>">
+                                        <span class="fa fa-flag"></span>UZ
+                                    </a>
+                                </li>
+                            </ul>
+                        <?php endif ?>
+                    </ul>
+                    <ul class="list-socials">
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                    </ul>
+                    
+                    </div>
+                              <!-- <ul class="menu-topbar">
                         <li class="language menu-item-has-children">
                             <a href="#" class="toggle-sub-menu"><span class="flag"><img src="images/flag1.jpg" alt=""></span><?php if($lang =='uz'){echo "O'zbekcha";}else{echo "Русский";}?></a>
                             <ul class="list-language sub-menu">
@@ -75,7 +112,7 @@ $lang = Yii::$app->language;
                             <li style="background-color: rgb(11, 82, 100);"><a href="#">Telegram</a></li>
                             <li style="background-color: rgb(11, 82, 100);"><a href="#">Facebook</a></li>
                             <li style="background-color: rgb(11, 82, 100);"><a href="#">Instagram</a>
-                        </ul>
+                        </ul> -->
                         
                     </div>
                     <!-- END .wrapper -->
