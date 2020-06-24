@@ -15,7 +15,6 @@ return [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
-    // 'language' => 'ru',
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-frontend',
@@ -32,7 +31,7 @@ return [
                 '*' => [
                     'class' => 'yii\i18n\PhpMessageSource',
                     'basePath' => '@frontend/messages',
-                    'sourceLanguage' => 'uz',
+                    'sourceLanguage' => 'ru',
                     'fileMap' => [
                         'template' => 'template.php',
                     ],
@@ -55,15 +54,6 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        
-        // 'urlManager' => [
-        //     'enablePrettyUrl' => true,
-        //     'showScriptName' => false,
-        //     'rules' => [
-        //         'post/page/<page:\d+>' => 'post/index',
-        //         'post/' => 'post/index',
-        //     ],
-        // ],
          'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
