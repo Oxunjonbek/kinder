@@ -1,6 +1,7 @@
 <?php
 return [
     'Biz haqimizda'=>'Biz haqimizda',
+    'title'=>'Бойсун тумани мактабгача таьлим бўлими',
     'Bosh sahifa'=>'Home',
     'Bolim haqida'=>'About section',
     'Raxbariyat'=>'Guide',    

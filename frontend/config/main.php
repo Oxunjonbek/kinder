@@ -8,7 +8,7 @@ $params = array_merge(
 
 return [
     'id' => 'app-frontend',
-    'language' => 'uz',
+    'language' => 'cyrl',
     'timeZone' => 'Asia/Tashkent',
     // 'layout' => 'techone/main',
     'name' => 'Ўзбекистон туризм магистрали туризм транспорт коридори',
@@ -24,14 +24,13 @@ return [
             'enableAutoLogin' => true,
             'identityCookie' => ['name' => '_identity-frontend', 'httpOnly' => true],
         ],
-        'urlManager' => $urlManager,
+         'urlManager' => $urlManager,
 //        'urlManagerBackEnd' => $urlManagerBackEnd,
         'i18n' => [
             'translations' => [
                 '*' => [
                     'class' => 'yii\i18n\PhpMessageSource',
-                    'basePath' => '@frontend/messages',
-                    'sourceLanguage' => 'ru',
+                    'sourceLanguage' => 'cyrl',
                     'fileMap' => [
                         'template' => 'template.php',
                     ],
