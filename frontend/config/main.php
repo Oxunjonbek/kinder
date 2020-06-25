@@ -8,7 +8,7 @@ $params = array_merge(
 
 return [
     'id' => 'app-frontend',
-    'language' => 'cyrl',
+    'language' => 'uz',
     'timeZone' => 'Asia/Tashkent',
     // 'layout' => 'techone/main',
     'name' => 'Ўзбекистон туризм магистрали туризм транспорт коридори',
@@ -25,14 +25,14 @@ return [
             'enableAutoLogin' => true,
             'identityCookie' => ['name' => '_identity-frontend', 'httpOnly' => true],
         ],
-         'urlManager' => $urlManager,
+         'urlManager' => require __DIR__ . '/urlManager.php',
 //        'urlManagerBackEnd' => $urlManagerBackEnd,
         'i18n' => [
             'translations' => [
                 '*' => [
                     'class' => 'yii\i18n\PhpMessageSource',
                     'basePath' => '@frontend/messages',
-                    'sourceLanguage' => 'cyrl',
+                    'sourceLanguage' => 'uz',
                     'fileMap' => [
                         'template' => 'template.php',
                     ],
@@ -54,24 +54,6 @@ return [
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',
-        ],
-        
-        // 'urlManager' => [
-        //     'enablePrettyUrl' => true,
-        //     'showScriptName' => false,
-        //     'rules' => [
-        //         'post/page/<page:\d+>' => 'post/index',
-        //         'post/' => 'post/index',
-        //     ],
-        // ],
-         'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            'rules' => [
-                '<controller:\w+>/<id:\d+>' => '<controller>/view',
-                '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
-                '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
-            ],
         ],
         
     ],

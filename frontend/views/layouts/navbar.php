@@ -10,8 +10,8 @@ $elonlar = Elonlar::find()->orderBy(['id'=>SORT_DESC])->limit(4)->all();
                     <div class="wrapper">
 
                         <ul class="menu">
-                            <li><a href="<?=Url::to(['site/index'])?>">Бош саҳифа</a></li>
-                            <li><a href="<?=Url::to(['site/tadbirlar'])?>">Бўлим ҳақида</a>
+                            <li><a href="<?=Url::to(['site/index'])?>"><?= Yii::t('template', 'Bosh sahifa'); ?></a></li>
+                            <li><a href="<?=Url::to(['site/tadbirlar'])?>"><?= Yii::t('template', 'Bolim haqida'); ?></a>
                                 <ul class="sub-menu">
                                     <li><a href="<?=Url::to(['site/rahbariyat'])?>">Рахбарият</a></li>
                                     <li><a href="<?=Url::to(['site/tuzilma'])?>">Тузилма</a></li>

@@ -27,7 +27,7 @@ $lang = Yii::$app->language;
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php $this->registerCsrfMetaTags() ?>
-    <title><?= Html::encode($this->title) ?></title>
+    <title><?= Yii::t('template','title') ?></title>
     <?php $this->head() ?>
 </head>
 <body>
@@ -45,8 +45,8 @@ $lang = Yii::$app->language;
                 <div class="wrapper" >
                      <ul class="menu-topbar">
                     <li class="language menu-item-has-children">
-                        <?php if (Yii::$app->language == 'cyrl'): ?>
-                            <a href="<?= LanguageChange::createMultipleLanguageReturnUrl('cyrl') ?>"
+                        <?php if (Yii::$app->language == 'uz'): ?>
+                            <a href="<?= LanguageChange::createMultipleLanguageReturnUrl('uz') ?>"
                                class="toggle-sub-menu">
                                 <span class="fa fa-flag"></span> Uzbekcha
                             </a>
@@ -65,7 +65,7 @@ $lang = Yii::$app->language;
                             <ul class="list-language sub-menu">
                                 <li>
                                     <a href="<?= LanguageChange::createMultipleLanguageReturnUrl('uz') ?>">
-                                        <span class="fa fa-flag"></span>UZ
+                                        <span class="fa fa-flag"></span>Uzbekcha
                                     </a>
                                 </li>
                             </ul>
