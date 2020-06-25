@@ -24,7 +24,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'attribute'=>'text',
             'format'=>'raw'
         ],        'image',
-        'pdf_name'
+        'pdf_name',
+        'lang'
 
     ];
 

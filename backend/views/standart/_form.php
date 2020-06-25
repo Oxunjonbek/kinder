@@ -12,6 +12,7 @@ use dosamigos\tinymce\TinyMce;
 <div class="standart-form">
 
     <?php $form = ActiveForm::begin(); ?>
+    <?= $form->field($model, 'lang')->textInput(['maxlength' => true]) ?>
     <?= $form->field($model, 'name')->widget(TinyMce::className(), [
     'options' => ['rows' => 6],
     'language' => 'en_GB',

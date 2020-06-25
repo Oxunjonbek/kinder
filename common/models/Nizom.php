@@ -28,8 +28,8 @@ class Nizom extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['title', 'text'], 'required'],
-            [['title', 'text'], 'string'],
+            [['title', 'text','lang'], 'required'],
+            [['title', 'text','lang'], 'string'],
         ];
     }
 
@@ -42,6 +42,7 @@ class Nizom extends \yii\db\ActiveRecord
             'id' => 'ID',
             'title' => 'Сарлавҳа',
             'text' => 'Tекст',
+            'lang' => 'Tili',
         ];
     }
 }

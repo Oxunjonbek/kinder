@@ -27,8 +27,9 @@ class Interaktiv extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'address'], 'required'],
+            [['name', 'address','lang'], 'required'],
             [['name', 'address'], 'string', 'max' => 300],
+            [['lang'], 'string', 'max' => 200],
         ];
     }
 
@@ -41,6 +42,7 @@ class Interaktiv extends \yii\db\ActiveRecord
             'id' => 'ID',
             'name' => 'Name',
             'address' => 'Address',
+            'lang' => 'Tili',
         ];
     }
 }

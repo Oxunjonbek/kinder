@@ -22,7 +22,8 @@ $this->params['breadcrumbs'][] = $this->title;
         ],
         'name',
         'phone',
-        'image'
+        'image',
+        'lang'
     ];
 
     $columns[] = [

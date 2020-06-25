@@ -28,10 +28,11 @@ class Vacansy extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'title', 'salary'], 'required'],
-            [['title'], 'string'],
+            [['name', 'title', 'salary','lang'], 'required'],
+            [['title','lang'], 'string'],
             [['salary'], 'integer'],
             [['name'], 'string', 'max' => 255],
+            [['lang'], 'string', 'max' => 200],
         ];
     }
 
@@ -45,6 +46,7 @@ class Vacansy extends \yii\db\ActiveRecord
             'name' => 'Бўш иш номи',
             'title' => 'Изоҳ',
             'salary' => 'Бўш иш сони',
+            'lang' => 'Tili',
         ];
     }
 }

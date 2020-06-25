@@ -20,6 +20,7 @@ $this->title = 'МТТ';
         'prof',
         'phone',
         'address',
+        'lang'
     ];
 
     $columns[] = [

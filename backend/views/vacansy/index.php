@@ -20,7 +20,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'attribute'=>'title',
             'format'=>'raw'
         ],
-        'salary'
+        'salary',
+        'lang'
     ];
 
     $columns[] = [

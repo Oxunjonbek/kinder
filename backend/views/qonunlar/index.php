@@ -24,6 +24,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'attribute'=>'address',
             'format'=>'raw'
         ],
+        'lang'
 
     ];
 

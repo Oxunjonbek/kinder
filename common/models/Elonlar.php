@@ -30,8 +30,9 @@ class Elonlar extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['title', 'text', 'image'], 'required'],
+            [['title', 'text', 'image','lang'], 'required'],
             [['title', 'text','pdf_name'], 'string'],
+            [['lang'], 'string', 'max' => 200],
             [['image','pdf_name'], 'string', 'max' => 255],
             [['img'], 'file', 'skipOnEmpty' => true, 'extensions' => 'png, jpg,gif,jpeg'],
             [['pdf'], 'file', 'skipOnEmpty' => true, 'extensions' => 'pdf,doc,txt,xlsx'],
@@ -49,6 +50,7 @@ class Elonlar extends \yii\db\ActiveRecord
             'text' => 'Текст',
             'image' => 'Расм',
             'pdf_name' => 'PDF',
+            'lang' => 'Tili',
         ];
     }
 }

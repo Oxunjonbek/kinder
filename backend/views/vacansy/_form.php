@@ -14,7 +14,7 @@ use dosamigos\tinymce\TinyMce;
     <?php $form = ActiveForm::begin(); ?>
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
-
+    <?= $form->field($model, 'lang')->textInput(['maxlength' => true]) ?>
     <?= $form->field($model, 'title')->widget(TinyMce::className(), [
 		'options' => ['rows' => 9],
 		'language' => 'es',

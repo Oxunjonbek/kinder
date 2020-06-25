@@ -27,8 +27,9 @@ class Pedagog extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'prof'], 'required'],
+            [['name', 'prof','lang'], 'required'],
             [['name', 'prof'], 'string', 'max' => 300],
+            [['lang'], 'string', 'max' => 200],
         ];
     }
 
@@ -41,6 +42,7 @@ class Pedagog extends \yii\db\ActiveRecord
             'id' => 'ID',
             'name' => 'Хужжат Номи',
             'prof' => 'Мавзуси',
+            'lang' => 'Tili',
         ];
     }
 }

@@ -29,8 +29,9 @@ class Contact extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'email', 'address', 'phone'], 'required'],
+            [['name', 'email', 'address', 'phone','lang'], 'required'],
             [['name', 'address'], 'string', 'max' => 300],
+            [['lang'], 'string', 'max' => 200],
             [['email', 'phone'], 'string', 'max' => 255],
         ];
     }
@@ -46,6 +47,7 @@ class Contact extends \yii\db\ActiveRecord
             'email' => 'Email',
             'address' => 'Address',
             'phone' => 'Phone',
+            'lang' => 'Tili',
         ];
     }
 }

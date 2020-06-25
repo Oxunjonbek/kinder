@@ -28,9 +28,10 @@ class Ichki extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'file'], 'required'],
-            [['name'], 'string'],
+            [['name', 'file','lang'], 'required'],
+            [['name','lang'], 'string'],
             [['file'], 'string', 'max' => 255],
+            [['lang'], 'string', 'max' => 200],
             [['files'], 'file', 'skipOnEmpty' => true, 'extensions' => 'pdf,doc']
         ];
     }
@@ -44,6 +45,7 @@ class Ichki extends \yii\db\ActiveRecord
             'id' => 'ID',
             'name' => 'Хужжат номи',
             'file' => 'Файл',
+            'lang' => 'Tili',
         ];
     }
 }

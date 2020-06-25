@@ -20,7 +20,8 @@ $this->title = 'Эълонлар';
             'format'=>'raw'
         ],
         'image',
-        'pdf_name'
+        'pdf_name',
+        'lang'
     
     ];
 

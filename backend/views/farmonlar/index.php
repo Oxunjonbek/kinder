@@ -24,7 +24,8 @@ $this->title = 'Фармонлар';
         [
             'attribute'=>'name',
             'format'=>'raw'
-        ]
+        ],
+        'lang'
     ];
 
     $columns[] = [

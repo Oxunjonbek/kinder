@@ -30,9 +30,10 @@ class Tanlov extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['title', 'text', 'image'], 'required'],
-            [['title', 'text','pdf_name'], 'string'],
+            [['title', 'text', 'image','lang'], 'required'],
+            [['title', 'text','pdf_name','lang'], 'string'],
             [['image','pdf_name'], 'string', 'max' => 255],
+            [['lang'], 'string', 'max' => 200],
             [['img'], 'file', 'skipOnEmpty' => true, 'extensions' => 'png, jpg,gif,jpeg,mp4,avi'],
             [['pdf'], 'file', 'skipOnEmpty' => true, 'extensions' => 'pdf,doc,txt,xlsx'],
         ];
@@ -49,6 +50,7 @@ class Tanlov extends \yii\db\ActiveRecord
             'text' => 'Текст',
             'image' => 'Расм',
             'pdf_name' => 'PDF',
+            'lang' => 'Tili',
         ];
     }
 }

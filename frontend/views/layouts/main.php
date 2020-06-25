@@ -16,7 +16,7 @@ use frontend\components\LanguageChange;
 AppAsset::register($this);
 $tadbir = Tadbir::find()->orderBy(['id'=>SORT_ASC])->limit(3)->all();
 $tanlov = Tanlov::find()->orderBy(['id'=>SORT_ASC])->limit(3)->all();
-$lang = Yii::$app->language;
+// $lang = Yii::$app->language;
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -60,7 +60,7 @@ $lang = Yii::$app->language;
                         <?php elseif (Yii::$app->language == 'ru'): ?>
                             <a href="<?= LanguageChange::createMultipleLanguageReturnUrl('ru') ?>"
                                class="toggle-sub-menu">
-                                <span class="fa fa-flag"></span>RU
+                                <span class="fa fa-flag"></span> русский
                             </a>
                             <ul class="list-language sub-menu">
                                 <li>

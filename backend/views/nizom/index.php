@@ -24,8 +24,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'attribute'=>'text',
             'format'=>'raw'
         ],
-        // 'image'
-    ];
+        'lang'
+            ];
 
     $columns[] = [
         'class' => 'kartik\grid\ActionColumn',

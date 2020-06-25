@@ -12,6 +12,7 @@ use dosamigos\tinymce\TinyMce;
 <div class="tadbir-form">
 
 	<?php $form = ActiveForm::begin(); ?>
+	<?= $form->field($model, 'lang')->textInput(['maxlength' => true]) ?>
 	<?= $form->field($model, 'title')->widget(TinyMce::className(), [
 		'options' => ['rows' => 9],
 		'language' => 'en_GB',

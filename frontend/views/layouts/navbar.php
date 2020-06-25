@@ -38,10 +38,10 @@ $elonlar = Elonlar::find()->orderBy(['id'=>SORT_DESC])->limit(4)->all();
                                                 <div class="menu-content featured-post">
                                                     <div class="item-photo">
                                                         <a href="<?=Url::to(['site/elonlar'])?>"><img src="<?=Yii::getAlias('@web')?>/admin/uploads/elonlar/<?=$elon->image?>" alt="" /></a>
-                                                        <h3><a href="<?=Url::to(['site/elonlar'])?>"><?=$elon->title?></a></h3>
+                                                        <h3><a href="<?=Url::to(['site/elonlar'])?>"></a></h3>
                                                     </div>
                                                     <div class="item-content">
-                                                        <p><?=$elon->text?></p>
+                                                         <p><?=$elon->title?></p>
                                                     </div>
                                                 </div>
                                                 <!-- END .menu-block -->

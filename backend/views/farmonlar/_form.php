@@ -25,6 +25,7 @@ use dosamigos\tinymce\TinyMce;
         'toolbar' => "undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"
     ]
 ]);?>
+<?= $form->field($model, 'lang')->textInput(['maxlength' => true]) ?>
 <?= $form->field($model, 'address')->widget(TinyMce::className(), [
     'options' => ['rows' => 9],
     'language' => 'en_GB',

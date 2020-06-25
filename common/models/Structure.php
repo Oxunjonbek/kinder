@@ -29,8 +29,9 @@ class Structure extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'prof', 'phone'], 'required'],
+            [['name', 'prof', 'phone','lang'], 'required'],
             [['name'], 'string', 'max' => 300],
+            [['lang'], 'string', 'max' => 200],
             [['prof', 'phone','image'], 'string', 'max' => 255],
             [['img'], 'file', 'skipOnEmpty' => true, 'extensions' => 'png, jpg,gif,jpeg'],
         ];
@@ -46,6 +47,7 @@ class Structure extends \yii\db\ActiveRecord
             'name' => 'Ф.И.О',
             'prof' => 'Лавозими',
             'phone' => 'Телефон',
+            'lang' => 'Tili',
         ];
     }
 }

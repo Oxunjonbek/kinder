@@ -25,6 +25,7 @@ $this->title = 'Ариза';
         //     }
         // ],
         'files',
+        'lang'
     ];
 
     $columns[] = [

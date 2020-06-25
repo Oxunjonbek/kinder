@@ -27,8 +27,9 @@ class Farmonlar extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'address'], 'required'],
-            [['name', 'address'], 'string'],
+            [['name', 'address','lang'], 'required'],
+            [['name', 'address','lang'], 'string'],
+            [['lang'], 'string', 'max' => 200],
         ];
     }
 

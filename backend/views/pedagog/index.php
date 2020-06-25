@@ -16,16 +16,9 @@ $this->params['breadcrumbs'][] = $this->title;
     $columns = [
         ['class' => 'kartik\grid\SerialColumn'],
 
-        //'id',
         'name',
-        // [
-        //     'attribute'=>'files',
-        //     'format' => 'html',
-        //     'value' => function($model){
-        //         return \yii\helpers\Html::img($model->file, ['width'=>90]);
-        //     }
-        // ],
         'prof',
+        'lang'
     ];
 
     $columns[] = [

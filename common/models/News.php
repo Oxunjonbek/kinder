@@ -29,9 +29,10 @@ class News extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'text', 'image'], 'required'],
-            [['text'], 'string'],
+            [['name', 'text', 'image','lang'], 'required'],
+            [['text','lang'], 'string'],
             [['name'], 'string', 'max' => 300],
+            [['lang'], 'string', 'max' => 200],
             [['image'], 'string', 'max' => 255],
             [['img'], 'file', 'skipOnEmpty' => true, 'extensions' => 'png, jpg,gif,jpeg'],
         ];
@@ -47,6 +48,7 @@ class News extends \yii\db\ActiveRecord
             'name' => 'Name',
             'text' => 'Text',
             'image' => 'Image',
+            'lang' => 'Tili',
         ];
     }
 }

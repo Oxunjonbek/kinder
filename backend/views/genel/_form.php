@@ -27,6 +27,7 @@ use dosamigos\tinymce\TinyMce;
         'toolbar' => "undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"
     ]
 ]);?>
+<?= $form->field($model, 'lang')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'phone')->textInput(['maxlength' => true]) ?>
 

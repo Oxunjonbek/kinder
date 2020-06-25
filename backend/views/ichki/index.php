@@ -25,6 +25,7 @@ $this->title = 'Ички хужжатлар ';
         //     }
         // ],
         'file',
+        'lang'
     ];
 
     $columns[] = [

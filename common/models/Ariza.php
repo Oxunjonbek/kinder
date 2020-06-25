@@ -28,7 +28,8 @@ class Ariza extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'files'], 'required'],
+            [['name', 'files','lang'], 'required'],
+            [['lang'], 'string', 'max' => 200],
             [['name'], 'string', 'max' => 300],
             [['files'], 'string', 'max' => 255],
             [['file'], 'file', 'skipOnEmpty' => true, 'extensions' => 'pdf,doc']
@@ -44,6 +45,7 @@ class Ariza extends \yii\db\ActiveRecord
             'id' => 'ID',
             'name' => 'Ариза номи',
             'files' => 'Файлни танлаг',
+            'lang' => 'Tili',
         ];
     }
 }

@@ -29,8 +29,9 @@ class Mtt extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'prof', 'phone', 'address'], 'required'],
+            [['name', 'prof', 'phone', 'address','lang'], 'required'],
             [['name', 'prof', 'phone', 'address'], 'string', 'max' => 300],
+            [['lang'], 'string', 'max' => 200],
         ];
     }
 
@@ -45,6 +46,7 @@ class Mtt extends \yii\db\ActiveRecord
             'prof' => 'Мудира',
             'phone' => 'Телефон',
             'address' => 'Манзил',
+            'lang' => 'Tili',
         ];
     }
 }

@@ -23,11 +23,7 @@ $this->title = 'Раҳбарият';
         ],
         'phone',
         'image',
-        // 'text',
-        // [
-        //     'attribute'=>'text',
-        //     'format'=>'raw'
-        // ]
+        'lang'
     ];
 
     $columns[] = [

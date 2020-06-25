@@ -42,9 +42,10 @@ class Qabulhona extends \yii\db\ActiveRecord
         return [
             [['name', 'viloyat_id', 'tuman', 'manzil', 'email', 'phone', 'jins', 'birth_day', 'maqom', 'murojaat_type', 'file', 'murojaat_text', 'tasqidlash'], 'required'],
             [['viloyat_id', 'jins', 'maqom', 'murojaat_type', 'tasqidlash'], 'integer'],
-            [['murojaat_text'], 'string'],
+            [['murojaat_text','lang'], 'string'],
             [['name', 'tuman', 'manzil', 'email'], 'string', 'max' => 300],
             [['phone', 'birth_day', 'file'], 'string', 'max' => 255],
+            [['lang'], 'string', 'max' => 200],
             [['files'], 'file', 'skipOnEmpty' => true, 'extensions' => 'pdf,doc,ex'],
             ['verifyCode', 'captcha'],
         ];
@@ -72,6 +73,7 @@ class Qabulhona extends \yii\db\ActiveRecord
             'murojaat_text' => 'Мурожаат матни ',
             'tasqidlash' => 'Оммавий офертани тасдиқлаш',
             'verifyCode' => 'Кодни киритинг',
+            'lang' => 'Tili',
         ];
     }
 }

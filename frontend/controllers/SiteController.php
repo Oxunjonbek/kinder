@@ -93,25 +93,25 @@ class SiteController extends BaseController
      */
     public function actionIndex()
     {
-        $elon = Elonlar::find()->orderBy(['id'=>SORT_DESC])->one();
-        $tadbir = Tadbir::find()->orderBy(['id'=>SORT_DESC])->one();
-        $tanlov = Tanlov::find()->orderBy(['id'=>SORT_DESC])->one();
-        $tanlovlar = Tanlov::find()->orderBy(['id'=>SORT_DESC])->limit(4)->all();
-        $tadbirlar = Tadbir::find()->orderBy(['id'=>SORT_DESC])->limit(4)->all();
-        $elonlar = Elonlar::find()->orderBy(['id'=>SORT_DESC])->limit(4)->all();
-        $item3 = Tadbir::find()->orderBy(['id'=>SORT_DESC])->limit(3)->all();
-        $tanlov3 = Tanlov::find()->orderBy(['id'=>SORT_DESC])->limit(3)->all();
-        $tadbirs = Tadbir::find()->all();
+        // $elon = Elonlar::find()->orderBy(['id'=>SORT_DESC])->one();
+        // $tadbir = Tadbir::find()->orderBy(['id'=>SORT_DESC])->one();
+        // $tanlov = Tanlov::find()->orderBy(['id'=>SORT_DESC])->one();
+        // $tanlovlar = Tanlov::find()->orderBy(['id'=>SORT_DESC])->limit(4)->all();
+        // $tadbirlar = Tadbir::find()->orderBy(['id'=>SORT_DESC])->limit(4)->all();
+        // $elonlar = Elonlar::find()->orderBy(['id'=>SORT_DESC])->limit(4)->all();
+        // $item3 = Tadbir::find()->orderBy(['id'=>SORT_DESC])->limit(3)->all();
+        // $tanlov3 = Tanlov::find()->orderBy(['id'=>SORT_DESC])->limit(3)->all();
+        // $tadbirs = Tadbir::find()->all();
         return $this->render('index',[
-            'elon'=>$elon,
-            'tadbir'=>$tadbir,
-            'tanlov'=>$tanlov,
-            'tadbirlar'=>$tadbirlar,
-            'tanlovlar'=>$tanlovlar,
-            'elonlar'=>$elonlar,
-            'item3'=>$item3,
-            'tadbirs'=>$tadbirs,
-            'tanlov3'=>$tanlov3
+            // 'elon'=>$elon,
+            // 'tadbir'=>$tadbir,
+            // 'tanlov'=>$tanlov,
+            // 'tadbirlar'=>$tadbirlar,
+            // 'tanlovlar'=>$tanlovlar,
+            // 'elonlar'=>$elonlar,
+            // 'item3'=>$item3,
+            // 'tadbirs'=>$tadbirs,
+            // 'tanlov3'=>$tanlov3
         ]);
     }
 
@@ -300,83 +300,84 @@ class SiteController extends BaseController
     {   
 
 
-        $query = Tadbir::find()->orderBy(['id' => SORT_DESC]);
-        $countQuery = clone $query;
-        $pages = new Pagination(['totalCount' => $countQuery->count(), 'pageSize' => 10]);
-        $pages->pageSizeParam = false;
-        $tadbir = $query->offset($pages->offset)
-        ->limit($pages->limit)
-        ->all();
+        // $query = Tadbir::find()->orderBy(['id' => SORT_DESC]);
+        // $countQuery = clone $query;
+        // $pages = new Pagination(['totalCount' => $countQuery->count(), 'pageSize' => 10]);
+        // $pages->pageSizeParam = false;
+        // $tadbir = $query->offset($pages->offset)
+        // ->limit($pages->limit)
+        // ->all();
 
         return $this->render('tadbirlar',[
-            'tadbir'=>$tadbir,
-            'pages'=>$pages
+            // 'tadbir'=>$tadbir,
+            // 'pages'=>$pages
         ]);
     }
 
     public function actionTadbirSingle($id=null)
     {
-        $tadbir = Tadbir::find()->where(['id'=>$id])->one();
+        // $tadbir = Tadbir::find()->where(['id'=>$id])->one();
         return $this->render('tadbirlar-single',[
-            'tadbir'=>$tadbir
+            // 'tadbir'=>$tadbir
         ]);
     }
 
     public function actionTanlovlar()
     {
-        $query = Tanlov::find();
-        // $pages = new Pagination(['totalCount' => $query->count()]);
-        $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
-        $tanlov = $query->offset($pages->offset)
-        ->limit($pages->limit)
-        ->all();
+        // $query = Tanlov::find()->where(['lang'=>$lang]);
+        // // $pages = new Pagination(['totalCount' => $query->count()]);
+        // $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
+        // $tanlov = $query->offset($pages->offset)
+        // ->limit($pages->limit)
+        // ->all();
 
         return $this->render('tanlov',[
-            'tanlov'=>$tanlov,
-            'pages'=>$pages
+            // 'tanlov'=>$tanlov,
+            // 'pages'=>$pages
         ]);
     }
 
     public function actionTanlovSingle($id=null)
     {
-        $one = Tanlov::find()->where(['id'=>$id])->one();
+        // $one = Tanlov::find()->where(['lang'=>$lang,'id'=>$id])->one();
         // var_dump($id) ;exit();
         return $this->render('tanlov-single',[
-            'one'=>$one
+            // 'one'=>$one
         ]);
     }
 
     public function actionElonlar()
     {
-        $query = Elonlar::find();
-        $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
-        $elon = $query->offset($pages->offset)
-        ->limit($pages->limit)
-        ->all();
+        // $query = Elonlar::find();
+        // $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
+        // $elon = $query->offset($pages->offset)
+        // ->limit($pages->limit)
+        // ->all();
         return $this->render('elon',[
-            'elon'=>$elon,
-            'pages'=>$pages
+            // 'elon'=>$elon,
+            // 'pages'=>$pages
         ]);
     }
 
     public function actionElonSingle($id=null)
     {
-        $elon = Elonlar::find()->where(['id'=>$id])->one(); return $this->render('elon-single',[
-            'elon'=>$elon
+        // $elon = Elonlar::find()->where(['id'=>$id])->one(); 
+        return $this->render('elon-single',[
+            // 'elon'=>$elon
         ]);
     }
 
     public function actionTuzilma()
     {
-        $query = Structure::find();
-        // $pages = new Pagination(['totalCount' => $query->count()]);
-        $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
-        $tuzilma = $query->offset($pages->offset)
-        ->limit($pages->limit)
-        ->all();
+        // $query = Structure::find()->where(['lang'=>$lang]);
+        // // $pages = new Pagination(['totalCount' => $query->count()]);
+        // $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
+        // $tuzilma = $query->offset($pages->offset)
+        // ->limit($pages->limit)
+        // ->all();
         return $this->render('tuzilma',[
-            'tuzilma'=>$tuzilma,
-            'pages'=>$pages
+            // 'tuzilma'=>$tuzilma,
+            // 'pages'=>$pages
         ]);
     }
 
@@ -384,159 +385,159 @@ class SiteController extends BaseController
     {
         // $tarkibiy = TarkibiyStructure::find()->all();
 
-        $query = TarkibiyStructure::find();
-        // $pages = new Pagination(['totalCount' => $query->count()]);
-        $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
-        $tarkibiy = $query->offset($pages->offset)
-        ->limit($pages->limit)
-        ->all();
+        // $query = TarkibiyStructure::find();
+        // // $pages = new Pagination(['totalCount' => $query->count()]);
+        // $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
+        // $tarkibiy = $query->offset($pages->offset)
+        // ->limit($pages->limit)
+        // ->all();
 
 
         return $this->render('tarkibiy',[
-            'tarkibiy'=>$tarkibiy,
-            'pages'=>$pages
+            // 'tarkibiy'=>$tarkibiy,
+            // 'pages'=>$pages
         ]);
     }
 
     public function actionVakansiyalar()
     {
 
-        $query = Vacansy::find();
-        // $pages = new Pagination(['totalCount' => $query->count()]);
-        $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
-        $vakant = $query->offset($pages->offset)
-        ->limit($pages->limit)
-        ->all();
+        // $query = Vacansy::find();
+        // // $pages = new Pagination(['totalCount' => $query->count()]);
+        // $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
+        // $vakant = $query->offset($pages->offset)
+        // ->limit($pages->limit)
+        // ->all();
         return $this->render('vakansiya',[
-            'vakant'=>$vakant,
-            'pages'=>$pages
+            // 'vakant'=>$vakant,
+            // 'pages'=>$pages
         ]);
     }
 
     public function actionRahbariyat()
     {
-        $query = Genel::find();
-        // $pages = new Pagination(['totalCount' => $query->count()]);
-        $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
-        $genels = $query->offset($pages->offset)
-        ->limit($pages->limit)
-        ->all();
+        // $query = Genel::find();
+        // // $pages = new Pagination(['totalCount' => $query->count()]);
+        // $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
+        // $genels = $query->offset($pages->offset)
+        // ->limit($pages->limit)
+        // ->all();
         return $this->render('rahbariyat',
             [
-                'genels'=>$genels,
-                'pages'=>$pages
+                // 'genels'=>$genels,
+                // 'pages'=>$pages
             ]);
     }
 
     public function actionPedagoglar()
     {
-        $pedagoglar = Pedagog::find()->all(); 
+        // $pedagoglar = Pedagog::find()->all(); 
         return $this->render('pedagoglar',[
-            'pedagoglar'=>$pedagoglar
+            // 'pedagoglar'=>$pedagoglar
         ]);
     }
 
     public function actionQonunlar()
     {
-        $query = Qonunlar::find();
-        $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
-        $qonunlar = $query->offset($pages->offset)
-        ->limit($pages->limit)
-        ->all();
+        // $query = Qonunlar::find();
+        // $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
+        // $qonunlar = $query->offset($pages->offset)
+        // ->limit($pages->limit)
+        // ->all();
         return $this->render('qonunlar',[
-            'qonunlar'=>$qonunlar,
-            'pages'=>$pages
+            // 'qonunlar'=>$qonunlar,
+            // 'pages'=>$pages
         ]);
     }
 
     public function actionStandartlar()
     {
-        $query = Standart::find();
-        $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
-        $qonunlar = $query->offset($pages->offset)
-        ->limit($pages->limit)
-        ->all();
+        // $query = Standart::find();
+        // $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
+        // $qonunlar = $query->offset($pages->offset)
+        // ->limit($pages->limit)
+        // ->all();
         return $this->render('standartlar',[
-            'qonunlar'=>$qonunlar,
-            'pages'=>$pages
+            // 'qonunlar'=>$qonunlar,
+            // 'pages'=>$pages
         ]);
     }
     public function actionQarorlar()
     {
-        $bm = Bm::find()->all();
+        // $bm = Bm::find()->all();
         // $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
         // $bm = $query->offset($pages->offset)
         // ->limit($pages->limit)
         // ->all();
         return $this->render('bm',[
-            'bm'=>$bm,
+            // 'bm'=>$bm,
             // 'pages'=>$pages
         ]);
     }
     public function actionNizom()
     {
-        $query = Nizom::find();
-        $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
-        $nizomlar = $query->offset($pages->offset)
-        ->limit($pages->limit)
-        ->all();
+        // $query = Nizom::find();
+        // $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
+        // $nizomlar = $query->offset($pages->offset)
+        // ->limit($pages->limit)
+        // ->all();
         return $this->render('nizomlar',[
-            'nizomlar'=>$nizomlar,
-            'pages'=>$pages
+            // 'nizomlar'=>$nizomlar,
+            // 'pages'=>$pages
         ]);
     }
 
     public function actionIchki()
     {
-        $query = Ichki::find();
-        $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
-        $ichki = $query->offset($pages->offset)
-        ->limit($pages->limit)
-        ->all();
+        // $query = Ichki::find();
+        // $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
+        // $ichki = $query->offset($pages->offset)
+        // ->limit($pages->limit)
+        // ->all();
         return $this->render('ichki',[
-            'ichki'=>$ichki,
-            'pages'=>$pages
+            // 'ichki'=>$ichki,
+            // 'pages'=>$pages
         ]);
     }
 
     public function actionTavsiyalar()
     {
-        $query = Nizom::find();
-        $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
-        $nizomlar = $query->offset($pages->offset)
-        ->limit($pages->limit)
-        ->all();
+        // $query = Nizom::find();
+        // $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
+        // $nizomlar = $query->offset($pages->offset)
+        // ->limit($pages->limit)
+        // ->all();
         return $this->render('nizomlar',[
-            'nizomlar'=>$nizomlar,
-            'pages'=>$pages
+            // 'nizomlar'=>$nizomlar,
+            // 'pages'=>$pages
         ]);
     }
     public function actionFarmonlar()
     {
-        $query = Farmonlar::find();
-        $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
-        $farmonlar = $query->offset($pages->offset)
-        ->limit($pages->limit)
-        ->all();
+        // $query = Farmonlar::find();
+        // $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
+        // $farmonlar = $query->offset($pages->offset)
+        // ->limit($pages->limit)
+        // ->all();
         return $this->render('farmonlar',[
-            'farmonlar'=>$farmonlar,
-            'pages'=>$pages
+            // 'farmonlar'=>$farmonlar,
+            // 'pages'=>$pages
         ]);
     }
 
     public function actionHujjatlar()
     {
-        $farmonlar = Farmonlar::find()->all();
+        // $farmonlar = Farmonlar::find()->all();
         return $this->render('ichki',[
-            'farmonlar'=>$farmonlar
+            // 'farmonlar'=>$farmonlar
         ]);
     }
 
     public function actionElektron()
     {
-        $interaktiv = Interaktiv::find()->all();
+        // $interaktiv = Interaktiv::find()->all();
         return $this->render('elektron',[
-            'interaktiv'=>$interaktiv
+            // 'interaktiv'=>$interaktiv
         ]);
     }
 
@@ -552,24 +553,28 @@ class SiteController extends BaseController
 
     public function actionAriza()
     {
-        $ariza = Ariza::find()->all();
+        // $ariza = Ariza::find()->all();
         return $this->render('ariza',[
-            'ariza'=>$ariza
+            // 'ariza'=>$ariza
         ]);
     }
 
     public function actionMttlar()
     {
-        $mttlar = Mtt::find()->all();
-        return $this->render('mttlar',compact('mttlar'));
+        // $mttlar = Mtt::find()->all();
+        return $this->render('mttlar',
+            [
+                // 'mttlar'=>$mttlar
+            ]
+        );
     }
 
     public function actionQabulhona()
     {
         $model = new Qabulhona();
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
-            echo '<pre>';
-            var_dump($model);exit();
+            // echo '<pre>';
+            // var_dump($model);exit();
             $files = UploadedFile::getInstance($model, 'files');
             if (!empty($files)) {
                 $model->file = random_int(0,9999). '.' . $files->extension;

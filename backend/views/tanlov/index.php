@@ -25,7 +25,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'format'=>'raw'
         ],
         'image',
-        'pdf_name'
+        'pdf_name',
+        'lang'
     ];
 
     $columns[] = [

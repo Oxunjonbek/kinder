@@ -30,8 +30,9 @@ class Genel extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'title', 'phone', 'image'], 'required'],
-            [['title'], 'string'],
+            [['name', 'title', 'phone', 'image','lang'], 'required'],
+            [['title','lang'], 'string'],
+            [['lang'], 'string', 'max' => 200],
             [['name'], 'string', 'max' => 400],
             [['phone', 'image'], 'string', 'max' => 255],
             [['img'], 'file', 'skipOnEmpty' => true, 'extensions' => 'png, jpg,gif,jpeg'],
@@ -49,6 +50,7 @@ class Genel extends \yii\db\ActiveRecord
             'title' => 'Лавозими',
             'phone' => 'Телефон',
             'image' => 'Расм',
+            'lang' => 'Tili',
         ];
     }
 }

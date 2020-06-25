@@ -29,9 +29,10 @@ class TarkibiyStructure extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['title', 'name', 'phone'], 'required'],
-            [['title'], 'string'],
+            [['title', 'name', 'phone','lang'], 'required'],
+            [['title'], 'string','lang'],
             [['name'], 'string', 'max' => 300],
+            [['lang'], 'string', 'max' => 200],
             [['phone','image'], 'string', 'max' => 255],
             [['img'], 'file', 'skipOnEmpty' => true, 'extensions' => 'png, jpg,gif,jpeg'],
 
@@ -48,6 +49,7 @@ class TarkibiyStructure extends \yii\db\ActiveRecord
             'title' => 'Лавозими',
             'name' => 'Ф.И.О',
             'phone' => 'Телефон',
+            'lang' => 'Tili',
         ];
     }
 }
