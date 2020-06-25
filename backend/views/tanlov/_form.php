@@ -39,6 +39,7 @@ use dosamigos\tinymce\TinyMce;
 
 
 	<?= $form->field($model, 'img')->fileInput(['maxlength' => true]) ?>
+	<?= $form->field($model, 'pdf')->fileInput(['maxlength' => true]) ?>
 
     <div class="form-group">
         <?= Html::submitButton('Сақлаш', ['class' => 'btn btn-success']) ?>

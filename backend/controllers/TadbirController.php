@@ -68,14 +68,22 @@ class TadbirController extends Controller
 
         if ($model->load(Yii::$app->request->post())) {
             $img = UploadedFile::getInstance($model, 'img');
+            $pdf = UploadedFile::getInstance($model, 'pdf');
             if (!empty($img)) {
                 $model->image = random_int(0,9999). '.' . $img->extension;
+            }
+             if (!empty($pdf)) {
+                $model->pdf_name = random_int(0,9999). '.' . $pdf->extension;
             }
             
             if ($model->save()) {
                 if (!empty($img)) {
                     $img->saveAs('uploads/tadbir/' . $model->image);
-                    return $this->redirect(['index']);
+                    // return $this->redirect(['index']);
+                }
+                if (!empty($pdf)) {
+                    $pdf->saveAs('uploads/' . $model->pdf_name);
+                    // return $this->redirect(['index']);
                 }
                 return $this->redirect(['index']);
             }
@@ -98,14 +106,22 @@ class TadbirController extends Controller
 
         if ($model->load(Yii::$app->request->post())) {
             $img = UploadedFile::getInstance($model, 'img');
+            $pdf = UploadedFile::getInstance($model, 'pdf');
             if (!empty($img)) {
                 $model->image = random_int(0,9999). '.' . $img->extension;
+            }
+             if (!empty($pdf)) {
+                $model->pdf_name = random_int(0,9999). '.' . $pdf->extension;
             }
             
             if ($model->save()) {
                 if (!empty($img)) {
                     $img->saveAs('uploads/tadbir/' . $model->image);
-                    return $this->redirect(['index']);
+                    // return $this->redirect(['index']);
+                }
+                if (!empty($pdf)) {
+                    $pdf->saveAs('uploads/' . $model->pdf_name);
+                    // return $this->redirect(['index']);
                 }
                 return $this->redirect(['index']);
             }
@@ -126,6 +142,7 @@ class TadbirController extends Controller
     {
         $data = Tadbir::findOne($id);
         unlink(Yii::$app->basePath . '/web/uploads/tadbir/' . $data->image);
+        unlink(Yii::$app->basePath . '/web/uploads/' . $data->pdf_name);
         $this->findModel($id)->delete();
 
         return $this->redirect(['index']);

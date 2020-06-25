@@ -15,25 +15,13 @@ $this->title = 'Эълонлар';
     $columns = [
         ['class' => 'kartik\grid\SerialColumn'],
 
-        //'id',
-        // 'title',
         [
             'attribute'=>'title',
             'format'=>'raw'
         ],
-        // [
-        //     'attribute'=>'image',
-        //     'format' => 'html',
-        //     'value' => function($model){
-        //         return \yii\helpers\Html::img($model->image, ['width'=>90]);
-        //     }
-        // ],
         'image',
-        // 'text',
-        [
-            'attribute'=>'text',
-            'format'=>'raw'
-        ]
+        'pdf_name'
+    
     ];
 
     $columns[] = [

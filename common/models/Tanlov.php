@@ -18,6 +18,7 @@ class Tanlov extends \yii\db\ActiveRecord
      * {@inheritdoc}
      */
     public $img;
+    public $pdf;
     public static function tableName()
     {
         return 'tanlov';
@@ -30,9 +31,10 @@ class Tanlov extends \yii\db\ActiveRecord
     {
         return [
             [['title', 'text', 'image'], 'required'],
-            [['title', 'text'], 'string'],
-            [['image'], 'string', 'max' => 255],
+            [['title', 'text','pdf_name'], 'string'],
+            [['image','pdf_name'], 'string', 'max' => 255],
             [['img'], 'file', 'skipOnEmpty' => true, 'extensions' => 'png, jpg,gif,jpeg,mp4,avi'],
+            [['pdf'], 'file', 'skipOnEmpty' => true, 'extensions' => 'pdf,doc,txt,xlsx'],
         ];
     }
 
@@ -46,6 +48,7 @@ class Tanlov extends \yii\db\ActiveRecord
             'title' => 'Сарлавҳа',
             'text' => 'Текст',
             'image' => 'Расм',
+            'pdf_name' => 'PDF',
         ];
     }
 }
