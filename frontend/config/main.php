@@ -15,7 +15,6 @@ return [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
-    // 'language' => 'ru',
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-frontend',
@@ -33,6 +32,7 @@ return [
                     'class' => 'yii\i18n\PhpMessageSource',
                     'basePath' => '@frontend/messages',
                     'sourceLanguage' => 'uz',
+
                     'fileMap' => [
                         'template' => 'template.php',
                     ],

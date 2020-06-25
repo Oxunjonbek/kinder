@@ -1,5 +1,6 @@
 <?php
 return [
+    'Biz haqimizda'=>'Biz haqimizda',
     'title'=>'Бойсун тумани мактабгача таьлим бўлими',
     'Bosh sahifa'=>'Home',
     'Bolim haqida'=>'About section',
@@ -29,7 +30,6 @@ return [
     'Foydali manzillar'=>'Useful addresses',
     'Bizni kuzatib boring'=>'follow us',
     'Fotogalereya'=>'Photo gallery',
-    'Kalit so\'zlar'=>'Keywords',
-    'Biz haqimizda'=>'About us'
+    'Kalit so\'zlar'=>'Keywords'
 
 ];

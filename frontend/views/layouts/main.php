@@ -144,7 +144,7 @@ $lang = Yii::$app->language;
                     <!-- BEGIN .widget -->
                     <div class="widget">
                         <div class="w-title">
-                            <h3>Biz haqimizda</h3>
+                            <h3><?= Yii::t('app', 'Biz haqimizda') ?></h3>
                         </div>
                         <div>
                             <p>Манзил: Сурхондарё вилояти  Бойсун тумани </br> Оби махалласи Ҳаёт абадий кучаси.</p>
