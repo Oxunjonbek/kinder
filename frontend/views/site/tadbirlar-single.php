@@ -18,7 +18,7 @@ use common\models\Interaktiv;
 use common\models\Pedagog;
 use common\models\Qabulhona;
 use yii\data\Pagination;
-$tadbir = Tadbir::find()->where(['lang'=>$lang])->where(['id'=>$id])->one();
+
  ?>
 
 <div class="main-content">

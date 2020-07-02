@@ -24,7 +24,7 @@ return [
             'enableAutoLogin' => true,
             'identityCookie' => ['name' => '_identity-frontend', 'httpOnly' => true],
         ],
-         'urlManager' => require __DIR__ . '/urlManager.php',
+         // 'urlManager' => require __DIR__ . '/urlManager.php',
 //        'urlManagerBackEnd' => $urlManagerBackEnd,
         'i18n' => [
             'translations' => [

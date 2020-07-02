@@ -19,7 +19,7 @@ use common\models\Pedagog;
 use common\models\Qabulhona;
 use yii\data\Pagination;
 // var_dump($elon->title);exit();
-$elon = Elonlar::find()->where(['lang'=>$lang,'id'=>$id])->one(); 
+// $elon = Elonlar::find()->where(['lang'=>$lang,'id'=>$id])->one(); 
 ?>
 	<div class="main-content">
 

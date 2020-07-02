@@ -1,36 +1,24 @@
 <?php
 use yii\helpers\Url;
-use common\models\Tadbir;
-use common\models\Genel;
-use common\models\Mtt;
-use common\models\Vacansy;
-use common\models\Structure;
-use common\models\TarkibiyStructure;
-use common\models\Tanlov;
-use common\models\Elonlar;
-use common\models\Qonunlar;
-use common\models\Standart;
-use common\models\Nizom;
-use common\models\Farmonlar;
-use common\models\Ariza;
-use common\models\Bm;
-use common\models\Ichki;
-use common\models\Interaktiv;
-use common\models\Pedagog;
-use common\models\Qabulhona;
-$lang = Yii::$app->language;
-$first = Tadbir::find()->where(['lang'=>$lang])->OrderBy(['id'=>SORT_DESC])->one();
-// $first = Yii::$app->db->createCommand('SELECT * FROM `tadbir` RIGHT OUTER JOIN `tanlov` ON `tadbir`.`id` = `tanlov`.`id` LIMIT 0, 1')->queryOne();
-// var_dump($first['title'] );exit();
-$elon = Elonlar::find()->where(['lang'=>$lang])->orderBy(['id'=>SORT_DESC])->one();
-$tadbir = Tadbir::find()->where(['lang'=>$lang])->orderBy(['id'=>SORT_DESC])->one();
-$tanlov = Tanlov::find()->where(['lang'=>$lang])->orderBy(['id'=>SORT_DESC])->one();
-$tanlovlar = Tanlov::find()->where(['lang'=>$lang])->orderBy(['id'=>SORT_DESC])->limit(4)->all();
-$tadbirlar = Tadbir::find()->where(['lang'=>$lang])->orderBy(['id'=>SORT_DESC])->limit(4)->all();
-$elonlar = Elonlar::find()->where(['lang'=>$lang])->orderBy(['id'=>SORT_DESC])->limit(4)->all();
-$item3 = Tadbir::find()->where(['lang'=>$lang])->orderBy(['id'=>SORT_DESC])->limit(3)->all();
-$tanlov3 = Tanlov::find()->where(['lang'=>$lang])->orderBy(['id'=>SORT_DESC])->limit(3)->all();
-$tadbirs = Tadbir::find()->where(['lang'=>$lang])->all();
+// use common\models\Tadbir;
+// use common\models\Genel;
+// use common\models\Mtt;
+// use common\models\Vacansy;
+// use common\models\Structure;
+// use common\models\TarkibiyStructure;
+// use common\models\Tanlov;
+// use common\models\Elonlar;
+// use common\models\Qonunlar;
+// use common\models\Standart;
+// use common\models\Nizom;
+// use common\models\Farmonlar;
+// use common\models\Ariza;
+// use common\models\Bm;
+// use common\models\Ichki;
+// use common\models\Interaktiv;
+// use common\models\Pedagog;
+// use common\models\Qabulhona;
+
 $this->title = 'Бойсун тумани мактабгача таьлим бўлими';
 ?>                    
 
@@ -40,15 +28,18 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
     <div class="panel">
         <div class="slider">
             <div class="slider-image" style="width: 798px; height: 427px; margin-bottom: 10px;">
-                <a href="<?=Url::to(['site/tadbir-single','id'=>$first->id])?>" class="active">
+                <a href="<?php
+                //=Url::to(['site/tadbir-single','id'=>$first->id])?>" class="active">
                     <span class="slider-overlay" style="font-size: 20px;">
 
 
-                        <strong ><?=$first['title']?></strong>
+                        <strong ><?php
+                        //=$first['title']?></strong>
 
 
                     </span>
-                    <img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?=$first['image']?>" class="setborder" alt="" title="" />
+                    <img src="<?=Yii::getAlias('@web')?>/admin/uploads/tadbir/<?php
+                    //=$first['image']?>" class="setborder" alt="" title="" />
                 </a>
             </div>
 
@@ -63,7 +54,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
             <!-- BEGIN .panel -->
             <div class="panel">
                 <div class="p-title">
-                    <h2 style="background-color: rgb(11, 82, 100);">Tадбирлар</h2>
+                    <h2 style="background-color: rgb(11, 82, 100);"><?= Yii::t('template','Tadbirlar') ?></h2>
                 </div>
                 <div class="article-list">
 
@@ -103,7 +94,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
             <!-- BEGIN .panel -->
             <div class="panel">
                 <div class="p-title">
-                    <h2 style="background-color: #b3b3b6;">Танловлар</h2>
+                    <h2 style="background-color: #b3b3b6;"><?= Yii::t('template','Tadbirlar') ?>Танловлар</h2>
                 </div>
                 <div class="article-list">
 
@@ -148,9 +139,9 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
         <!-- BEGIN .panel -->
         <div class="panel">
             <div class="p-title">
-                <h2  style="background-color: rgb(11, 82, 100);">Эьлонлар ва тендорлар</h2>
+                <h2  style="background-color: rgb(11, 82, 100);"><?= Yii::t('template','Elonlar va tendorlar') ?></h2>
             </div>
-            <a href="blog.html" class="upper-title">Батафсил<i class="fa fa-caret-right"></i></a>
+            <a href="blog.html" class="upper-title"><?= Yii::t('template','batafsil') ?><i class="fa fa-caret-right"></i></a>
             <div>
                 <div class="panel-split">
                     <div class="left-side">
@@ -199,9 +190,9 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                     <!-- BEGIN .panel -->
                     <div class="panel">
                         <div class="p-title">
-                            <h2 style="background-color: rgb(11, 82, 100);">Бизни кузатиб боринг</h2>
+                            <h2 style="background-color: rgb(11, 82, 100);"><?= Yii::t('template','Bizni kuzatib boring') ?></h2>
                         </div>
-                        <a href="#" class="upper-title">Read More<i class="fa fa-caret-right"></i></a>
+                        <a href="#" class="upper-title"><?= Yii::t('template','batafsil') ?><i class="fa fa-caret-right"></i></a>
                         <div class="review-block">
 
                             <div class="item">
@@ -211,7 +202,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                 </a></h3>
 
                                 <p>
-                                    <a href="<?=Url::to(['site/tadbir-single','id'=>$tadbir->id])?>"> Read More </a></p>
+                                    <a href="<?=Url::to(['site/tadbir-single','id'=>$tadbir->id])?>"><?= Yii::t('template','batafsil') ?></a></p>
                                 </div>
 
                                 <div class="item">
@@ -221,7 +212,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                     </a></h3>
 
                                     <p>
-                                        <a href="<?=Url::to(['site/tanlov-single','id'=>$tanlov->id])?>"> Read More </a></p>
+                                        <a href="<?=Url::to(['site/tanlov-single','id'=>$tanlov->id])?>"><?= Yii::t('template','batafsil') ?></a></p>
                                     </div>
 
                                     <div class="item">
@@ -231,7 +222,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                         </a></h3>
 
                                         <p>
-                                           <a href="<?=Url::to(['site/elon-single','id'=>$elon->id])?>"> Read More </a>
+                                           <a href="<?=Url::to(['site/elon-single','id'=>$elon->id])?>"> <?= Yii::t('template','batafsil') ?></a>
                                        </p>
                                    </div>
 
@@ -251,7 +242,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                         <!-- BEGIN .panel -->
                         <div class="panel">
                             <div class="p-title">
-                                <h2 style="background-color: rgb(11, 82, 100);">Фойдали манзиллар</h2>
+                                <h2 style="background-color: rgb(11, 82, 100);"><?= Yii::t('template','Foydali manzillar') ?></h2>
                             </div>
                             <div class="video-carousel" >
                                 <a href="#" class="carousel-left"><i class="fa fa-chevron-left"></i></a>
@@ -264,7 +255,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                            <a href="https://president.uz/" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/1.png?>" class="item-photo" alt="" /></a>
                                        </center>
                                        <center>
-                                        <h3><a href="https://president.uz/" target="_blank">Ўзбекистон Республикаси Давлат Хукумати Портали</a></h3>
+                                        <h3><a href="https://president.uz/" target="_blank"><?= Yii::t('template','portal') ?></a></h3>
                                     </center>
                                 </div>
 
@@ -273,7 +264,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                         <a href="https://lex.uz/" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/2.png" class="item-photo" alt="" /></a>
                                     </center>
                                     <center>
-                                        <h3><a href="https://lex.uz/" target="_blank">Ўзбекистон Республикаси Миллий Қонунчилиги онлайн базаси</a></h3>
+                                        <h3><a href="https://lex.uz/" target="_blank"><?= Yii::t('template','milliyqonun') ?></a></h3>
                                     </center>
                                 </div>
 
@@ -282,7 +273,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                     <a href="https://lex.uz/" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/3.png" class="item-photo" alt="" /></a>
                                 </center>
                                 <center>
-                                    <h3><a href="https://lex.uz/" target="_blank">Ўзбекистон Республикаси Президенти Матбуот Хизмати</a></h3>
+                                    <h3><a href="https://lex.uz/" target="_blank"><?= Yii::t('template','matbuoti') ?></a></h3>
                                 </center>
                             </div>
                             <div class="item">
@@ -290,7 +281,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                     <a href="http://senat.gov.uz " target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/4.png" class="item-photo" alt="" /></a>
                                 </center>
                                 <center>
-                                    <h3><a href="http://senat.gov.uz" target="_blank">Ўзбекистон Республикаси Олий Мажлиси Сенати</a></h3>
+                                    <h3><a href="http://senat.gov.uz" target="_blank"><?= Yii::t('template','senati') ?></a></h3>
                                 </center>
                             </div>
                             <div class="item">
@@ -298,7 +289,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
                                     <a href="http://parliament.gov.uz" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/5.png" class="item-photo" alt="" /></a>
                                 </center>
                                 <center>
-                                    <h3><a href="http://parliament.gov.uz" target="_blank">Ўзбекистон Республикаси Олий Мажлиси Қонунчилик палатаси</a></h3>
+                                    <h3><a href="http://parliament.gov.uz" target="_blank"><?= Yii::t('template','palatasi') ?></a></h3>
                                 </center>
                             </div>
 

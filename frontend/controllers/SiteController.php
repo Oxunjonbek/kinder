@@ -102,16 +102,27 @@ class SiteController extends BaseController
         // $item3 = Tadbir::find()->orderBy(['id'=>SORT_DESC])->limit(3)->all();
         // $tanlov3 = Tanlov::find()->orderBy(['id'=>SORT_DESC])->limit(3)->all();
         // $tadbirs = Tadbir::find()->all();
+$lang = Yii::$app->language;
+$first = Tadbir::find()->where(['lang'=>$lang])->OrderBy(['id'=>SORT_DESC])->one();
+$elon = Elonlar::find()->where(['lang'=>$lang])->orderBy(['id'=>SORT_DESC])->one();
+$tadbir = Tadbir::find()->where(['lang'=>$lang])->orderBy(['id'=>SORT_DESC])->one();
+$tanlov = Tanlov::find()->where(['lang'=>$lang])->orderBy(['id'=>SORT_DESC])->one();
+$tanlovlar = Tanlov::find()->where(['lang'=>$lang])->orderBy(['id'=>SORT_DESC])->limit(4)->all();
+$tadbirlar = Tadbir::find()->where(['lang'=>$lang])->orderBy(['id'=>SORT_DESC])->limit(4)->all();
+$elonlar = Elonlar::find()->where(['lang'=>$lang])->orderBy(['id'=>SORT_DESC])->limit(4)->all();
+$item3 = Tadbir::find()->where(['lang'=>$lang])->orderBy(['id'=>SORT_DESC])->limit(3)->all();
+$tanlov3 = Tanlov::find()->where(['lang'=>$lang])->orderBy(['id'=>SORT_DESC])->limit(3)->all();
+$tadbirs = Tadbir::find()->where(['lang'=>$lang])->all();
         return $this->render('index',[
-            // 'elon'=>$elon,
-            // 'tadbir'=>$tadbir,
-            // 'tanlov'=>$tanlov,
-            // 'tadbirlar'=>$tadbirlar,
-            // 'tanlovlar'=>$tanlovlar,
-            // 'elonlar'=>$elonlar,
-            // 'item3'=>$item3,
-            // 'tadbirs'=>$tadbirs,
-            // 'tanlov3'=>$tanlov3
+            'elon'=>$elon,
+            'tadbir'=>$tadbir,
+            'tanlov'=>$tanlov,
+            'tadbirlar'=>$tadbirlar,
+            'tanlovlar'=>$tanlovlar,
+            'elonlar'=>$elonlar,
+            'item3'=>$item3,
+            'tadbirs'=>$tadbirs,
+            'tanlov3'=>$tanlov3
         ]);
     }
 
@@ -316,9 +327,12 @@ class SiteController extends BaseController
 
     public function actionTadbirSingle($id=null)
     {
-        // $tadbir = Tadbir::find()->where(['id'=>$id])->one();
+        $lang = Yii::$app->language;
+        $tadbir = Tadbir::find()->where(['lang'=>$lang])->andWhere(['id'=>$id])->one();
+        // echo "<pre>";
+        // print_r($tadbir->title);exit();
         return $this->render('tadbirlar-single',[
-            // 'tadbir'=>$tadbir
+            'tadbir'=>$tadbir
         ]);
     }
 
@@ -360,10 +374,12 @@ class SiteController extends BaseController
     }
 
     public function actionElonSingle($id=null)
-    {
-        // $elon = Elonlar::find()->where(['id'=>$id])->one(); 
+    { 
+        $lang = Yii::$app->language;
+        $elon = Elonlar::find()->where(['lang'=>$lang])->andWhere(['id'=>$id])->one(); 
+        // var_dump($elon);exit();
         return $this->render('elon-single',[
-            // 'elon'=>$elon
+            'elon'=>$elon
         ]);
     }
 
