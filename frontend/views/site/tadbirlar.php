@@ -20,7 +20,7 @@ use common\models\Interaktiv;
 use common\models\Pedagog;
 use common\models\Qabulhona;
 use yii\data\Pagination;
-
+$lang = \Yii::$app->language;
 $query = Tadbir::find()->where(['lang'=>$lang])->orderBy(['id' => SORT_DESC]);
         $countQuery = clone $query;
         $pages = new Pagination(['totalCount' => $countQuery->count(), 'pageSize' => 10]);
@@ -34,7 +34,7 @@ $query = Tadbir::find()->where(['lang'=>$lang])->orderBy(['id' => SORT_DESC]);
 	<!-- BEGIN .panel -->
 	<div class="panel">
 		<div class="p-title">
-			<h2>Tadbirlar</h2>
+			<h2><?= Yii::t('template','Tadbirlar') ?></h2>
 		</div>
 		<div class="blog-list style-2">
 
@@ -49,7 +49,7 @@ $query = Tadbir::find()->where(['lang'=>$lang])->orderBy(['id' => SORT_DESC]);
 					</div> -->
 					<div class="item-footer">
 						<a href="#" class="left" style="color: #c32929;">
-							<strong>Янгиликлар</strong>
+							<strong><?= Yii::t('template','Yangiliklar') ?></strong>
 						</a>
 					</div>
 				</div>

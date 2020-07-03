@@ -18,7 +18,7 @@ use common\models\Interaktiv;
 use common\models\Pedagog;
 use common\models\Qabulhona;
 use yii\data\Pagination;
-
+$lang = \Yii::$app->language;
  ?>
 
 <div class="main-content">

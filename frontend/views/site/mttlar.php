@@ -19,6 +19,7 @@ use common\models\Interaktiv;
 use common\models\Pedagog;
 use common\models\Qabulhona;
 use yii\data\Pagination;
+$lang = \Yii::$app->language;
 $mttlar = Mtt::find()->where(['lang'=>$lang])->all();
 ?>
 <div class="main-content">
@@ -26,7 +27,7 @@ $mttlar = Mtt::find()->where(['lang'=>$lang])->all();
 	<!-- BEGIN .panel -->
 	<div class="panel">
 		<div class="p-title">
-			<h2>МТТлар</h2>
+			<h2><?= Yii::t('template','MTTLAR') ?></h2>
 		</div>
 		<div class="blog-list style-1" >
 
@@ -38,18 +39,19 @@ $mttlar = Mtt::find()->where(['lang'=>$lang])->all();
 
 					<h3 style="text-indent: 60px;"><?=$value->name?></h3>
 					<p style="color: #339966; font-size: 14px; font-family: Times New Roman;">
-						<span style="color: #008000;font-size: 14px; font-weight: bold;">	 Mудира:
+						<span style="color: #008000;font-size: 14px; font-weight: bold;"><?= Yii::t('template','mudira') ?>:
 						</span>
 						<?=$value->prof?>
 					</p>
 					<p style="color: #339966; font-size: 14px;">
-						<span style="color: #008000;font-size: 14px; font-weight: bold;">Телефон:
+						<span style="color: #008000;font-size: 14px; font-weight: bold;"><?= Yii::t('template','Phone') ?>:
 						</span>
 						<?=$value->phone?>
 							
 					</p>
 					<p style="color: #339966; font-size: 14px;">
-						<span style="color: #008000;font-size: 14px; font-weight: bold;">Манзил:
+						<span style="color: #008000;font-size: 14px; font-weight: bold;">
+							<?= Yii::t('template','manzil1') ?>:
 						</span>
 						<?=$value->address?>
 							

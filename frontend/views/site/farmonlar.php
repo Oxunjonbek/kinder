@@ -20,7 +20,7 @@ use common\models\Interaktiv;
 use common\models\Pedagog;
 use common\models\Qabulhona;
 use yii\data\Pagination;
-
+$lang = \Yii::$app->language;
 $query = Farmonlar::find()->where(['lang'=>$lang]);
         $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
         $farmonlar = $query->offset($pages->offset)
@@ -33,7 +33,7 @@ $query = Farmonlar::find()->where(['lang'=>$lang]);
 	<!-- BEGIN .panel -->
 	<div class="panel">
 		<div class="p-title">
-			<h2>Президент фармон ва қарорлари</h2>
+			<h2><?= Yii::t('template','prezidentfarmon') ?></h2>
 		</div>
 		<div class="blog-list style-1">
 			<?php foreach ($farmonlar as $key => $value) : ?>

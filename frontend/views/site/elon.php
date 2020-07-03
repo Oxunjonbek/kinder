@@ -20,6 +20,7 @@ use common\models\Interaktiv;
 use common\models\Pedagog;
 use common\models\Qabulhona;
 use yii\data\Pagination;
+$lang = \Yii::$app->language;
 $query = Elonlar::find()->where(['lang'=>$lang]);
         $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
         $elon = $query->offset($pages->offset)
@@ -31,7 +32,7 @@ $query = Elonlar::find()->where(['lang'=>$lang]);
 	<!-- BEGIN .panel -->
 	<div class="panel">
 		<div class="p-title">
-			<h2>Эълонлар ва тендерлар
+			<h2><?= Yii::t('template','elonvaten') ?>
 </h2>
 		</div>
 		<div class="blog-list style-2">
@@ -53,7 +54,7 @@ $query = Elonlar::find()->where(['lang'=>$lang]);
 					</div> -->
 					<div class="item-footer">
 						<a href="#" class="left" style="color: #c32929;">
-							<strong>Янгиликлар</strong>
+							<strong><?= Yii::t('template','Yangiliklar') ?></strong>
 						</a>
 					</div>
 				</div>

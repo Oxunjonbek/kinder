@@ -19,6 +19,7 @@ use common\models\Pedagog;
 use common\models\Qabulhona;
 use yii\data\Pagination;
 // var_dump($one);exit();
+$lang = \Yii::$app->language;
 $one = Tanlov::find()->where(['lang'=>$lang,'id'=>$id])->one();
 ?>
 	<div class="main-content">

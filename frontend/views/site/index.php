@@ -94,7 +94,7 @@ $this->title = 'Бойсун тумани мактабгача таьлим бў
             <!-- BEGIN .panel -->
             <div class="panel">
                 <div class="p-title">
-                    <h2 style="background-color: #b3b3b6;"><?= Yii::t('template','Tadbirlar') ?>Танловлар</h2>
+                    <h2 style="background-color: #b3b3b6;"><?= Yii::t('template','Tanlovlar') ?></h2>
                 </div>
                 <div class="article-list">
 

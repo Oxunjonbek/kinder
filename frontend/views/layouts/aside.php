@@ -24,7 +24,8 @@ $rows = Elonlar::find()->orderBy(['id'=>SORT_DESC])->limit(4)->all();
     <!-- BEGIN .widget -->
     <div class="widget">
         <div class="w-title tab-a"  >
-            <h3 style="padding-left: 15px; padding-right: 14px; background-color: rgb(11, 82, 100);">Сўнги янгиликлар</h3><h3 style="padding-left: 12px;padding-right: 12px;background-color: rgb(11, 82, 100);">Кўп ўқилган янгиликлар</h3>
+            <h3 style="padding-left: 15px; padding-right: 14px; background-color: rgb(11, 82, 100);"><?=Yii::t('template','sunggi yangiliklar')?></h3>
+            <!-- <h3 style="padding-left: 12px;padding-right: 12px;background-color: rgb(11, 82, 100);"><?=Yii::t('template','Ko‘p o‘qilgan yangiliklar')?></h3> -->
         </div>
         <div class="tab-d">
 
@@ -43,7 +44,7 @@ $rows = Elonlar::find()->orderBy(['id'=>SORT_DESC])->limit(4)->all();
                                 </div>
 
                                 <!-- Second Tab -->
-                                <div class="article-list">
+                                <!-- <div class="article-list">
                                     <div class="item">
                                         <a href="#"><img src="<?=Yii::getAlias('@web')?>/foto/images/photos/image-3.jpg" alt="" class="item-photo" /></a>
                                         <div class="item-content">
@@ -71,13 +72,13 @@ $rows = Elonlar::find()->orderBy(['id'=>SORT_DESC])->limit(4)->all();
                                         </div>
                                     </div>
 
-                                    <!-- <div class="more-button">
-                                        <a href="blog.html">More Articles</a>
-                                    </div> -->
-                                </div>
+                                    <div class="more-button">
+                                        <a href="#">More Articles</a>
+                                    </div>
+                                </div> -->
 
                                 <!-- Third Tab -->
-                                <div class="comments-list">
+                                <!-- <div class="comments-list">
                                     <div class="item">
                                         <img src="<?=Yii::getAlias('@web')?>/foto/images/photos/avatar-1.jpg" alt="" class="item-photo" />
                                         <div class="item-content">
@@ -106,7 +107,7 @@ $rows = Elonlar::find()->orderBy(['id'=>SORT_DESC])->limit(4)->all();
                                         </div>
                                     </div>
                                 </div>
-
+ -->
                             </div>
                             <!-- END .widget -->
                         </div>
@@ -114,7 +115,7 @@ $rows = Elonlar::find()->orderBy(['id'=>SORT_DESC])->limit(4)->all();
                         <!-- BEGIN .widget -->
                         <div class="widget">
                             <div class="w-title">
-                                <h3 style="background-color: rgb(11, 82, 100);">Қонунлар</h3>
+                                <h3 style="background-color: rgb(11, 82, 100);"><?=Yii::t('template','Qonunlar')?></h3>
                             </div>
                             <div class="article-list">
                                 <?php foreach ($qonunlar as $key => $value) : ?>
@@ -136,18 +137,18 @@ $rows = Elonlar::find()->orderBy(['id'=>SORT_DESC])->limit(4)->all();
                         <!-- BEGIN .widget -->
                         <div class="widget">
                             <div class="w-title">
-                                <h3 style="background-color: rgb(11, 82, 100);">Фойдали Манзиллар</h3>
+                                <h3 style="background-color: rgb(11, 82, 100);"><?=Yii::t('template','Foydali manzillar')?></h3>
 
                             </div>
                             <div class="review-list">
-                                <a href="blog.html" class="upper-title"><i class="fa fa-caret-right"></i></a>
+                                <a href="#" class="upper-title"><i class="fa fa-caret-right"></i></a>
                                 
                                 <div class="item">
                                     <center>
                                      <a href="https://president.uz/" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/1.png" class="item-photo" alt="" /></a>
                                  </center>
                                  <center>
-                                    <h3><a href="https://president.uz/" target="_blank">Ўзбекистон Республикаси Давлат Хукумати Портали</a></h3>
+                                    <h3><a href="https://president.uz/" target="_blank"><?=Yii::t('template','portal')?></a></h3>
                                 </center>
                             </div>
 
@@ -156,13 +157,13 @@ $rows = Elonlar::find()->orderBy(['id'=>SORT_DESC])->limit(4)->all();
                                     <a href="https://lex.uz/" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/2.png" class="item-photo" alt="" /></a>
                                 </center>
                                 <center>
-                                    <h3><a href="https://lex.uz/" target="_blank">Ўзбекистон Республикаси Миллий Қонунчилиги онлайн базаси</a></h3>
+                                    <h3><a href="https://lex.uz/" target="_blank"><?=Yii::t('template','milliyqonun')?></a></h3>
                                 </center>
                             </div>
 
 
                             <div class="w-gallery">
-                                <a href="photo-gallery.html" class="upper-title">More Galleries<i class="fa fa-caret-right"></i></a>
+                                <a href="photo-gallery.html" class="upper-title"><?=Yii::t('template','kupgalereya')?><i class="fa fa-caret-right"></i></a>
 
                                 
 
@@ -178,7 +179,7 @@ $rows = Elonlar::find()->orderBy(['id'=>SORT_DESC])->limit(4)->all();
                                         <a href="https://lex.uz/" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/3.png" class="item-photo" alt="" /></a>
                                     </center>
                                     <center>
-                                        <h3><a href="https://lex.uz/" target="_blank">Ўзбекистон Республикаси Президенти Матбуот Хизмати</a></h3>
+                                        <h3><a href="https://lex.uz/" target="_blank"><?=Yii::t('template','matbuoti')?></a></h3>
                                     </center>
 
                                 </div>
@@ -188,7 +189,7 @@ $rows = Elonlar::find()->orderBy(['id'=>SORT_DESC])->limit(4)->all();
                                     <a href="http://senat.gov.uz " target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/4.png" class="item-photo" alt="" /></a>
                                 </center>
                                 <center>
-                                    <h3><a href="http://senat.gov.uz" target="_blank">Ўзбекистон Республикаси Олий Мажлиси Сенати</a></h3>
+                                    <h3><a href="http://senat.gov.uz" target="_blank"><?=Yii::t('template','senati')?></a></h3>
                                 </center>
                             </div>
 
@@ -197,7 +198,7 @@ $rows = Elonlar::find()->orderBy(['id'=>SORT_DESC])->limit(4)->all();
                                     <a href="http://parliament.gov.uz" target="_blank"><img src="<?=Yii::getAlias('@web')?>/foto/images/5.png" class="item-photo" alt="" /></a>
                                 </center>
                                 <center>
-                                    <h3><a href="http://parliament.gov.uz" target="_blank">Ўзбекистон Республикаси Олий Мажлиси Қонунчилик палатаси</a></h3>
+                                    <h3><a href="http://parliament.gov.uz" target="_blank"><?=Yii::t('template','palatasi')?></a></h3>
                                 </center>
                             </div>
 
@@ -208,10 +209,10 @@ $rows = Elonlar::find()->orderBy(['id'=>SORT_DESC])->limit(4)->all();
                     <!-- BEGIN .widget -->
                     <div class="widget">
                         <div class="w-title">
-                            <h3 style="background-color: rgb(11, 82, 100);">Фото Галерия</h3>
+                            <h3 style="background-color: rgb(11, 82, 100);"><?=Yii::t('template','Foto Galeriya')?></h3>
                         </div>
                         <div class="w-gallery">
-                            <a href="photo-gallery.html" class="upper-title">More Galleries<i class="fa fa-caret-right"></i></a>
+                            <a href="photo-gallery.html" class="upper-title"><?=Yii::t('template','kupgalereya')?><i class="fa fa-caret-right"></i></a>
                             <div class="w-photos">
                                 <a href="#" class="gallery-link-left"><i class="fa fa-chevron-left"></i></a>
                                 <a href="#" class="gallery-link-right"><i class="fa fa-chevron-right"></i></a>
@@ -229,11 +230,11 @@ $rows = Elonlar::find()->orderBy(['id'=>SORT_DESC])->limit(4)->all();
                     <!-- BEGIN .widget -->
                     <div class="widget">
                         <div class="w-title">
-                            <h3 style="background-color: rgb(11, 82, 100);">Калит сўзлар</h3>
+                            <h3 style="background-color: rgb(11, 82, 100);"><?=Yii::t('template','Qonun')?></h3>
                         </div>
                         <div class="tagcloud">
-                            <a href="https://lex.uz/">Qonun</a><a href="https://lex.uz/">Qarorlar</a><a href="https://lex.uz/">Nizomlar</a><a href="https://lex.uz/">Tuzilma</a><a href="https://lex.uz/">MMt</a><a href="https://lex.uz/">nizomlar</a><a href="https://lex.uz/">tartib</a><a href="https://lex.uz/">kodeks</a>
-                            <a href="https://lex.uz/">hujjat</a><a href="https://lex.uz/">ariza</a><a href="https://lex.uz/">intellegat</a><a href="https://lex.uz/">savol</a><a href="#">bog`cha</a><a href="blog.html">kalit</a><a href="blog.html">intensiv</a>
+                            <a href="https://lex.uz/"><?=Yii::t('template','Qarorlar')?></a><a href="https://lex.uz/"><?=Yii::t('template','Nizomlar')?></a><a href="https://lex.uz/"><?=Yii::t('template','Tuzilma')?></a><a href="https://lex.uz/"><?=Yii::t('template','MMt')?></a><a href="https://lex.uz/"><?=Yii::t('template','nizomlar')?></a><a href="https://lex.uz/"><?=Yii::t('template','tartib')?></a><a href="https://lex.uz/"><?=Yii::t('template','kodeks')?></a><a href="https://lex.uz/"><?=Yii::t('template','hujjat')?></a>
+                            <a href="https://lex.uz/"><?=Yii::t('template','ariza')?></a><a href="https://lex.uz/"><?=Yii::t('template','intellegat')?></a><a href="https://lex.uz/"><?=Yii::t('template','savol')?></a><a href="https://lex.uz/"><?=Yii::t('template','bog')?></a><a href="#"><?=Yii::t('template','bog\'cha')?></a><a href="#"><?=Yii::t('template','kalit')?></a><a href="#"><?=Yii::t('template','intensiv')?></a>
                         </div>
                         <!-- END .widget -->
                     </div>

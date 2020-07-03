@@ -18,13 +18,14 @@ use common\models\Interaktiv;
 use common\models\Pedagog;
 use common\models\Qabulhona;
 use yii\data\Pagination;
+$lang = \Yii::$app->language;
  $interaktiv = Interaktiv::find()->where(['lang'=>$lang])->all();
   ?> 	<div class="main-content">
 
 	<!-- BEGIN .panel -->
 	<div class="panel">
 		<div class="p-title">
-			<h2>МТТда электрон навбат ва бўш ўринлар ҳақида маълумот</h2>
+			<h2><?= Yii::t('template','mttdaelek') ?></h2>
 		</div>
 		<div class="blog-list style-1">
 

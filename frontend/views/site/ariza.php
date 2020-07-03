@@ -27,7 +27,7 @@ $ariza = Ariza::find()->where(['lang'=>$lang])->all();
 						<!-- BEGIN .panel -->
 						<div class="panel">
 							<div class="p-title">
-								<h2>Ариза ва бланкалар намунаси</h2>
+								<h2><?= Yii::t('template','Ariza va blankalar namunasi') ?></h2>
 							</div>
 							<div class="blog-list style-1">
 								<?php foreach ($ariza as $key => $value) : ?>

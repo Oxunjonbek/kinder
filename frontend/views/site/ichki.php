@@ -20,6 +20,7 @@ use common\models\Interaktiv;
 use common\models\Pedagog;
 use common\models\Qabulhona;
 use yii\data\Pagination;
+$lang = \Yii::$app->language;
 $query = Ichki::find()->where(['lang'=>$lang]);
         $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
         $ichki = $query->offset($pages->offset)
@@ -33,7 +34,7 @@ $query = Ichki::find()->where(['lang'=>$lang]);
 	<!-- BEGIN .panel -->
 	<div class="panel">
 		<div class="p-title">
-			<h2>Ички ҳужжатлар</h2>
+			<h2><?= Yii::t('template','ichkihujjatlar') ?></h2>
 		</div>
 		<div class="blog-list style-1">
 			<?php foreach ($ichki as $key => $value) : ?>

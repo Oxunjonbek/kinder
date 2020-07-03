@@ -19,6 +19,7 @@ use common\models\Interaktiv;
 use common\models\Pedagog;
 use common\models\Qabulhona;
 use yii\data\Pagination;
+$lang = Yii::$app->language;
 $query = Genel::find()->where(['lang'=>$lang]);
         // $pages = new Pagination(['totalCount' => $query->count()]);
         $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
@@ -31,7 +32,8 @@ $query = Genel::find()->where(['lang'=>$lang]);
 						<!-- BEGIN .panel -->
 						<div class="panel">
 							<div class="p-title" >
-								<h2 style="background-color: rgb(11, 82, 100);">Рахбарият</h2>
+								<h2 style="background-color: rgb(11, 82, 100);">
+									<?= Yii::t('template', 'Raxbariyat') ?></h2>
 							</div>
 							<div class="blog-list style-1">
 								<?php foreach($genels as $genel):?>
@@ -41,7 +43,7 @@ $query = Genel::find()->where(['lang'=>$lang]);
 									</div>
 									
 									<div class="item-content" style="padding-top:20px;">
-										<strong class="category-link">Лавозими</strong>
+										<strong class="category-link"><?= Yii::t('template', 'Raxbariyat') ?></strong>
 										<h3 style="font-family: Times New Roman; font-weight: bold;"><?=$genel->name?></h3>
 										<p ><?=$genel->title?></p>
 									</div>

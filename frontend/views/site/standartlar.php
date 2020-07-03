@@ -31,7 +31,7 @@ $query = Standart::find()->where(['lang'=>$lang]);
 	<!-- BEGIN .panel -->
 	<div class="panel">
 		<div class="p-title">
-			<h2>Давлат стандартлари</h2>
+			<h2><?= Yii::t('template','davlatstandartlar') ?></h2>
 		</div>
 		<div class="blog-list style-1">
 			<?php  foreach ($qonunlar as $key => $value) : ?>
