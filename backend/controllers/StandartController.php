@@ -12,22 +12,9 @@ use yii\filters\VerbFilter;
 /**
  * StandartController implements the CRUD actions for Standart model.
  */
-class StandartController extends Controller
+class StandartController extends AppAdminController
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['POST'],
-                ],
-            ],
-        ];
-    }
+
 
     /**
      * Lists all Standart models.

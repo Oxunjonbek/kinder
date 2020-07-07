@@ -13,22 +13,9 @@ use yii\web\UploadedFile;
 /**
  * TarkibiyStructureController implements the CRUD actions for TarkibiyStructure model.
  */
-class TarkibiyStructureController extends Controller
+class TarkibiyStructureController extends AppAdminController
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['POST'],
-                ],
-            ],
-        ];
-    }
+
 
     /**
      * Lists all TarkibiyStructure models.

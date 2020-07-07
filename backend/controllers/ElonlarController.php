@@ -13,22 +13,9 @@ use yii\web\UploadedFile;
 /**
  * ElonlarController implements the CRUD actions for Elonlar model.
  */
-class ElonlarController extends Controller
+class ElonlarController extends AppAdminController
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['POST'],
-                ],
-            ],
-        ];
-    }
+
 
     /**
      * Lists all Elonlar models.

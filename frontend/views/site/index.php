@@ -18,8 +18,8 @@ use yii\helpers\Url;
 // use common\models\Interaktiv;
 // use common\models\Pedagog;
 // use common\models\Qabulhona;
-
-$this->title = 'Бойсун тумани мактабгача таьлим бўлими';
+$lang = \Yii::$app->language;
+$this->title = \Yii::t('template','title');
 ?>                    
 
 <div class="main-content">

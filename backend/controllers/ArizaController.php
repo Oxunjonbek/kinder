@@ -13,22 +13,9 @@ use yii\web\UploadedFile;
 /**
  * ArizaController implements the CRUD actions for Ariza model.
  */
-class ArizaController extends Controller
+class ArizaController extends AppAdminController
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['POST'],
-                ],
-            ],
-        ];
-    }
+
 
     /**
      * Lists all Ariza models.

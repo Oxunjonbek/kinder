@@ -13,22 +13,9 @@ use yii\web\UploadedFile;
 /**
  * IchkiController implements the CRUD actions for Ichki model.
  */
-class IchkiController extends Controller
+class IchkiController extends AppAdminController
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['POST'],
-                ],
-            ],
-        ];
-    }
+
 
     /**
      * Lists all Ichki models.

@@ -14,9 +14,9 @@ use common\models\Tadbir;
 use common\models\Tanlov;
 use frontend\components\LanguageChange;
 AppAsset::register($this);
-$til = Yii::$app->language;
-$tadbir = Tadbir::find()->where(['lang'=>$til])->orderBy(['id'=>SORT_ASC])->limit(3)->all();
-$tanlov = Tanlov::find()->where(['lang'=>$til])->orderBy(['id'=>SORT_ASC])->limit(3)->all();
+$lang = Yii::$app->language;
+$tadbir = Tadbir::find()->where(['lang'=>$lang])->orderBy(['id'=>SORT_ASC])->limit(3)->all();
+$tanlov = Tanlov::find()->where(['lang'=>$lang])->orderBy(['id'=>SORT_ASC])->limit(3)->all();
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>

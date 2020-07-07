@@ -12,22 +12,9 @@ use yii\filters\VerbFilter;
 /**
  * PedagogController implements the CRUD actions for Pedagog model.
  */
-class PedagogController extends Controller
+class PedagogController extends AppAdminController
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['POST'],
-                ],
-            ],
-        ];
-    }
+
 
     /**
      * Lists all Pedagog models.

@@ -26,7 +26,7 @@ use common\models\Interaktiv;
 use common\models\Pedagog;
 use common\models\Qabulhona;
 use yii\data\Pagination;
-
+$lang = \Yii::$app->language;
 $this->title = \Yii::t('template','aloqa');
 $this->params['breadcrumbs'][] = $this->title;
 ?>

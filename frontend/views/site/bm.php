@@ -18,6 +18,7 @@ use common\models\Interaktiv;
 use common\models\Pedagog;
 use common\models\Qabulhona;
 use yii\data\Pagination; 
+$lang = \Yii::$app->language;
 $bm = Bm::find()->where(['lang'=>$lang])->all(); ?>
 <div class="main-content">
 

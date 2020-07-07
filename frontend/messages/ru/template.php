@@ -20,7 +20,7 @@ return [
     'jins'=>'пол',
     'tuman'=>'район',
     'viloyat'=>'Область',
-    'virtualqabul'=>'Виртуальный прием',
+    'virtual qabulhona'=>'Виртуальный прием',
     'Vakansiya'=>'Ваканция',
     'TarkibiyStruktura'=>'Структурная структура',
     'davlatstandartlar'=>'Государственные стандарты',

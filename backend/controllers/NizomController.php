@@ -13,22 +13,9 @@ use yii\web\UploadedFile;
 /**
  * NizomController implements the CRUD actions for Nizom model.
  */
-class NizomController extends Controller
+class NizomController extends AppAdminController
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['POST'],
-                ],
-            ],
-        ];
-    }
+
 
     /**
      * Lists all Nizom models.

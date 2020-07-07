@@ -12,22 +12,8 @@ use yii\filters\VerbFilter;
 /**
  * FarmonlarController implements the CRUD actions for Farmonlar model.
  */
-class FarmonlarController extends Controller
+class FarmonlarController extends AppAdminController
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['POST'],
-                ],
-            ],
-        ];
-    }
 
     /**
      * Lists all Farmonlar models.

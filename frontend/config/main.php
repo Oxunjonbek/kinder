@@ -1,4 +1,5 @@
 <?php
+$urlManagerBackEnd = require(__DIR__ . '/../../backend/config/urlManager.php');
 $params = array_merge(
     require __DIR__ . '/../../common/config/params.php',
     require __DIR__ . '/../../common/config/params-local.php',
@@ -24,8 +25,8 @@ return [
             'enableAutoLogin' => true,
             'identityCookie' => ['name' => '_identity-frontend', 'httpOnly' => true],
         ],
-         // 'urlManager' => require __DIR__ . '/urlManager.php',
-//        'urlManagerBackEnd' => $urlManagerBackEnd,
+         'urlManager' => require __DIR__ . '/urlManager.php',
+       'urlManagerBackEnd' => $urlManagerBackEnd,
         'i18n' => [
             'translations' => [
                 '*' => [
