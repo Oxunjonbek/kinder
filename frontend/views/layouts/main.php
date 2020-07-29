@@ -14,9 +14,9 @@ use common\models\Tadbir;
 use common\models\Tanlov;
 use frontend\components\LanguageChange;
 AppAsset::register($this);
-$tadbir = Tadbir::find()->orderBy(['id'=>SORT_ASC])->limit(3)->all();
-$tanlov = Tanlov::find()->orderBy(['id'=>SORT_ASC])->limit(3)->all();
-// $lang = Yii::$app->language;
+$lang = Yii::$app->language;
+$tadbir = Tadbir::find()->where(['lang'=>$lang])->orderBy(['id'=>SORT_ASC])->limit(3)->all();
+$tanlov = Tanlov::find()->where(['lang'=>$lang])->orderBy(['id'=>SORT_ASC])->limit(3)->all();
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -144,12 +144,12 @@ $tanlov = Tanlov::find()->orderBy(['id'=>SORT_ASC])->limit(3)->all();
                     <!-- BEGIN .widget -->
                     <div class="widget">
                         <div class="w-title">
-                            <h3><?= Yii::t('app', 'Biz haqimizda') ?></h3>
+                            <h3><?= Yii::t('template', 'Biz haqimizda') ?></h3>
                         </div>
                         <div>
-                            <p>Манзил: Сурхондарё вилояти  Бойсун тумани </br> Оби махалласи Ҳаёт абадий кучаси.</p>
-                            <p>Телефон: +99876 335 10 40</p>
-                            <p>E-mail: info@boysun-mtm.uz</p>
+                            <p><?= Yii::t('template', 'manzil1') ?></br><?= Yii::t('template', 'manzil2') ?></p>
+                            <p><?= Yii::t('template', 'tele') ?></p>
+                            <p><?= Yii::t('template', 'emaili') ?></p>
                             
                         </div>
                         <!-- END .widget -->
@@ -157,7 +157,7 @@ $tanlov = Tanlov::find()->orderBy(['id'=>SORT_ASC])->limit(3)->all();
                     <!-- BEGIN .widget -->
                     <div class="widget">
                         <div class="w-title">
-                            <h3>Tadbirlar</h3>
+                            <h3><?= Yii::t('template', 'Tadbirlar') ?></h3>
                         </div>
                         <div class="article-list">
                             <?php foreach ($tadbir as $key => $value) : ?>
@@ -180,7 +180,7 @@ $tanlov = Tanlov::find()->orderBy(['id'=>SORT_ASC])->limit(3)->all();
                         <!-- BEGIN .widget -->
                         <div class="widget">
                             <div class="w-title">
-                                <h3>Tanlovlar</h3>
+                                <h3><?= Yii::t('template', 'Tanlovlar') ?></h3>
                             </div>
                             <div class="article-list">
                                 <?php foreach ($tanlov as $key => $value) : ?>

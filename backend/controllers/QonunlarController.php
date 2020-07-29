@@ -12,22 +12,9 @@ use yii\filters\VerbFilter;
 /**
  * QonunlarController implements the CRUD actions for Qonunlar model.
  */
-class QonunlarController extends Controller
+class QonunlarController extends AppAdminController
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['POST'],
-                ],
-            ],
-        ];
-    }
+
 
     /**
      * Lists all Qonunlar models.

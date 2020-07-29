@@ -12,22 +12,9 @@ use yii\filters\VerbFilter;
 /**
  * BmController implements the CRUD actions for Bm model.
  */
-class BmController extends Controller
+class BmController extends AppAdminController
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['POST'],
-                ],
-            ],
-        ];
-    }
+
 
     /**
      * Lists all Bm models.

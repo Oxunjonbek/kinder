@@ -18,13 +18,14 @@ use common\models\Interaktiv;
 use common\models\Pedagog;
 use common\models\Qabulhona;
 use yii\data\Pagination; 
+$lang = \Yii::$app->language;
 $bm = Bm::find()->where(['lang'=>$lang])->all(); ?>
 <div class="main-content">
 
 	<!-- BEGIN .panel -->
 	<div class="panel">
 		<div class="p-title">
-			<h2>ВМ қарор ва фармойишлари</h2>
+			<h2><?= Yii::t('template','VM qaror va farmoyishlari') ?></h2>
 		</div>
 		<div class="blog-list style-1">
 			<?php  foreach ($bm as $key => $value) : ?>

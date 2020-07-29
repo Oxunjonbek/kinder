@@ -12,22 +12,9 @@ use yii\web\UploadedFile;
 /**
  * TadbirController implements the CRUD actions for Tadbir model.
  */
-class TadbirController extends Controller
+class TadbirController extends AppAdminController
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['POST'],
-                ],
-            ],
-        ];
-    }
+
 
     /**
      * Lists all Tadbir models.

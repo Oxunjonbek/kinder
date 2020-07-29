@@ -12,22 +12,9 @@ use yii\filters\VerbFilter;
 /**
  * VacansyController implements the CRUD actions for Vacansy model.
  */
-class VacansyController extends Controller
+class VacansyController extends AppAdminController
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['POST'],
-                ],
-            ],
-        ];
-    }
+
 
     /**
      * Lists all Vacansy models.

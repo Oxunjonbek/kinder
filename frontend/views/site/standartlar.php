@@ -20,6 +20,7 @@ use common\models\Interaktiv;
 use common\models\Pedagog;
 use common\models\Qabulhona;
 use yii\data\Pagination;
+$lang = \Yii::$app->language;
 $query = Standart::find()->where(['lang'=>$lang]);
         $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
         $qonunlar = $query->offset($pages->offset)
@@ -31,7 +32,7 @@ $query = Standart::find()->where(['lang'=>$lang]);
 	<!-- BEGIN .panel -->
 	<div class="panel">
 		<div class="p-title">
-			<h2>Давлат стандартлари</h2>
+			<h2><?= Yii::t('template','davlatstandartlar') ?></h2>
 		</div>
 		<div class="blog-list style-1">
 			<?php  foreach ($qonunlar as $key => $value) : ?>

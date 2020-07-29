@@ -19,6 +19,7 @@ use common\models\Interaktiv;
 use common\models\Pedagog;
 use common\models\Qabulhona;
 use yii\data\Pagination;
+$lang = Yii::$app->language;
 $query = Vacansy::find()->where(['lang'=>$lang]);
         // $pages = new Pagination(['totalCount' => $query->count()]);
         $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
@@ -31,7 +32,7 @@ $query = Vacansy::find()->where(['lang'=>$lang]);
 	<!-- BEGIN .panel -->
 	<div class="panel">
 		<div class="p-title">
-			<h2>Vakansiya</h2>
+			<h2><?= Yii::t('template','Vakansiya') ?></h2>
 		</div>
 		<a href="#l" class="upper-title"><i class="fa fa-home"></i></a>
 		<div class="photo-gallery-blocks">

@@ -11,10 +11,9 @@
 			<div class="item">
 
 
-				<h3><a href="post.html">Ота-оналарга
+				<h3><a href="post.html"><?= Yii::t('template','otaonlarga') ?>
 </a></h3>
-				<p>Hech narsa topilmadi!
-				Apologies, but the page you requested could not be found. Perhaps searching will help.</p>
+				<p><?= Yii::t('template','hechnarsatopilmadi') ?></p>
 
 			</div>
 

@@ -13,22 +13,9 @@ use yii\web\UploadedFile;
 /**
  * StructureController implements the CRUD actions for Structure model.
  */
-class StructureController extends Controller
+class StructureController extends AppAdminController
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['POST'],
-                ],
-            ],
-        ];
-    }
+
 
     /**
      * Lists all Structure models.

@@ -20,6 +20,7 @@ use common\models\Interaktiv;
 use common\models\Pedagog;
 use common\models\Qabulhona;
 use yii\data\Pagination;
+$lang = \Yii::$app->language;
 $query = Nizom::find()->where(['lang'=>$lang]);
         $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
         $nizomlar = $query->offset($pages->offset)

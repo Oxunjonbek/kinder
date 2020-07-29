@@ -18,6 +18,7 @@ use common\models\Interaktiv;
 use common\models\Pedagog;
 use common\models\Qabulhona;
 use yii\data\Pagination;  
+$lang = \Yii::$app->language;
 $pedagoglar = Pedagog::find()->where(['lang'=>$lang])->all();
 ?>
 <div class="main-content">
@@ -25,7 +26,8 @@ $pedagoglar = Pedagog::find()->where(['lang'=>$lang])->all();
 	<!-- BEGIN .panel -->
 	<div class="panel">
 		<div class="p-title">
-			<h2>Педагогларга
+			<h2>
+				<?= Yii::t('template','pedagoglar') ?>
 			</h2>
 		</div>
 		<div class="blog-list style-1">

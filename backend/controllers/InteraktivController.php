@@ -12,22 +12,9 @@ use yii\filters\VerbFilter;
 /**
  * InteraktivController implements the CRUD actions for Interaktiv model.
  */
-class InteraktivController extends Controller
+class InteraktivController extends AppAdminController
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['POST'],
-                ],
-            ],
-        ];
-    }
+
 
     /**
      * Lists all Interaktiv models.

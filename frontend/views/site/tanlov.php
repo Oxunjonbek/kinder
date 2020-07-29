@@ -20,7 +20,7 @@ use common\models\Interaktiv;
 use common\models\Pedagog;
 use common\models\Qabulhona;
 use yii\data\Pagination;
-
+$lang = \Yii::$app->language;
  $query = Tanlov::find()->where(['lang'=>$lang]);
         // $pages = new Pagination(['totalCount' => $query->count()]);
         $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 5]);
@@ -33,7 +33,7 @@ use yii\data\Pagination;
 	<!-- BEGIN .panel -->
 	<div class="panel">
 		<div class="p-title">
-			<h2>Танловлар</h2>
+			<h2><?= Yii::t('template','Tanlovlar') ?></h2>
 		</div>
 		<div class="blog-list style-2">
 
@@ -54,7 +54,7 @@ use yii\data\Pagination;
 					</div> -->
 					<div class="item-footer">
 						<a href="#" class="left" style="color: #c32929;">
-							<strong>Янгиликлар</strong>
+							<strong><?= Yii::t('template','Yangiliklar') ?></strong>
 						</a>
 					</div>
 				</div>

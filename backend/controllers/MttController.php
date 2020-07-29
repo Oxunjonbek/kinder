@@ -12,22 +12,9 @@ use yii\filters\VerbFilter;
 /**
  * MttController implements the CRUD actions for Mtt model.
  */
-class MttController extends Controller
+class MttController extends AppAdminController
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['POST'],
-                ],
-            ],
-        ];
-    }
+
 
     /**
      * Lists all Mtt models.

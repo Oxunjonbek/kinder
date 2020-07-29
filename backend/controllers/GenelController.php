@@ -13,22 +13,8 @@ use yii\web\UploadedFile;
 /**
  * GenelController implements the CRUD actions for Genel model.
  */
-class GenelController extends Controller
+class GenelController extends AppAdminController
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['POST'],
-                ],
-            ],
-        ];
-    }
 
     /**
      * Lists all Genel models.

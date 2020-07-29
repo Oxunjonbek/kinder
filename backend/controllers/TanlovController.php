@@ -13,22 +13,9 @@ use yii\web\UploadedFile;
 /**
  * TanlovController implements the CRUD actions for Tanlov model.
  */
-class TanlovController extends Controller
+class TanlovController extends AppAdminController
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['POST'],
-                ],
-            ],
-        ];
-    }
+
 
     /**
      * Lists all Tanlov models.
