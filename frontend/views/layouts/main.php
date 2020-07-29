@@ -27,7 +27,7 @@ $tanlov = Tanlov::find()->orderBy(['id'=>SORT_ASC])->limit(3)->all();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php $this->registerCsrfMetaTags() ?>
-    <title><?= Yii::t('template','title') ?></title>
+    <title><?= Yii::t('template',$this->title) ?></title>
     <?php $this->head() ?>
 </head>
 <body>
@@ -69,7 +69,7 @@ $tanlov = Tanlov::find()->orderBy(['id'=>SORT_ASC])->limit(3)->all();
                                     </a>
                                 </li>
                             </ul>
-                        <?php endif ?>
+                        <?php endif; ?>
                     </ul>
                     <ul class="list-socials">
                         <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>

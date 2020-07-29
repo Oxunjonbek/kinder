@@ -7,6 +7,7 @@ use yii\helpers\Url;
 class LanguageChange{
 
     public static function createMultipleLanguageReturnUrl($lang = 'uz') {
+
         if (count($_GET) > 0) {
             $arr = $_GET;
             $arr['language'] = $lang;
@@ -16,7 +17,7 @@ class LanguageChange{
 
         $arr = [0=>NULL] + $arr;
 
-        return Url::to($arr);
+        return Url::to($arr).'?language='.$lang;
     }
 
 
